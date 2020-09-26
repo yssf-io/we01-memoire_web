@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Les site web low-tech</title>
+	<title>Les sites web low-tech</title>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 		<li>Les commandements des sites low-tech</li>
 		<li>Développement d'un site low-tech</li>
 		<li>L'hébergement d'un site low-tech</li>
-		<li>Examples de sites low-tech</li>
+		<li>Exemples de sites low-tech</li>
 		<li>Comparaison des temps de chargement</li>
 		<li>L'avenir...</li>
 	</ol>
@@ -27,48 +27,39 @@
 	<h2><a name="intro">Introduction</a></h2>
 
 <section>
-  <h3>Des pages Web de plus en plus lourde et gourmandes en ressources</h3>
+  <h3>Des pages Web de plus en plus lourdes et gourmandes en ressources</h3>
 	<p>
-		Les sites Web ont beaucoup évolué depuis la publication de la première page Web en 1990. De nombreuses technologies permettant
-		de réaliser des pages sont apparues et les standards ont évolué (HTML5, CSS3). <br />
-    L'HTML5 est la dernière version de l'Hypertext Markup Language, c'est une language de balisage qui permet de d'écrire de l'hypertext. <br />
-    Le CSS3 est la troisième version des feuilles de style en cascade (Cascading Style Sheets), c'est une langage informatique qui décrit la présentation des documents HTML. Chaque page a charge un fichier HTML qui a éventuellement besoin d'un fichier CSS
-	</p>
-
-  <p>
-    Les performances des infrastructures réseau
-		et des machines ont aussi progressé, facilitant l’apparition de ces évolutions. Aussi, le nombre de sites Web a explosé
-		avec la démocratisation d’Internet. Tout cela a poussé à considérablement augmenter la taille des sites notamment avec
-		l'ajout de diverses images, fichiers CSS/JavaScript, vidéos, polices, etc.
+		Les sites Web ont beaucoup évolués depuis la publication de la première page Web en 1990. De nombreuses technologies permettant
+		de réaliser des pages sont apparues et les standards ont évolués (HTML5, CSS3). <br />
+    L'HTML5 est la dernière version de l'HyperText Markup Language, c'est un language de balisage qui permet d'écrire de l'hypertext. <br />
+    Le CSS3 est la troisième version des feuilles de style en cascade (Cascading Style Sheets), c'est un langage informatique qui décrit la présentation des documents HTML. Chaque page doit charger un fichier HTML qui a éventuellement besoin d'un fichier CSS.
 	</p>
 
 	<p>
-		2Mo, c’est la taille médiane d’une page web en 2020 ; soit 1.5Mo de plus qu’en 2010 selon le projet HTTP Archive*. Cette taille correspond à la somme de toutes les ressources demandées lors d’un appel à une page. On peut cité le HTML pour le fond
-		de la page, le CSS pour la mise en forme, le JavaScript pour intégrer de l'interactivité ainsi que les images et les vidéos. Notament avec HTML5 on note l'utilisation API multimédia et graphiques, par exemples avec &lt;audio/&gt;, &lt;video/&gt; et &lt;canvas/&gt;.
+		2Mo, c’est la taille médiane d’une page web en 2020 ; soit 1.5Mo de plus qu’en 2010 selon le projet HTTP Archive*. Cette taille correspond à la somme de toutes les ressources demandées lors d’un appel à une page. On peut cité pour un site statique, le HTML pour la structure
+		de la page, le CSS pour la mise en forme et par exemple le JavaScript pour intégrer de l'interactivité (menu déroulant, boutons, etc). Notament avec HTML5 on note l'utilisation API multimédia et graphiques, par exemples avec &lt;audio/&gt;, &lt;video/&gt; et &lt;canvas/&gt;.
   </p>
   <p>
-		Cela signifie que chaque utilisateur se connectant à une page web va recevoir 2Mo de ressources pour afficher la page comme les développeurs la voulaient. Cette taille est aussi liée au nombre de requêtes faites par une page comme l’appel à des ressources CSS connues. Une communication avec le serveur pour du temps réel (chat) permis par le developpement de nouvelles technologies (AJAX).
+		Cela signifie que chaque utilisateur se connectant à une page web via un navigateur va recevoir environ 2Mo de ressources pour afficher la page comme les développeurs la souhaitent affichée. Cette taille est aussi liée au nombre de requêtes faites par une page comme l’appel à des ressources CSS connues, ou encore une communication avec le serveur avec des langages de programmation comme le PHP ou par une architecture comme Ajax par exemple, afin d'ajouter des opérations en temps réel (chat).
   </p>
 
 
 
 	<p>
-		Cette évolution peut être expliquée par l’évolution du Web. Les réseaux sociaux et les sites de e-commerces sont rapidement devenus les sites web les plus consultés. Le point commun entre toutes ces pages est qu’elles affichent assez librement des
-		images et des vidéos bien plus volumineux que du simple texte. Image et vidéo qui d'ailleurs on un volume qui ne cesse d'augmenter. Aujourd'hui on rencontre de plus en plus de fichier vidéo 4K et d'image haute définition.
+		Les réseaux sociaux et les sites de e-commerces sont rapidement devenus les sites web les plus consultés. Le point commun entre toutes ces pages est qu’elles affichent assez librement des
+		images et des vidéos bien plus volumineuses que du simple texte. Images et vidéos qui d'ailleurs ont un volume qui ne cesse d'augmenter (qualité d'image en pixel en nette augmentation depuis des années). Aujourd'hui on rencontre de plus en plus de fichiers vidéos 4K et d'images hautes définitions.
   </p>
-    Par ailleurs, il est devenu simple d’intégrer n’importe quel fichier JavaScript/CSS pour rendre son site plus attirant sans forcément prendre le temps de récupérer uniquement les parties du code qui nous intéressent. Il faut connaitre toutes les subtilités de JavaScript pour éviter cette prise de poids. Nous pouvons ajouter à cela l’augmentation de la popularité des CMS (Content Management System) telle que Wordpress qui propose des bases de sites web qui sont crées au préalable et réutilisables permettant à n'importe qui de créer facilement un site web. Cependant ce genre de template de site n'offre pas une optimisation parfaite au besoin de chacun et devront souvent être adaptés.
-  </p>
-  <p>
-    Le développement de site responsive (qui s'adapte aux écran : format, taille, tactile ou non...) peut aussi contribuer à l’augmentation du code HTML utilisé pour réaliser une page. Ainsi des sites sont passés de deux pages, l’une dédiée aux ordinateurs et l’autre dédiée mobile (plus léger) à une seule et unique page qui s’adapte.
+    Par ailleurs, il est devenu simple d’intégrer n’importe quel fichier JavaScript/CSS pour rendre son site web plus attirant sans forcément prendre le temps de récupérer uniquement les parties du code qui nous intéressent. Il faut connaitre toutes les subtilités de JavaScript pour éviter au maximum cette prise de volume. Nous pouvons ajouter à cela l’augmentation de la popularité des CMS (Content Management System) telle que Wordpress qui propose des bases de sites web qui sont créés au préalable et réutilisables permettant à n'importe qui de créer facilement un site web. Cependant ce genre de template de site n'offre pas une optimisation parfaite au besoin de chacun et devront souvent être adaptés.
   </p>
   <p>
-    Autre élément important, il faut prendre en compte qu’une partie très importante des revenus du Web proviennent de la publicité qui contribue à alourdir les pages web avec des images ou vidéos et des scripts pour analyser leurs performances, par exemple dans le jeu vidéo Angry Birds, cela représente 75% de la consommation électrique. Il y a aussi des choses qui consomme beaucoup d'énergies et qui existent dans beaucoup de sites web comme Google Analytics, Cookies, etc.
+    Le développement de sites responsives, qui s'adapte par rapport à l'écran et à l'OS de l'utilisateur (changement de format ou de police d'écriture, fonctionnalité tactile ou non, etc) peut aussi contribuer à l’augmentation du volume de code HTML utilisé dans le site. Ainsi des sites sont passés de deux pages, l’une dédiée aux ordinateurs et l’autre dédiée mobile (plus légere) à une seule et unique page qui peut s’adapter.
+  </p>
+  <p>
+    Autre élément important, il faut prendre en compte qu’une partie très importante des revenus du Web proviennent de la publicité qui contribue à alourdir les pages web avec des images, vidéos et/ou des scripts récoltant des données, par exemple dans le jeu vidéo Angry Birds, cela représentait 75% de la consommation électrique. Il y a aussi des addons, des fonctionnalités externes, qui consomment de l'énergie et qui sont implémentés dans la majorité de sites web de nos jours comme Google Analytics ou certains Cookies.
   </p>
 
-
-
   <p>
-    Il y a plusieurs conséquences plus ou moins évidentes à tout cela. La première est que les consommateurs doivent mettre à jour leur matériel pour suivre la tendance, il commence par exemple à être difficile de charger certaines pages avec peu de mémoire ou des navigateurs plus anciens. La bande-passante est aussi impactée par le fait de devoir transporter des images, police de font,vidéos, etc. De manière générale, c’est un manque à gagner en termes de temps de chargement et consommation d’électricité.
+    Il y a plusieurs conséquences plus ou moins évidentes à tout cela. La première est que les consommateurs doivent avoir un matériel à jour afin de pouvoir accéder à des sites toujours plus volumineux, il devient difficile pour certains utilisateurs possédant des configurations fragiles (HardWare datant de plusieurs années, logiciels non à-jour, peu de mémoire vive). La bande-passante est aussi impactée par le fait de devoir transporter des images, police de font, vidéos, etc. De manière générale.
   </p>
 
 </section>
@@ -76,69 +67,69 @@
   <section>
     <h3>Le mouvement low-tech</h2>
     <p>
-      En réaction à cela un mouvement est né : le mouvement low-tech qui s'opposent ainsi aux high-tech puisqu'elles souhaitent simplifier la technologie : faire mieux avec moins de complexité, moins de ressources, moins de dépenses, etc. La philosophie low-tech pourrait se résumer en « pourquoi faire compliqué quand on peut faire simple. » Appliqué à la technologie.
+      En réaction de l'augmentation de la taille des sites web un mouvement est né : le mouvement low-tech, dont le nom s'oppose directement à "high-tech" car l'objectif est ici de simplifier la technologie au minimum requis pour répondre au besoin du client: La philosophie low-tech pourrait à de la radienerie informatique (en terme de gestion de mémoire et de capacité machine), ou encore à l'adage « pourquoi faire compliqué quand on peut faire simple. » appliqué à la technologie.
     </p>
     <p>
-      Cependant bien que ce mouvement s'oppose aux high-tech il ne s'oppose pas aux technologies ! La low-tech ne prône pas un retoure à la préhistoire. Il s'agit à l'inverse de mieux utilisé les technologie et en se limitant au nécessaire. C'est une façon différente de voir les chose. Le low-tech est même très moderne en ce sens qu'il s'inscrit dans un mouvement de remise en questrion de la société et de la place des technologie, notamment dans une logique de développement durable. <br/>
+      Cependant bien que ce mouvement s'oppose à la notion de high-tech et non à toute technologie ! Le low-tech ne prône pas un retour à une époque avant la première révolution industrielle. Il faut donc mieux utiliser les ressources informatiques que nous avons mis des années à développer. C'est une façon différente de représenter le futur de la technologie. La vision high-tech consiste à vouloir améliorer les possibilités de la technologie tandit que la vision low-tech consiste à vouloir apprendre comment utiliser la technologie existante le mieux possible et en dépensant le moins de ressources possible. Le low-tech est un miroir sur des problématiques très modernes comme le développement durable. <br/>
 
-    En fait, on peut même caractériser le low-tech par trois critères :
+    On peut caractériser le low-tech avec trois critères :
     <ul>
-      <li>Utilité sociale : répond à un besoin réel</li>
-      <li>Facilité d’appropriation : ne nécessite pas de compétences techniques particulière</li>
-      <li>Respect de l’environnement : necessite peut de ressources</li>
+      <li>Utilité sociale : Répond à un besoin réel</li>
+      <li>Facilité d’appropriation : Ne nécessite pas de compétences techniques particulières</li>
+      <li>Respect de l’environnement : Necessite peut de ressources</li>
     </ul>
     </p>
 
     <p>
-      Les adeptes du mouvement “low-tech” proposent un retour au Web simple. C’est-à-dire revenir à des solutions qui cherchent à être simples et bien dimensionnées. Il s’agit alors d’identifier ce qui prend le plus de ressources et qui est le moins « nécessaire » de trouver et déployer alors des alternatives. <br />
+      Les adeptes du mouvement “low-tech” proposent un retour au Web simple. C’est-à-dire revenir à des solutions techniques simples et bien dimensionnées. Il s’agit alors d’identifier ce qui prend le plus de ressources et aux priorités des différents fonctionnalitées à déployer ou alors des alternatives possibles. <br />
       Dans le contexte du Web, cela peut se traduire par le chargement du minimum de ressources possible. 
       <ul>
         <li>
-            L’hébergement sur un support alimenté aux énergies renouvelables (même si cela signifie des moments d’inaccessibilité).
+            L’hébergement sur un support alimenté avec des énergies renouvelables (occasionnerait des moments d’inaccessibilités car ces énergies ne sont pas produites de manière constante).
         </li>
         <li>
           La réduction du nombre d’appels sortants.
         </li>
       </ul>
-      Le but du low-tech en général est de faire appel à son ingéniosité pour réussir à faire le maximum avec le minimum, de revenir sur ce qui est nécessaire et de normaliser le fait de faire soi-même. 
+      Le but du low-tech en général est de faire appel à l'ingéniosité des concepteurs pour réussir à créer le plus de matière avec le minimum de ressources et de prendre le recul nécessaire pour voir ce qui est nécessaire. 
       <ul>
         <li>
-          Écrire son propre CSS et éviter d'utiliser les CSS pré-faits remplis de fonctionnalités inutilisées.
+          Créer et utiliser son propre fichier CSS et à contrario éviter d'utiliser des fichiers CSS pré-établis contenant trop de fonctionnalités inutilisés et inadaptées à son produit.
         </li>
         <li>
-          Programmer en finesse, réduire la taille de son code.
+          Programmer en finesse, réduire la taille de son code au maximum.
         </li>
         <li>
-          Simplifier son design, uliliser moins d'images et les compresser tout en évitant les animations.
+          Simplifier le design, uliliser le moins d'images possible et sinon les compresser, éviter les animations.
         </li>
         <li>
           Développer ses propres modules de blogs ou du moins récupérer uniquement le nécessaire.
         </li>
-        <li>Avoir son propre serveur équipé d’outils d’analyse de trafic au lieu d’utiliser les plus connus.
+        <li>Avoir son propre serveur équipé d’outils d’analyse de trafic au lieu d’utiliser les plus répendus sur internet.
         </li>
       </ul> 
     </p>
     <p>
-      Bien que ce mémoire s'intéresse aux sites web low-tech, ce sont les utlisateurs qui consomment le plus d'énergie, il faut donc non seulement faire des efforts du côté des développeurs mais aussi du côté utilisateur. Il y a des bons gestes à prendre en considération :
+      Bien que ce mémoire s'intéresse aux sites web low-tech, ce sont les utlisateurs aussi sont un facteur de la consommation d'énergie, il faut alors non seulement que les développeurs et concepteurs fassent des efforts mais aussi les utilisateurs. Il y a par ailleurs des bons gestes à prendre en considération :
       <ul>
         <li>
           Fermer les onglets inactifs.
         </li>
         <li>
-          Éviter les moteurs de recherche lorsqu'on connait l'url du site que l'on souhaite visite car chaque recherche consomme beaucoup d'énergie, c'est une gaspillage.
+          Utiliser le moins possible les moteurs de recherche si on connait déjà l'URL d'un site (éviter de chercher "Google" sur Google) car chaque recherche consomme de l'énergie, c'est du gaspillage.
         </li>
       </ul>
     </p>
     <h4>Précisions</h4>
-    <li><strong>JavaScript</strong></li>
+    <h5>JavaScript</h5>
     <p>
       Le JavaScript est un langage de programmation qui permet de rendre les pages Web dynamiques côté client.
-      Son utilité se retrouve notamment dans la validation des formulaires, l’animation des pages Web, les jeux sur le Web, etc.
-      Très attrayant, le JavaScript contribue cependant fortement à l’augmentation de la taille des pages Web.
+      Son utilité se retrouve notamment dans la validation de formulaire, l’animation des pages Web, les jeux en ligne, etc.
+      Cependant, des fichiers JavaScript de tailles conséquentes contribuent fortement à l’augmentation de la taille des pages Web.
     </p>
-    <li><strong>CMS</strong></li>
+    <h5>CMS</h5>
     <p>
-      Le CMS ou système de gestion de contenus en français est un programme informatique qui permet de gérer l’ensemble du contenu et la construction d’un site web. Il facilite et rend accessible la création de site Web en proposant des outils simples.
+      Le CMS ou Système de Gestion de Contenus en français est un programme informatique qui permet de gérer l’ensemble du contenu et la construction d’un site web. Il facilite et rend accessible la création de sites Web en proposant des outils simples.
     </p>
     <h4>Sources</h4>
     <ul>
