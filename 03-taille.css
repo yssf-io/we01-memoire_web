@@ -1,0 +1,53 @@
+body {
+  background-color: ghostwhite;
+}
+
+.main {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: ghostwhite;
+  border-radius: 15px;
+  box-shadow: 0px 0px 24px 2px rgba(202, 209, 209, 1);
+}
+
+h2,
+h3,
+h4 {
+  font-weight: lighter;
+}
+
+img {
+  width: 100%;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h4 {
+  color: brown;
+}
+
+.footnote {
+  font-size: 0.7rem;
+}
+
+.caption {
+  font-size: 0.8;
+  color: grey;
+  font-style: italic;
+}
+
+table,
+th,
+td {
+  border: solid black 1px;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+}
