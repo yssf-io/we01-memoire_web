@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Les sites web low-tech</title>
+    <link href="01-introduction.css" rel="stylesheet" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-  <title>Les sites web low-tech</title>
-  <link href="01-introduction.css" rel="stylesheet">
-</head>
+  <body>
+    <section class="main">
+      <h2>La taille des sites web</h2>
 
-<body>
-  <section class="main">
+      <h3>Qu'est-ce que la taille d'un site web ?</h3>
 
-  <h2>La taille des sites web</h2>
+      <div id="définition">
+        La taille d'une page web - aussi appelé poids - correspond à la taille
+        globale des fichiers d'une la page web reçus par le navigateur.
+      </div>
 
+      Ce poids est mesuré, comme pour tout fichier informatique, en octet. Ainsi
+      pour une page web la taille est de l'ordre de grandeur de quelques méga
+      octets<a class="footnote" href="#source1">[2]</a>.
 
+      <h3>Comment évaluer la taille d'une page web ?</h3>
 
-  <h3>Qu'est-ce que la taille d'un site web ?</h3>
+      <h3>Plus c'est léger, mieux c'est.</h3>
 
-  <div id="définition">
-  La taille d'une page web - aussi appelé poid -
-  correspond à la taille globale du fichier correspondant spécifiquement à la page web
-  et reçus par le navigateur.
-  </div>
+      Le poids est un facteur très alarmant de la vitesse de chargement d'un
+      site web. On peut aussi constater que ce poids augmente fortement d'année
+      en année, il était en moyenne de 1.92Mo pour un site Desktop en 2015 et
+      avoisinnait les 2.5Mo en 2018.<a class="footnote" href="#source3">[3]</a>
+      Il est aussi dit que le poids des sites mobiles a augmenté de 50% entre
+      2018 et 2020<a class="footnote" href="#source4">[4]</a>. Google prend en
+      compte le temps de chargements pour le référencement des sites web, on a
+      donc tout intéret à réduire la taille de nos pages.
 
-  Ce poid est mesuré, comme pour tout fichier informatique, en octet.
-  Ainsi pour une page web la taille est de l'ordre de grandeur de quelques méga octets<a
-    class="footnote"
-    href="#source1"
-    >[2]</a
-  >.
+      <h3>Diminuer le poid d'une page</h3>
 
-  <h3>Comment évaluer la taille d'une page web ?</h3>
+      <h4>Du côté developpeur</h4>
 
+      - Il faut optimiser toutes les images, mais aussi le poids de fichiers
+      externes comme les CSS et JavaScript, éviter d'utiliser trop de librairies
+      JS différentes, concaténer les fichiers, etc. - Certains designs peuvent
+      faire des pages très lourdes. Il faut sensibiliser les graphistes, et
+      s'assurer que le design répond aux objectifs du site.
 
-	<h3>Plus c'est léger, mieux c'est.</h3>
+      <h4>Du côté utilisateur</h4>
 
-	La vitesse d'affichage des pages compte aussi pour beaucoup.
-	Google prend en compte le temps de chargements.
-	Le poids total est un indicateur de cette vitesse d'affichage, mais il y a d'autres paramètres (voir YSlow, Google Speed).
+      bloqueur : traker et publicité exemple : poid de la page d'acceuil du
+      Figaro diviser par 3 <a class="footnote" href="#source2">[2]</a>.
 
-
-	<h3>Diminuer le poid d'une page</h3>
-
-		<h4>Du côté developpeur</h4>
-
-		- Il faut optimiser toutes les images, mais aussi le poids de fichiers externes comme les CSS et JavaScript, éviter d'utiliser trop de librairies JS différentes, concaténer les fichiers, etc.
-		- Certains designs peuvent faire des pages très lourdes. Il faut sensibiliser les graphistes, et s'assurer que le design répond aux objectifs du site.
-
-
-		<h4>Du côté utilisateur</h4>
-
-		bloqueur : traker et publicité
-		exemple : poid de la page d'acceuil du Figaro diviser par 3 <a
-	    class="footnote"
-	    href="#source2"
-	    >[2]</a
-	  >.
-
-  <h3>Sources</h3>
-  <p>Pour aller plus loin...</p>
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>Objet</th>
-      <th>Lien</th>
-    </tr>
-    <tr>
-      <td id="source1">[1]</td>
-      <td>Taille page web</td>
-      <td>
-        <a href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
-          >Demystifying API Rate Limiting</a
-        >
-      </td>
-    </tr>
-		<tr>
-			<td id="source2">[2]</td>
-			<td>Taille page web</td>
-			<td>
-				<a href="https://www.dsfc.net/internet/bloqueur-publicitaire/poids-reel-page-site-web/"
-					>Connaître le poids réel d’une page d’un site Web</a
-				>
-			</td>
-		</tr>
-  </table>
-  <p>
-    Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
-    Xiang Li.
-  </p>
-
-</section>
-</body>
+      <h3>Sources</h3>
+      <p>Pour aller plus loin...</p>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Lien</th>
+        </tr>
+        <tr>
+          <td id="source1">[1]</td>
+          <td>
+            <a
+              href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
+              >Demystifying API Rate Limiting</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source2">[2]</td>
+          <td>
+            <a
+              href="https://www.dsfc.net/internet/bloqueur-publicitaire/poids-reel-page-site-web/"
+              >Connaître le poids réel d’une page d’un site Web</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source3">[3]</td>
+          <td>
+            <a href="https://www.artwai.com/poids-moyen-des-pages-web-en-2018/"
+              >Web 2018: plus lourd, plus lent</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source4">[4]</td>
+          <td>
+            <a href="https://httparchive.org/reports/page-weight"
+              >Report page-weight</a
+            >
+          </td>
+        </tr>
+      </table>
+      <p>
+        Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
+        Xiang Li.
+      </p>
+    </section>
+  </body>
 </html>
