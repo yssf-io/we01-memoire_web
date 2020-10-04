@@ -47,8 +47,6 @@
         </div>
       </div>
 
-      A compléter...
-
       <p>
         On peut constater que ce poids augmente fortement d'année en année, il
         était en moyenne de 1.92Mo pour un site Desktop en 2015 et avoisinnait
@@ -63,11 +61,12 @@
         qui sont les plus consultés aujourd'hui. En effet, il existe plus de 1,6
         milliards de sites web dans le monde dont plus de 2 millions de blogs
         publiés chaque jour sur Internet. Plus de 23,6 milliards de pages
-        chaques mois rien que sur WordPress (part de marché de près 60%).
-        Wordpress héberge des sites comme le New York Times, Forbes et même le
-        Blog Facebook. <a class="footnote" href="#source4">[4]</a> Or comme il a
-        été dit dans l'introduction et le chapitre 1, l'utilisation de CMS
-        engendre souvent des pages web plus lourdes.<br />
+        chaques mois rien que sur WordPress (présent sur plus de 40% des sites
+        web en ligne actuellement)<a class="footnote" href="#source4">[4]</a>.
+        Wordpress héberge des sites comme le New York Times ou Forbes.
+        <a class="footnote" href="#source5">[5]</a> Or comme il a été dit dans
+        l'introduction et le chapitre 1, l'utilisation de CMS engendre souvent
+        des pages web plus lourdes.<br />
         Aussi les réseaux sociaux occupent une part importante du trafic (3
         milliards d’utilisateurs en 2020). Les réseaux sociaux sont constitués
         de pages lourdes : Présence de boutons, de nombreuses images et vidéos,
@@ -86,7 +85,7 @@
       inférieure à 2 secondes. Et pour cause en 2020, 40% des internautes
       abandonnent un site web si le chargement prend plus de 3 secondes.<a
         class="footnote"
-        href="#source4"
+        href="#source6"
         >[4]</a
       >
 
@@ -113,20 +112,21 @@
         l'augmentation du poids d'une page soit proportionnelle à
         l'enrichissement de son contenu et même à l'amélioration de l'experience
         utilisateur. Un exemple de cela serait le "No Fucking JS Spirit" employé
-        entre autre par la société Artwai<a class="footnote" href="#source6"
-          >[6]</a
+        entre autre par la société Artwai<a class="footnote" href="#source7"
+          >[7]</a
         >. Si on devait résumer ce concept ce serait programmer intelligemment
         le site web en connaissant certaines subtilités du JavaScript comme le
         Binding ou la fermeture lexicale afin d'obtenir un site remplissant sa
         fonction avec le poids minimum possible.
       </p>
       <p>
-        Aussi l'économie du web aujourd'hui est fondé en grande partie sur la publicité
-        qui contribut à une partie de l'augmentation du poids des pages. Dans un
-        premier temps parce que les publicités peuvent peser très lourd (images et vidéos pour identifier un produit,
-        des liens ou même des scripts JS). Mais aussi car cela est lié à l'économie de
-        l'attention : il s'agit d'attirer et de faire rester les utilisateurs
-        sur la page web. Pour cela les <i>designers</i> cherche à stimuler l'esprit de
+        Aussi l'économie du web aujourd'hui est fondé en grande partie sur la
+        publicité qui contribut à une partie de l'augmentation du poids des
+        pages. Dans un premier temps parce que les publicités peuvent peser très
+        lourd (images et vidéos pour identifier un produit, des liens ou même
+        des scripts JS). Mais aussi car cela est lié à l'économie de l'attention
+        : il s'agit d'attirer et de faire rester les utilisateurs sur la page
+        web. Pour cela les <i>designers</i> cherchent à stimuler l'esprit de
         l'utilisateur par de nombreuses images et animations.
       </p>
 
@@ -134,54 +134,59 @@
 
       <h4>Du côté developpeur</h4>
 
-      De manière générale il s'agit de minimiser la taille du code utilse à la
-      page web mais aussi celle de toutes les ressources. Ainsi il faut
-      optimiser toutes les images, mais aussi le poids de fichiers externes
-      comme les CSS et JavaScript, éviter d'utiliser trop de librairies JS
-      différentes, concaténer les fichiers, etc. - Certains designs peuvent
-      faire des pages très lourdes. Il faut sensibiliser les graphistes, et
-      s'assurer que le design répond aux objectifs du site.
+      De manière générale, il s'agit de minimiser la taille du code de la page
+      web mais aussi celle de toutes les ressources. Ainsi il faut optimiser
+      l'utilisation de toutes les images ainsi qu'en compresser le maximum. Il
+      faut aussi prendre en compte le poids de fichiers externes comme les CSS
+      et JavaScript, éviter d'utiliser trop de librairies JS différentes,
+      concaténer les fichiers, etc. - Certains designs peuvent augmenter le
+      poids d'une page. Il faut sensibiliser les graphistes, et s'assurer que le
+      design répond aux objectifs du site.
 
       <ul>
         <li>
           Les minimiseurs (Closure Compiler de Google, Clean CSS) sont des
-          outils qui permette de réduire automatiquement la taille du code
+          outils qui permettent de réduire automatiquement la taille du code.
         </li>
         <li>
           Il existe des équivalents de jQuery avec la même syntaxe mais
-          utilisant seulement les fonctions essentielles
+          utilisant seulement les fonctions essentielles.
         </li>
         <li>
           Adopter une syntaxe dite "vectorisé" qui permet de réduire la taille
-          du CSS
+          du CSS.
         </li>
         <li>Supprimer les descriptions non utilisées.</li>
       </ul>
 
       <h4>Du côté utilisateur</h4>
 
-      Comme on l'à vu, les pubs joue un rôle important dans le poids des pages
-      web. Il en va de même pour les trackers qu'utilise certains sites afin
-      d'analyser leurs statistiques. En effets ces trackers sont souvent des
-      outils lourd. Un peu à l'instard des librairies, ceux-ci ne sont pas
-      forcément adapté aux besoins du site. Ce sont des outils génériques
-      proposées par exemple par Google... En plus ceux-ci utilise généralement
-      du javascript et jquery afin d'agir dynamiquement à l'activité de
+      Comme on l'a vu, les publicités jouent un rôle important dans le poids des
+      pages web. Il en va de même pour les trackers qu'utilisent certains sites
+      afin d'analyser leurs statistiques. En effets, ces trackers sont souvent
+      des outils lourd. A l'instard des librairies, ceux-ci ne sont pas
+      forcément adaptés aux besoins du site. Ce sont des outils génériques
+      proposées par exemple par Google... De plus ceux-ci utilise généralement
+      du Javascript et jQuery afin de réagir dynamiquement à l'activité de
       l'utilisateur et de communiquer ces informations au serveur (ce qui, au
       passage, entraine un grand nombre de requète supplémentaire).<br />
-      Une solution pour l'utilisateur peut alors être un bloqueur. Celui-ci à
-      pour rôle de bloquer/supprimer les trakers et publicités. L'effet peut
-      être concidérable. Par exemple le poids de la page d'acceuil du Figaro
-      diviser par 3 <a class="footnote" href="#source5">[5]</a>.<br />
-      Cependant faire ça peut nuire au site web, c'est priver celui-ci d'une
-      partie de ses revenus et des ses outils de developpement. C'est donc une
-      pratique à modérer. Au delà de ça, certains navigateur et extensions
-      proposes des outils pour bloquer le javascript ou réduir le chargement des
-      images.<br />
-      Malheuresement ces solutions ne sont pas parfaites. D'abord elle impacte
-      l'experience pour l'utilisateur et loe développeurs. Mais surtout la page
-      n'est plus légère que pour l'utilisateurs. La même quantité de donnée aura
-      transité et le site représentera toujours le même poids coté serveur.
+      Une solution pour l'utilisateur peut alors être un bloqueur comme adBlock.
+      Celui-ci à pour rôle de bloquer/supprimer les trakers et publicités.
+      L'effet peut être concidérable. Par exemple le poids de la page d'acceuil
+      du Figaro est divisé par 3 sans publicités<a
+        class="footnote"
+        href="#source8"
+        >[8]</a
+      >.<br />
+      Cependant faire ça peut nuire au développement du site web car le modèle
+      économique de beaucoup d'entreprise basé en ligne se joue essentiellement
+      sur la publicité. C'est donc une pratique à modérer. Au delà de ça,
+      certains navigateurs et extensions proposes des outils pour bloquer
+      certains scripts Javascript ou pour réduir le chargement d'images en les
+      compressant.<br />
+      Malheureusement, ces solutions ne sont pas parfaites. La page n'est plus
+      légère que pour l'utilisateur. En effet, la quantité de donnée qui aura
+      transité entre le serveur et le client sera la même.
 
       <h3>Sources</h3>
       <p>Pour aller plus loin...</p>
@@ -218,13 +223,37 @@
         <tr>
           <td id="source4">[4]</td>
           <td>
+            <a href="https://w3techs.com/technologies/details/cm-wordpress"
+              >Usage statistics and market share of WordPress</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source5">[5]</td>
+          <td>
             <a href="https://www.alioze.com/chiffres-web"
               >CHIFFRES & TENDANCES DU WEB 2020</a
             >
           </td>
         </tr>
         <tr>
-          <td id="source5">[5]</td>
+          <td id="source6">[6]</td>
+          <td>
+            <a href="https://neilpatel.com/blog/loading-time/?wide=1"
+              >How loading time affects your bottom line</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source7">[7]</td>
+          <td>
+            <a href="https://www.artwai.com/a-propos/integration-web/"
+              >Intégration web selon Artwai</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source8">[8]</td>
           <td>
             <a
               href="https://www.dsfc.net/internet/bloqueur-publicitaire/poids-reel-page-site-web/"
