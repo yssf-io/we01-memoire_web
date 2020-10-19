@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Les sites web low-tech</title>
+    <link href="05-services.css" rel="stylesheet" />
+  </head>
+
+  <body id="body">
+    <section class="main">
+      <h2>Quelques services gourmands</h2>
+      <p>
+        Les chapitres précédents nous ont permis de nous familiariser avec les
+        sites web : leur évolution, leurs tailles ainsi que les différences
+        entre-eux. Ce chapitre entre dans ces différences de manière plus
+        précise en essayant de mettre en lumière ce qui alourdie réellement une
+        page web.
+      </p>
+      <h3>Les images de hautes résolutions</h3>
+      <p>
+        Les images représentent en moyenne plus de 50% du poids total d'une
+        page. La taille de transfert des images a même augmenté de 200% entre
+        2010 et 2015. Il semblerait cependant que cette taille de transfert
+        n'ait pas augmenté à cause du nombre d'images partagées mais à cause de
+        l'augmentation de leurs résolutions. Ce sont des choses qui sont simples
+        à remarquer sur les sites de e-commerce par exemple ; un tel site poste
+        des images de hautes résolutions pour permettre à l'utilisateur de
+        zoomer sur les produits. C'est aussi à mettre en relation avec les
+        améliorations impressionnantes en terme de qualité de caméra de
+        smartphone. Nous sommes passés de 5 mégapixels pour le Nokia N95 des
+        années 2000 à 64 mégapixels pour l'iPhone 12 Pro d'aujourd'hui.<a
+          href=""
+          class="footnote"
+          >[2]</a
+        >.
+      </p>
+
+      <h3>Le design responsive</h3>
+      <p>
+        Le design responsive apporte de la facilité aux utilisateurs dans le
+        sens où la même adresse de site web emmène à des design différents en
+        fonction de la taille de l'écran utilisé. Cette simplicité vient au prix
+        du poids des fichiers CSS. En effet, quelque soit l'écran utilisé, c'est
+        tout le fichier CSS qui est transmis. Tout en sachant que ce dernier est
+        peut-être servi par un fournisseur tiers.
+      </p>
+      <p>
+        D'un point de vue développeur, il est normal de récupérer une image et
+        la redimensionner dynamiquement pour la rendre responsive. Les
+        développeurs peuvent faire différemment en passant par des hébergeurs
+        d'images qui fournissent (via leur API) des moyens de choisir la
+        dimension au moment de l'appel.
+      </p>
+
+      <h3>Le HTML généré côté client</h3>
+      <p>
+        C'est un aspect qui a déjà été vu dans un chapitre précédent.
+        Concrètement, il est simple de comprendre pourquoi le HTML généré chez
+        le client rend les pages web plus lourde : au lieu d'envoyer directement
+        le contenu, on envoie le contenu en JavaScript avec en plus la logique
+        JavaScript pour générer ledit contenu. Cela permet des choses très
+        intéressantes côté développement, ce qui explique la popularité des
+        frameworks JavaScript vu précédemment. Cependant, nous réfléchissons en
+        terme de moyenne et, d'un point de vue low-tech, certains frameworks ont
+        aussi des avantages tels que générer uniquement le CSS qu'il faut.
+      </p>
+
+      <h3>Sources</h3>
+      <p>Pour aller plus loin...</p>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Lien</th>
+        </tr>
+        <tr>
+          <td id="source1">[1]</td>
+          <td>
+            <a
+              href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
+              >Demystifying API Rate Limiting</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source2">[2]</td>
+          <td>
+            <a href="https://www.artwai.com/poids-moyen-des-pages-web-en-2018/"
+              >Web 2018: plus lourd, plus lent</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source3">[3]</td>
+          <td>
+            <a href="https://httparchive.org/reports/page-weight"
+              >Report page-weight</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source4">[4]</td>
+          <td>
+            <a href="https://w3techs.com/technologies/details/cm-wordpress"
+              >Usage statistics and market share of WordPress</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source5">[5]</td>
+          <td>
+            <a href="https://www.alioze.com/chiffres-web"
+              >CHIFFRES & TENDANCES DU WEB 2020</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source6">[6]</td>
+          <td>
+            <a href="https://neilpatel.com/blog/loading-time/?wide=1"
+              >How loading time affects your bottom line</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source7">[7]</td>
+          <td>
+            <a href="https://www.artwai.com/a-propos/integration-web/"
+              >Intégration web selon Artwai</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source8">[8]</td>
+          <td>
+            <a
+              href="https://www.dsfc.net/internet/bloqueur-publicitaire/poids-reel-page-site-web/"
+              >Connaître le poids réel d’une page d’un site Web</a
+            >
+          </td>
+        </tr>
+      </table>
+      <p>
+        Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
+        Xiang Li.
+      </p>
+    </section>
+  </body>
+  <script src="03-taille.js"></script>
+</html>
