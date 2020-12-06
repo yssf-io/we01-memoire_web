@@ -103,6 +103,21 @@
           des cas, paralyser vos serveurs en envoyant une grande quantité de
           trafic inattendu.)
         </li>
+        <li>
+          <strong>Mettre JavaScript en bas</strong> (Les scripts JavaScript
+          bloquent les téléchargements parallèles; autrement dit, lorsqu'un
+          script est en cours de téléchargement, le navigateur ne lancera aucun
+          autre téléchargement. Pour accélérer le chargement de la page,
+          déplacez les scripts vers le bas de la page s'ils peuvent être
+          différés.)
+        </li>
+        <li>
+          <strong> Réduire le nombre d'éléments DOM</strong> (Une page complexe
+          signifie plus d'octets à télécharger et un accès au DOM plus lent en
+          JavaScript. Réduisez le nombre d'éléments DOM sur la page pour
+          améliorer les performances.)
+        </li>
+        <li>etc.</li>
       </ul>
       <p>
         Il nous indique la taille de chaque type de contenu comme les vidéos,
@@ -119,8 +134,16 @@
           href="#source2"
           class="footnote"
           >[2]</a
-        >, nous allons le comparer avec un site vitrine low-tech, le site de The
-        Green Emporium<a href="#source3" class="footnote">[3]</a>.
+        >
+        qui montre ses produit qui sont ses vidéos YouTube ainsi que ses
+        compétences dans le web, nous allons le comparer avec un site vitrine
+        low-tech, le site de The Green Emporium<a
+          href="#source3"
+          class="footnote"
+          >[3]</a
+        >, une entreprise qui offre les meilleures alternatives aux produits du
+        quotidien tout en réduisant le plus possible l'impact écologique sur la
+        planète et les animaux.
       </p>
       <div class="content">
         <div class="left">
@@ -139,7 +162,7 @@
           Green Emporium<a href="#source3" class="footnote">[3]</a>
           <p>
             Niveu de performance : 84 C<br />
-            Taille de la page : 799.8 MB<br />
+            Taille de la page : 799.8 KB<br />
             Temps de chargement : 286 ms
           </p>
           <img src="performance_green.PNG" class="compare" /><br />
@@ -148,15 +171,23 @@
       </div>
       <br />
       <p>
-        Nous observons qu'en effet un site vitrine low-tech est plus performant,
-        plus petit en taille, et le temps de chargement est plus court.
-        Cependant il reste toujours des points à améliorer pour avoir une
-        meilleure performance. <br />
+        Nous observons qu'en effet le site vitrine de The Green Emporium est
+        plus performant que le site de benjaminCode avec une différence de 10
+        points selon l'outil Pingdom, il est aussi environ 17 fois plus petit
+        que le site de benjaminCode, c'est un cas exceptionnel car le site de
+        benjaminCode contient enormément de vidéos. Et le temps de chargement du
+        site de benjaminCode est 2.5 fois plus lent que l'autre site.
+        <br />
         Ensuite, pour les différents critères de performances, nous voyons que
-        le site low-tech a des meilleures notes que le site normal. <br />
+        le site de The Green Emporium a des meilleures notes que le site de
+        benjaminCode, notamment dans les critères comme "Compresser les
+        composants avec gzip". Cependant il reste toujours des points à
+        améliorer pour avoir une meilleure performance comme le critère "Ajouter
+        des en-têtes Expires".<br />
         Enfin, en observant les différents contenus, nous pouvons constater que
         les contenus les plus lourds sont bien les vidéos (XHR), les images et
-        les scripts.
+        les scripts que nous avons parlé dans les chapitre précedent, ces trois
+        types de contenus répresente 90% d'un site web.
       </p>
 
       <h3>Sources</h3>
