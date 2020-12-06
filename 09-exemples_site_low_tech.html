@@ -10,7 +10,120 @@
   <body id="body">
     <section class="main">
       <h2>Exemples de site low-tech</h2>
-      </section>
+      <p>
+        Nous avons vu dans le chapitre précédent le développement et
+        l'hébergement d' un site low-tech, et nous avons vu dans le chapitre 4
+        les différents types de site web. Donc dans ce chapitre nous allons
+        donner quelques exemples concrètes de sites types de différents types
+        qui sont low-tech, et les comparer à des sites web normals.
+      </p>
+
+      <h2>Outil : Pingdom<a href="#source1" class="footnote">[1]</a></h2>
+      <p>
+        Avant de présenter les exemples des sites low-tech, nous allons d'abord
+        présenter Pingdom, un site web qui offre une surveillance rentable et
+        fiable de la disponibilité et des performances de site web. Nous allons
+        utiliser ce site web pour comparer les sites normals et les sites
+        low-tech.
+      </p>
+      <p>
+        Tout d'abord ce site évalue le site que nous avons donné, il nous
+        renvoie une note globale sur la performance, la taille de la page, le
+        temps de chargement. Ensuite il nous offre des notes (allant de 0 à 100
+        et de F à A) sur des critères permettant d'améliorer la performance. Les
+        critères sont :
+      </p>
+      <ul>
+        <li>Ajouter des en-têtes Expires</li>
+        <li>Compresser les composants avec gzip</li>
+        <li>Faire moins de requêtes HTTP</li>
+        <li>Utiliser des domaines sans cookies</li>
+        <li>Réduire les recherches DNS</li>
+        <li>Éviter les redirections d'URL</li>
+        <li>Éviter les src ou href vides</li>
+      </ul>
+      <p>
+        Il nous indique la taille de chaque type de contenu comme les vidéos,
+        les images, les scripts, le code HTML, le code CSS, le font, les liens
+        de redirections, etc.
+      </p>
+
+      <h3>Les sites vitrines</h3>
+      <p>
+        Comme nous avons vu au chapitre 4, un site vitrine est alors un site web
+        qui expose ce que propose différents partis comme des PME, des artisans
+        ou des entrepises de services. Prenons le même exemple pour un site
+        normal, le site vitrine de BenjaminCode<a
+          href="#source2"
+          class="footnote"
+          >[2]</a
+        >, nous allons le comparer avec un site vitrine low-tech, le site de The
+        Green Emporium<a href="#source3" class="footnote">[3]</a>.
+      </p>
+      <div class="content">
+        <div class="left">
+          <img src="benjamincode_tv.PNG" class="compare" />le site vitrine de
+          BenjaminCode<a href="#source2" class="footnote">[2]</a>
+          <p>
+            Niveu de performance : 74 C<br />
+            Taille de la page : 13.5 MB<br />
+            Temps de chargement : 786 ms
+          </p>
+          <img src="performance_benjamincode.PNG" class="compare" /><br />
+          <img src="content_benjamincode.PNG" class="compare" />
+        </div>
+        <div class="right">
+          <img src="The_green_emporium.PNG" class="compare" />le site de The
+          Green Emporium<a href="#source3" class="footnote">[3]</a>
+          <p>
+            Niveu de performance : 84 C<br />
+            Taille de la page : 799.8 MB<br />
+            Temps de chargement : 286 ms
+          </p>
+          <img src="performance_green.PNG" class="compare" /><br />
+          <img src="content_green.PNG" class="compare" />
+        </div>
+      </div>
+      <br />
+      <p>
+        Nous observons qu'en effet un site vitrine low-tech est plus performant,
+        plus petit en taille, et le temps de chargement est plus court.
+        Cependant il reste toujours des points à améliorer pour avoir une
+        meilleure performance. <br />
+        Ensuite, pour les différents critères de performances, nous voyons que
+        le site low-tech a des meilleures notes que le site normal. <br />
+        Enfin, en observant les différents contenus, nous pouvons constater que
+        les contenus les plus lourds sont bien les vidéos (XHR), les images et
+        les scripts.
+      </p>
+
+      <h3>Sources</h3>
+      <p>Pour aller plus loin...</p>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Lien</th>
+        </tr>
+        <tr>
+          <td id="source1">[1]</td>
+          <td>
+            <a href="https://tools.pingdom.com/">Pingdom</a>
+          </td>
+        </tr>
+        <tr>
+          <td id="source2">[2]</td>
+          <td>
+            <a href="https://benjamincode.tv/">BenjaminCode</a>
+          </td>
+        </tr>
+        <tr>
+          <td id="source3">[3]</td>
+          <td>
+            <a href="https://the-green-emporium.com/">The Green Emporium</a>
+          </td>
+        </tr>
+      </table>
+    </section>
   </body>
   <script src="03-taille.js"></script>
 </html>

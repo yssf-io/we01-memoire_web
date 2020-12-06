@@ -3,7 +3,7 @@ body {
 }
 
 .main {
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 10px;
   text-align: justify;
@@ -107,3 +107,30 @@ td {
   font-size: 120%;
   color: gray;
 }
+
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.compare {
+  width: 600px;
+  height: auto;
+  
+}
+
+.left, .right { 
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+} 
+
+.left  { 
+  flex: auto;
+}
+
+.right { 
+  flex: auto;
+} 
