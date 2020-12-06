@@ -34,13 +34,75 @@
         critères sont :
       </p>
       <ul>
-        <li>Ajouter des en-têtes Expires</li>
-        <li>Compresser les composants avec gzip</li>
-        <li>Faire moins de requêtes HTTP</li>
-        <li>Utiliser des domaines sans cookies</li>
-        <li>Réduire les recherches DNS</li>
-        <li>Éviter les redirections d'URL</li>
-        <li>Éviter les src ou href vides</li>
+        <li>
+          <strong>Ajouter des en-têtes Expires</strong> (Les pages Web
+          deviennent de plus en plus complexes avec plus de scripts, de feuilles
+          de style, d'images et de Flash dessus. Une première visite sur une
+          page peut nécessiter plusieurs requêtes HTTP pour charger tous les
+          composants. En utilisant les en-têtes Expires, ces composants peuvent
+          être mis en cache, ce qui évite les requêtes HTTP inutiles sur les
+          pages vues suivantes. Les en-têtes Expires sont le plus souvent
+          associés à des images, mais ils peuvent et doivent être utilisés sur
+          tous les composants de la page, y compris les scripts, les feuilles de
+          style et Flash.)
+        </li>
+        <li>
+          <strong>Compresser les composants avec gzip</strong> (La compression
+          réduit les temps de réponse en réduisant la taille de la réponse HTTP.
+          Gzip est la méthode de compression la plus populaire et la plus
+          efficace actuellement disponible et réduit généralement la taille de
+          la réponse d'environ 70%. Environ 90% du trafic Internet actuel passe
+          par des navigateurs qui prétendent prendre en charge gzip.)
+        </li>
+        <li>
+          <strong>Faire moins de requêtes HTTP</strong> (La diminution du nombre
+          de composants sur une page réduit le nombre de requêtes HTTP requises
+          pour afficher la page, ce qui accélère le chargement des pages. Voici
+          quelques moyens de réduire le nombre de composants: combiner des
+          fichiers, combiner plusieurs scripts en un seul script, combiner
+          plusieurs fichiers CSS dans une seule feuille de style et utiliser des
+          sprites CSS et des images maps.)
+        </li>
+        <li>
+          <strong>Utiliser des domaines sans cookies</strong> (Lorsque le
+          navigateur demande une image statique et envoie des cookies avec la
+          demande, le serveur ignore les cookies. Ces cookies sont du trafic
+          réseau inutile. Pour contourner ce problème, assurez-vous que les
+          composants statiques sont demandés avec des demandes sans cookie en
+          créant un sous-domaine et en les y hébergeant.)
+        </li>
+        <li>
+          <strong>Réduire les recherches DNS</strong> (Le système de noms de
+          domaine (DNS) mappe les noms d'hôte aux adresses IP, tout comme les
+          répertoires téléphoniques associent les noms des personnes à leurs
+          numéros de téléphone. Lorsque vous tapez l'URL www.yahoo.com dans le
+          navigateur, le navigateur contacte un résolveur DNS qui renvoie
+          l'adresse IP du serveur. Le DNS a un coût; il lui faut généralement de
+          20 à 120 millisecondes pour rechercher l'adresse IP d'un nom d'hôte.
+          Le navigateur ne peut rien télécharger de l'hôte tant que la recherche
+          n'est pas terminée.)
+        </li>
+        <li>
+          <strong>Éviter les redirections d'URL</strong> (Les redirections d'URL
+          sont effectuées à l'aide des codes d'état HTTP 301 et 302. Elles
+          indiquent au navigateur d'aller vers un autre emplacement. L'insertion
+          d'une redirection entre l'utilisateur et le document HTML final
+          retarde tout sur la page car rien sur la page ne peut être rendu et
+          aucun composant ne peut être téléchargé jusqu'à ce que le document
+          HTML arrive.)
+        </li>
+        <li>
+          <strong>Éviter les src ou href vides</strong> (Vous pouvez vous
+          attendre à ce qu'un navigateur ne fasse rien lorsqu'il rencontre une
+          image vide src. Cependant, ce n'est pas le cas dans la plupart des
+          navigateurs. IE fait une demande au répertoire dans lequel se trouve
+          la page; Safari, Chrome, Firefox 3 et les versions antérieures font
+          une demande à la page elle-même. Ce comportement pourrait corrompre
+          les données des utilisateurs, gaspiller les cycles de calcul du
+          serveur générant une page qui ne sera jamais affichée et, dans le pire
+          des cas, paralyser vos serveurs en envoyant une grande quantité de
+          trafic inattendu.)
+        </li>
       </ul>
       <p>
         Il nous indique la taille de chaque type de contenu comme les vidéos,
