@@ -14,17 +14,21 @@
         Nous avons vu dans le chapitre précédent le développement et
         l'hébergement d'un site low-tech, et nous avons vu dans le chapitre 4
         les différents types de site web. Donc dans ce chapitre nous allons
-        donner quelques exemples de sites (low-tech ou non), et les comparer.
+        donner quelques exemples de sites (low-tech ou non), et les comparer. Ce
+        chapitre peut être lu comme la suite directe de celui sur le
+        développement car nous allons voir certaines des techniques utilisées
+        par les sites web low-tech.
       </p>
 
       <h2>Outil : Pingdom<a href="#source1" class="footnote">[1]</a></h2>
       <p>
         Afin de pouvoir comparer les performances des différents sites, il est
         nécessaire d'utiliser des outils qui vont nous fournir des informations
-        sur les pages web à comparer. Nous aurons ainsi des mesures, du
-        même test, qui nous servirons de base de comparaisons. Il existe de nombreux tests accessibles gratuitement en ligne comme on
-        s'en aperçois en recherchant "website speed test" sur n'importe quel
-        moteur de recherche. Même Google fournit un test :
+        sur les pages web à comparer. Nous aurons ainsi des mesures, du même
+        test, qui nous servirons de base de comparaisons. Il existe de nombreux
+        tests accessibles gratuitement en ligne comme on s'en aperçois en
+        recherchant "website speed test" sur n'importe quel moteur de recherche.
+        Même Google fournit un test :
         <a href="https://developers.google.com/speed/pagespeed/insights/?hl=fr"
           >PageSpeed Insights - Google Developers</a
         >.
@@ -33,126 +37,177 @@
         Ici, avant de présenter les exemples des sites, nous allons donc
         présenter un de ces outils, Pingdom, un site web qui offre une
         surveillance fiable et claire de la disponibilité et des performances de
-        site web. Il va nous servir pour comparer les sites
-        "normaux" et les sites low-tech.
+        site web. Il va nous servir pour comparer les sites "normaux" et les
+        sites low-tech.
       </p>
       <p>
-        Tout d'abord, Pingdom va évaluer le site que nous lui fournissons, il nous
-        renvoie une note globale sur la performance, la taille de la page, le
-        temps de chargement. Ensuite il nous offre des notes (allant de 0 à 100
-        et de F à A) sur des critères permettant d'améliorer la performance. Les
-        critères sont :
+        Tout d'abord, Pingdom va évaluer le site que nous lui fournissons, il
+        nous renvoie une note globale sur la performance, la taille de la page,
+        le temps de chargement. Ensuite il nous offre des notes (allant de 0 à
+        100 et de F à A) sur des critères permettant d'améliorer la performance.
+        Voici une liste non exhaustive des critères :
       </p>
       <ul>
         <li>
-          <strong>Ajouter des en-têtes Expires</strong> <p>(Les pages Web
-          deviennent de plus en plus complexes avec plus de scripts, de feuilles
-          de style, d'images et de Flash dessus. Une première visite sur une
-          page peut nécessiter plusieurs requêtes HTTP pour charger tous les
-          composants. En utilisant les en-têtes Expires, ces composants peuvent
-          être mis en cache, ce qui évite les requêtes HTTP inutiles sur les
-          pages vues suivantes. Les en-têtes Expires sont le plus souvent
-          associés à des images, mais ils peuvent et doivent être utilisés sur
-          tous les composants de la page, y compris les scripts, les feuilles de
-          style et Flash.)</p>
+          <strong>Ajouter des en-têtes <i>Expires</i></strong>
+          <p>
+            Les pages web deviennent de plus en plus complexes avec plus de
+            scripts, de feuilles de style, d'images et de Flash dessus. Une
+            première visite sur une page peut nécessiter plusieurs requêtes HTTP
+            pour charger tous les composants. En utilisant les en-têtes
+            <i>Expires</i>, ces composants peuvent être mis en cache, ce qui
+            évite les requêtes HTTP inutiles sur les pages suivantes. Les
+            en-têtes Expires sont le plus souvent associés à des images, mais
+            ils peuvent et doivent être utilisés sur tous les composants de la
+            page, y compris les scripts et les feuilles de style.
+          </p>
         </li>
         <li>
-          <strong>Compresser les composants avec gzip</strong> (La compression
-          réduit les temps de réponse en réduisant la taille de la réponse HTTP.
-          Gzip est la méthode de compression la plus populaire et la plus
-          efficace actuellement disponible et réduit généralement la taille de
-          la réponse d'environ 70%. Environ 90% du trafic Internet actuel passe
-          par des navigateurs qui prétendent prendre en charge gzip.)
+          <strong>Compresser les composants avec <i>gzip</i></strong>
+          <p>
+            La compression réduit les temps de réponse en réduisant la taille de
+            la réponse HTTP. <i>gzip</i> est la méthode de compression la plus
+            populaire et la plus efficace actuellement disponible et réduit
+            généralement la taille de la réponse d'environ 70%. Environ 90% du
+            trafic Internet actuel passe par des navigateurs qui prétendent
+            prendre en charge <i>gzip</i>.
+          </p>
         </li>
         <li>
-          <strong>Faire moins de requêtes HTTP</strong> (La diminution du nombre
-          de composants sur une page réduit le nombre de requêtes HTTP requises
-          pour afficher la page, ce qui accélère le chargement des pages. Voici
-          quelques moyens de réduire le nombre de composants: combiner des
-          fichiers, combiner plusieurs scripts en un seul script, combiner
-          plusieurs fichiers CSS dans une seule feuille de style et utiliser des
-          sprites CSS et des images maps.)
+          <strong>Faire moins de requêtes HTTP</strong>
+          <p>
+            La diminution du nombre de composants sur une page réduit le nombre
+            de requêtes HTTP requises pour afficher la page, ce qui accélère le
+            chargement des pages. Voici quelques moyens de réduire le nombre de
+            composants : combiner des fichiers, combiner plusieurs scripts en un
+            seul script, combiner plusieurs fichiers CSS dans une seule feuille
+            de style et utiliser des <i>sprites</i> CSS ainsi que des images
+            maps. Les <i>sprites</i> CSS font référence à une technique qui
+            consiste à regrouper plusieurs images en une afin de réduire le
+            nombre de requêtes, l'idée est ensuite d'utiliser le CSS pour
+            sélectionner l'image que l'on souhaite à un moment donné. Une
+            <i>image map</i> permet de rendre des zones d'une image cliquable,
+            mélangées au <i>sprites</i> ils permettent d'aller plus loin dans le
+            regroupement d'images.
+          </p>
         </li>
         <li>
-          <strong>Utiliser des domaines sans cookies</strong> (Lorsque le
-          navigateur demande une image statique et envoie des cookies avec la
-          demande, le serveur ignore les cookies. Ces cookies sont du trafic
-          réseau inutile. Pour contourner ce problème, assurez-vous que les
-          composants statiques sont demandés avec des demandes sans cookie en
-          créant un sous-domaine et en les y hébergeant.)
+          <strong
+            >Utiliser des domaines sans cookie<a
+              href="#source4"
+              class="footnote"
+              >[4]</a
+            ></strong
+          >
+          <p>
+            Lorsque le navigateur demande une image statique et envoie des
+            cookies avec la demande, le serveur ignore les cookies. Ces cookies
+            sont du trafic réseau inutile. Pour contourner ce problème,
+            assurez-vous que les composants statiques sont demandés avec des
+            demandes sans cookie en créant un sous-domaine et en les y
+            hébergeant. Un sous-domaine se présente sous cette forme :
+            sous-domaine.domaine.org. Il faut savoir que les sous-domaines
+            héritent des cookies placés sur leur domaine parent. Ainsi, lorsque
+            l'on souhaite faire un appel à un fichier statique sans traiter de
+            cookies, il faut s'assurer que le domaine/sous-domaine n'a pas de
+            cookie. La bonne pratique serait de mettre ses cookies sur le
+            sous-domaine www.domaine.org et les fichiers statiques sur
+            static.domaine.org en ne laissant aucun cookie sur le domaine
+            lui-même.
+          </p>
         </li>
         <li>
-          <strong>Réduire les recherches DNS</strong> (Le système de noms de
-          domaine (DNS) mappe les noms d'hôte aux adresses IP, tout comme les
-          répertoires téléphoniques associent les noms des personnes à leurs
-          numéros de téléphone. Lorsque vous tapez l'URL www.yahoo.com dans le
-          navigateur, le navigateur contacte un résolveur DNS qui renvoie
-          l'adresse IP du serveur. Le DNS a un coût; il lui faut généralement de
-          20 à 120 millisecondes pour rechercher l'adresse IP d'un nom d'hôte.
-          Le navigateur ne peut rien télécharger de l'hôte tant que la recherche
-          n'est pas terminée.)
+          <strong>Réduire le nombre de recherche DNS</strong>
+          <p>
+            Le système de nom de domaine (DNS) mappe les noms d'hôte aux
+            adresses IP, tout comme les répertoires téléphoniques associent les
+            noms des personnes à leurs numéros de téléphone. Lorsque vous tapez
+            l'URL www.utc.fr dans le navigateur, ce dernier contacte un
+            résolveur DNS qui renvoie l'adresse IP du serveur. Le DNS a un coût
+            ; il lui faut généralement de 20 à 120 millisecondes pour rechercher
+            l'adresse IP d'un nom d'hôte. Le navigateur ne peut rien télécharger
+            de l'hôte tant que la recherche n'est pas terminée. Un bon moyen de
+            réduire le nombre de recherche DNS est d'éviter d'utiliser trop
+            d'URL différentes lorsque ce n'est pas utile ; un exemple serait
+            d'utiliser un seul fournisseur de CDN (serveur qui héberge des
+            fichiers statiques) pour ses besoins en CSS, JavaScript et images.
+          </p>
         </li>
         <li>
-          <strong>Éviter les redirections d'URL</strong> (Les redirections d'URL
-          sont effectuées à l'aide des codes d'état HTTP 301 et 302. Elles
-          indiquent au navigateur d'aller vers un autre emplacement. L'insertion
-          d'une redirection entre l'utilisateur et le document HTML final
-          retarde tout sur la page car rien sur la page ne peut être rendu et
-          aucun composant ne peut être téléchargé jusqu'à ce que le document
-          HTML arrive.)
+          <strong>Éviter les redirections d'URL</strong>
+          <p>
+            Les redirections d'URL sont effectuées à l'aide des codes d'état
+            HTTP 301 et 302. Elles indiquent au navigateur d'aller vers un autre
+            emplacement. L'insertion d'une redirection entre l'utilisateur et le
+            document HTML final retarde tout sur la page car rien sur la page ne
+            peut être rendu et aucun composant ne peut être téléchargé jusqu'à
+            ce que le document HTML arrive.
+          </p>
         </li>
         <li>
-          <strong>Éviter les src ou href vides</strong> (Vous pouvez vous
-          attendre à ce qu'un navigateur ne fasse rien lorsqu'il rencontre une
-          image vide src. Cependant, ce n'est pas le cas dans la plupart des
-          navigateurs. IE fait une demande au répertoire dans lequel se trouve
-          la page; Safari, Chrome, Firefox 3 et les versions antérieures font
-          une demande à la page elle-même. Ce comportement pourrait corrompre
-          les données des utilisateurs, gaspiller les cycles de calcul du
-          serveur générant une page qui ne sera jamais affichée et, dans le pire
-          des cas, paralyser vos serveurs en envoyant une grande quantité de
-          trafic inattendu.)
+          <strong>Éviter les src ou href vides</strong>
+          <p>
+            Vous pouvez vous attendre à ce qu'un navigateur ne fasse rien
+            lorsqu'il rencontre une image vide src. Cependant, ce n'est pas le
+            cas dans la plupart des navigateurs. IE fait une demande au
+            répertoire dans lequel se trouve la page; Safari, Chrome, Firefox 3
+            et les versions antérieures font une demande à la page elle-même. Ce
+            comportement pourrait corrompre les données des utilisateurs,
+            gaspiller les cycles de calcul du serveur générant une page qui ne
+            sera jamais affichée et, dans le pire des cas, paralyser vos
+            serveurs en envoyant une grande quantité de trafic inattendu.
+          </p>
         </li>
         <li>
-          <strong>Mettre JavaScript en bas</strong> (Les scripts JavaScript
-          bloquent les téléchargements parallèles; autrement dit, lorsqu'un
-          script est en cours de téléchargement, le navigateur ne lancera aucun
-          autre téléchargement. Pour accélérer le chargement de la page,
-          déplacez les scripts vers le bas de la page s'ils peuvent être
-          différés.)
+          <strong>Mettre JavaScript à la fin du code</strong>
+          <p>
+            Les scripts JavaScript bloquent les téléchargements parallèles;
+            autrement dit, lorsqu'un script est en cours de téléchargement, le
+            navigateur ne lancera aucun autre téléchargement. Pour accélérer le
+            chargement de la page, déplacez les scripts vers le bas de la page
+            s'ils peuvent être différés.
+          </p>
         </li>
+
         <li>
-          <strong> Réduire le nombre d'éléments DOM</strong> (Une page complexe
-          signifie plus d'octets à télécharger et un accès au DOM plus lent en
-          JavaScript. Réduisez le nombre d'éléments DOM sur la page pour
-          améliorer les performances.)
+          <strong> Réduire le nombre d'élément DOM</strong>
+          <p>
+            Une page complexe signifie plus d'octets à télécharger et un accès
+            au DOM plus lent en JavaScript. Réduisez le nombre d'éléments DOM
+            sur la page pour améliorer les performances. Cette technique ne fait
+            pas vraiment sens pour un développeur web qui écrit son propre HTML,
+            cependant il faut le garder en tête lorsque des framework JavaScript
+            (comme React.js) sont utilisés pour générer du HTML. Ces framework
+            ont tendances à créer un grand nombre d'élément DOM.
+          </p>
         </li>
-        <li>etc.</li>
       </ul>
       <p>
-        Il nous indique la taille de chaque type de contenu comme les vidéos,
-        les images, les scripts, le code HTML, le code CSS, le font, les liens
-        de redirections, etc.
+        Pingdom nous indique aussi la taille de chaque type de contenu comme les
+        vidéos, les images, les scripts, le code HTML, le code CSS, la police
+        d'écriture, les liens de redirections, etc.
       </p>
 
       <h3>Les sites vitrines</h3>
       <p>
-        Comme nous avons vu au chapitre 4, un site vitrine est alors un site web
-        qui expose ce que proposent différents partis comme des PME, des
-        artisans ou des entreprises de services. <br />
-        Les sites vitrine sont intéressants, car ayant pour rôle de représenter
-        le site et l'organisme sous-jacent ces pages donnent un bon aperçu du
-        site dans son ensemble. Aussi celles-ci ont pour mission d'être
-        attractif afin de donné une bonne image de la compagnie tout en étant
-        assez rapide au chargement pour ne pas repousser ne partit des
-        visiteurs.
+        Comme nous l'avons vu au chapitre 4, un site vitrine est un site web qui
+        expose ce que proposent différents partis comme des PME, des artisans ou
+        des entreprises de services. Les sites vitrines sont intéressants, car
+        ayant pour rôle de représenter le site et l'organisme sous-jacent ces
+        pages donnent un bon aperçu du site dans son ensemble. Aussi celles-ci
+        ont pour mission d'être attractive afin de donner une bonne image de la
+        compagnie tout en étant assez rapide au chargement pour ne pas repousser
+        une partie des visiteurs.
       </p>
       <p>
-        Ici prenons un exemple pour un site normal, le site vitrine de
-        BenjaminCode<a href="#source2" class="footnote">[2]</a> qui montre ses
-        produit qui sont ses vidéos YouTube ainsi que ses compétences dans le
-        web, nous allons le comparer avec un site vitrine low-tech, le site de
-        The Green Emporium<a href="#source3" class="footnote">[3]</a>, une
+        Ici, notre exemple de site normal sera celui de BenjaminCode<a
+          href="#source2"
+          class="footnote"
+          >[2]</a
+        >
+        qui montre ses produits (vidéos YouTube) ainsi que ses compétences dans
+        le Web, nous allons le comparer avec un site vitrine low-tech, le site
+        de The Green Emporium<a href="#source3" class="footnote">[3]</a>, une
         entreprise qui offre les meilleures alternatives aux produits du
         quotidien tout en réduisant le plus possible l'impact écologique sur la
         planète et les animaux.
@@ -183,23 +238,93 @@
       </div>
       <br />
       <p>
-        Nous observons qu'en effet le site vitrine de The Green Emporium est
-        plus performant que le site de benjaminCode avec une différence de 10
-        points selon l'outil Pingdom, il est aussi environ 17 fois plus petit
-        que le site de benjaminCode, c'est un cas exceptionnel car le site de
-        benjaminCode contient enormément de vidéos. Et le temps de chargement du
-        site de benjaminCode est 2.5 fois plus lent que l'autre site.
-        <br />
+        Nous observons que le site vitrine de The Green Emporium est plus
+        performant que le site de BenjaminCode avec une différence de 10 points
+        selon l'outil Pingdom, il est aussi environ 17 fois plus petit. Il faut
+        noter que c'est un cas exceptionnel car le site de BenjaminCode contient
+        enormément de vidéos. Le temps de chargement de ce dernier est 2.5 fois
+        plus lent que son homologue low-tech.
+      </p>
+      <p>
         Ensuite, pour les différents critères de performances, nous voyons que
         le site de The Green Emporium a des meilleures notes que le site de
-        benjaminCode, notamment dans les critères comme "Compresser les
-        composants avec gzip". Cependant il reste toujours des points à
+        BenjaminCode, notamment dans les critères comme "Compresser les
+        composants avec gzip". Cependant, il reste toujours des points à
         améliorer pour avoir une meilleure performance comme le critère "Ajouter
-        des en-têtes Expires".<br />
+        des en-têtes <i>Expires</i>".
+      </p>
+
+      <p>
         Enfin, en observant les différents contenus, nous pouvons constater que
         les contenus les plus lourds sont bien les vidéos (XHR), les images et
         les scripts que nous avons parlé dans les chapitre précedent, ces trois
         types de contenus répresentent 90% d'un site web.
+      </p>
+
+      <h3>Les blogs</h3>
+      <p>
+        Les blogs sont une partie importante du Web, ils permettent à n'importe
+        qui de s'exprimer sur tous les sujets. Cela est accentué par le fait que
+        les gens aiment lire des billets de blog ; c'est plus de 400 millions
+        d'internautes qui visitent des blogs tous les mois<a
+          href="#source5"
+          class="footnote"
+          >[5]</a
+        >.
+      </p>
+      <p>
+        Si il est possible aujourd'hui, pour n'importe qui, d'ouvrir un blog,
+        c'est parce qu'il existe des technologie comme WordPress qui simplifie
+        le processus. L'effet secondaire de cette simplification est la perte en
+        performance et le fait que cette performance (que énormément de sites
+        partagent) soit directement liée à un groupe de développeurs qui ne
+        suivent pas forcément les principes énoncées jusqu'à présent dans nos
+        chapitres.
+      </p>
+      <p>
+        Pour illustrer nos propos nous comparons ces trois blogs (cliquez sur la
+        partie colorée pour avoir les résultats) :
+      </p>
+      <ul>
+        <li class="blog">
+          <a href="https://adventureblog.net/">Adventure Blog</a>, qui est un
+          blog WordPress classique et plutôt connu
+          <div class="spoiler">
+            <img src="adventure1.png" alt="adventure blog global score" />
+            <img src="adventure2.png" alt="adventure blog performance score" />
+            <img src="adventure3.png" alt="adventure blog weight score" />
+          </div>
+        </li>
+        <li class="blog">
+          <a href="https://stackoverflow.blog/">StackOverflow Blog</a>, le blog
+          officiel du site iconique de question-réponse dans le domaine de la
+          programmation, c'est un blog fait maison par les développeur de
+          StackOverflow
+          <div class="spoiler">
+            <img src="stack1.png" alt="stack overflow blog global score" />
+            <img src="stack2.png" alt="stack overflow blog performance score" />
+            <img src="stack3.png" alt="stack overflow blog weight score" />
+          </div>
+        </li>
+        <li class="blog">
+          <a href="https://solar.lowtechmagazine.com/">Low-Tech Magazine</a>,
+          notre blog low-tech de référence
+          <div class="spoiler">
+            <img src="low1.png" alt="Low Tech blog global score" />
+            <img src="low2.png" alt="Low Tech blog performance score" />
+            <img src="low3.png" alt="Low Tech blog weight score" />
+          </div>
+        </li>
+      </ul>
+
+      <p>
+        On remarque immédiatement la différence, le blog low-tech respecte
+        toutes les recommendations de Pingdom et obtient le meilleur score. On
+        voit encore une fois que ce sont les images qui prennent le plus de
+        place dans ces trois sites ; c'est donc normal que le blog low-tech ait
+        là-aussi de meilleurs résultats car nous avions vu dans un chapitre
+        précédent que les développeurs de ce blog avaient fait usage de
+        différentes techniques de compression d'image (dithering par exemple).
       </p>
 
       <h3>Sources</h3>
@@ -227,7 +352,25 @@
             <a href="https://the-green-emporium.com/">The Green Emporium</a>
           </td>
         </tr>
+        <tr>
+          <td id="source4">[4]</td>
+          <td>
+            <a
+              href="https://www.keycdn.com/support/how-to-use-cookie-free-domains#:~:text=When%20you%20use%20cookie%2Dfree,by%20eliminating%20unneeded%20network%20traffic"
+              >Nom de domaine sans cookie</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source5">[5]</td>
+          <td>
+            <a href="https://optinmonster.com/blogging-statistics/"
+              >Statistiques sur les blogs</a
+            >
+          </td>
+        </tr>
       </table>
     </section>
   </body>
+  <script src="spoiler.js"></script>
 </html>
