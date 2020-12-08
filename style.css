@@ -117,20 +117,31 @@ td {
 .compare {
   width: 75%;
   height: auto;
-
 }
 
-.left, .right {
+.left,
+.right {
   display: inline-block;
   width: 50%;
   height: 100%;
   text-align: center;
 }
 
-.left  {
+.left {
   flex: auto;
 }
 
 .right {
   flex: auto;
+}
+
+.blog {
+  background-color: aliceblue;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.spoiler {
+  display: none;
 }
