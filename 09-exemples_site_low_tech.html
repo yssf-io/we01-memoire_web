@@ -13,10 +13,10 @@
       <p>
         Nous avons vu dans le chapitre précédent le développement et
         l'hébergement d'un site low-tech, et nous avons vu dans le chapitre 4
-        les différents types de site web. Donc dans ce chapitre nous allons
+        les différents types de sites web. Donc dans ce chapitre nous allons
         donner quelques exemples de sites (low-tech ou non), et les comparer. Ce
         chapitre peut être lu comme la suite directe de celui sur le
-        développement car nous allons voir certaines des techniques utilisées
+        développement, car nous allons voir certaines des techniques utilisées
         par les sites web low-tech.
       </p>
 
@@ -25,8 +25,8 @@
         Afin de pouvoir comparer les performances des différents sites, il est
         nécessaire d'utiliser des outils qui vont nous fournir des informations
         sur les pages web à comparer. Nous aurons ainsi des mesures, du même
-        test, qui nous servirons de base de comparaisons. Il existe de nombreux
-        tests accessibles gratuitement en ligne comme on s'en aperçois en
+        test, qui nous serviront de base de comparaisons. Il existe de nombreux
+        tests accessibles gratuitement en ligne comme on s'en aperçoit en
         recherchant "website speed test" sur n'importe quel moteur de recherche.
         Même Google fournit un test :
         <a href="https://developers.google.com/speed/pagespeed/insights/?hl=fr"
@@ -127,7 +127,7 @@
             ; il lui faut généralement de 20 à 120 millisecondes pour rechercher
             l'adresse IP d'un nom d'hôte. Le navigateur ne peut rien télécharger
             de l'hôte tant que la recherche n'est pas terminée. Un bon moyen de
-            réduire le nombre de recherche DNS est d'éviter d'utiliser trop
+            réduire le nombre de recherches DNS est d'éviter d'utiliser trop
             d'URL différentes lorsque ce n'est pas utile ; un exemple serait
             d'utiliser un seul fournisseur de CDN (serveur qui héberge des
             fichiers statiques) pour ses besoins en CSS, JavaScript et images.
@@ -139,7 +139,7 @@
             Les redirections d'URL sont effectuées à l'aide des codes d'état
             HTTP 301 et 302. Elles indiquent au navigateur d'aller vers un autre
             emplacement. L'insertion d'une redirection entre l'utilisateur et le
-            document HTML final retarde tout sur la page car rien sur la page ne
+            document HTML final retarde tout sur la page, car rien sur la page ne
             peut être rendu et aucun composant ne peut être téléchargé jusqu'à
             ce que le document HTML arrive.
           </p>
@@ -148,7 +148,7 @@
           <strong>Éviter les src ou href vides</strong>
           <p>
             Vous pouvez vous attendre à ce qu'un navigateur ne fasse rien
-            lorsqu'il rencontre une image vide src. Cependant, ce n'est pas le
+            lorsqu'il rencontre une image vide SRC. Cependant, ce n'est pas le
             cas dans la plupart des navigateurs. IE fait une demande au
             répertoire dans lequel se trouve la page; Safari, Chrome, Firefox 3
             et les versions antérieures font une demande à la page elle-même. Ce
@@ -176,9 +176,9 @@
             au DOM plus lent en JavaScript. Réduisez le nombre d'éléments DOM
             sur la page pour améliorer les performances. Cette technique ne fait
             pas vraiment sens pour un développeur web qui écrit son propre HTML,
-            cependant il faut le garder en tête lorsque des framework JavaScript
-            (comme React.js) sont utilisés pour générer du HTML. Ces framework
-            ont tendances à créer un grand nombre d'élément DOM.
+            cependant il faut le garder en tête lorsque des frameworks JavaScript
+            (comme React.js) sont utilisés pour générer du HTML. Ces frameworks
+            ont tendance à créer un grand nombre d'éléments DOM.
           </p>
         </li>
       </ul>
@@ -192,10 +192,10 @@
       <p>
         Comme nous l'avons vu au chapitre 4, un site vitrine est un site web qui
         expose ce que proposent différents partis comme des PME, des artisans ou
-        des entreprises de services. Les sites vitrines sont intéressants, car
+        des entreprises de services. Les sites vitrine sont intéressants, car
         ayant pour rôle de représenter le site et l'organisme sous-jacent ces
         pages donnent un bon aperçu du site dans son ensemble. Aussi celles-ci
-        ont pour mission d'être attractive afin de donner une bonne image de la
+        ont pour mission d'être attractives afin de donner une bonne image de la
         compagnie tout en étant assez rapide au chargement pour ne pas repousser
         une partie des visiteurs.
       </p>
@@ -241,8 +241,8 @@
         Nous observons que le site vitrine de The Green Emporium est plus
         performant que le site de BenjaminCode avec une différence de 10 points
         selon l'outil Pingdom, il est aussi environ 17 fois plus petit. Il faut
-        noter que c'est un cas exceptionnel car le site de BenjaminCode contient
-        enormément de vidéos. Le temps de chargement de ce dernier est 2.5 fois
+        noter que c'est un cas exceptionnel, car le site de BenjaminCode contient
+        énormément de vidéos. Le temps de chargement de ce dernier est 2.5 fois
         plus lent que son homologue low-tech.
       </p>
       <p>
@@ -257,8 +257,8 @@
       <p>
         Enfin, en observant les différents contenus, nous pouvons constater que
         les contenus les plus lourds sont bien les vidéos (XHR), les images et
-        les scripts que nous avons parlé dans les chapitre précedent, ces trois
-        types de contenus répresentent 90% d'un site web.
+        les scripts dont nous avons parlé dans les chapitres précédents, ces trois
+        types de contenus représentent 90% d'un site web.
       </p>
 
       <h3>Les blogs</h3>
@@ -273,16 +273,16 @@
         >.
       </p>
       <p>
-        Si il est possible aujourd'hui, pour n'importe qui, d'ouvrir un blog,
-        c'est parce qu'il existe des technologie comme WordPress qui simplifie
+        S’il est possible aujourd'hui, pour n'importe qui, d'ouvrir un blog,
+        c'est parce qu'il existe des technologies comme WordPress qui simplifie
         le processus. L'effet secondaire de cette simplification est la perte en
-        performance et le fait que cette performance (que énormément de sites
+        performance et le fait que cette performance (qu’énormément de sites
         partagent) soit directement liée à un groupe de développeurs qui ne
-        suivent pas forcément les principes énoncées jusqu'à présent dans nos
+        suivent pas forcément les principes énoncés jusqu'à présent dans nos
         chapitres.
       </p>
       <p>
-        Pour illustrer nos propos nous comparons ces trois blogs (cliquez sur la
+        Pour illustrer nos propos, nous comparons ces trois blogs (cliquez sur la
         partie colorée pour avoir les résultats) :
       </p>
       <ul>
@@ -298,7 +298,7 @@
         <li class="blog">
           <a href="https://stackoverflow.blog/">StackOverflow Blog</a>, le blog
           officiel du site iconique de question-réponse dans le domaine de la
-          programmation, c'est un blog fait maison par les développeur de
+          programmation, c'est un blog fait maison par les développeurs de
           StackOverflow
           <div class="spoiler">
             <img src="stack1.png" alt="stack overflow blog global score" />
@@ -319,10 +319,10 @@
 
       <p>
         On remarque immédiatement la différence, le blog low-tech respecte
-        toutes les recommendations de Pingdom et obtient le meilleur score. On
+        toutes les recommandations de Pingdom et obtient le meilleur score. On
         voit encore une fois que ce sont les images qui prennent le plus de
         place dans ces trois sites ; c'est donc normal que le blog low-tech ait
-        là-aussi de meilleurs résultats car nous avions vu dans un chapitre
+        là aussi de meilleurs résultats, car nous avions vu dans un chapitre
         précédent que les développeurs de ce blog avaient fait usage de
         différentes techniques de compression d'image (dithering par exemple).
       </p>
