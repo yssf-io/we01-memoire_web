@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Site statique/dynamique [Chapitre 4]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.107 / Opale 3.7.001">
+  <meta name="revision" content="2020-10-11 20:24">
+  <link rel="start" href="module_Memoire.html" title="M&eacute;moire web - Chapitre 4&nbsp;: Les diff&eacute;rents types de sites web">
+  <meta name="author" content>
+  <meta name="keywords" content>
+  <meta name="date" content>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kg5k3mki"};
+/*1*/ window.scLoadParams = {destUri:"/co/DynamiqueStatique.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_Memoire.txt");
+	</script> </head>
+ <body class="default module expUc">
+  <div id="root"><header id="header" role="banner"><h1><span>M&eacute;moire web - Chapitre 4&nbsp;: Les diff&eacute;rents types de sites web</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Diff&eacute;rence entre un site statique et un site dynamique</span></h2><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>On peut aussi classer les sites web en deux cat&eacute;gories&nbsp;: Les sites statiques et les sites dynamiques</p></div></div></div><div class="def pBk"><h3 class="def_ti pBk_ti"><span><i class="type"><span>D&eacute;finition</span></i><span class="hidden"> : </span><span class="title">Site statique</span></span></h3><div class="def_co pBk_co"><div class="rBk "><p>Un site statique est un site simple qui n'est modifiable qu'en changeant le fichier stocker dans le serveur web.</p></div><div class="rBk "><p>Il est seulement n&eacute;cessaire d'utiliser des langages Front End pour en cr&eacute;er un&nbsp;: HTML pour la structure, CSS pour la mise en page et quelques animations et le JavaScript pour ajouter du dynamisme uniquement c&ocirc;t&eacute; client. (animations graphiques, scripts etc)</p></div></div></div><div class="example pBk"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Exemple</span></i><span class="hidden"> : </span><span class="title">CV en ligne, rendu de la semaine 3 du TD de WE01</span></span></h3><div class="example_co pBk_co"><div class="rBk "><p><a class="op_txt_ul" target="_blank" href="https://wwwetu.utc.fr/~laridmeh/cv/" rel="noopener" title="https://wwwetu.utc.fr/~laridmeh/cv/ (nouvelle fen&ecirc;tre)"><span>https://wwwetu.utc.fr/~laridmeh/cv/</span></a></p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/cv.png" width="598" height="307" alt></div></figure></div><div class="rBk "><p>Cette page &agrave; uniquement &eacute;t&eacute; cr&eacute;&eacute;e avec du HTML et du CSS.</p></div></div></div><div class="def pBk"><h3 class="def_ti pBk_ti"><span><i class="type"><span>D&eacute;finition</span></i><span class="hidden"> : </span><span class="title">Site dynamique</span></span></h3><div class="def_co pBk_co"><div class="rBk "><p>Le contenu d'un site dynamique peut &eacute;voluer avec le temps, des langages de programmation comme PHP, java, C# ou encore Ruby sont utilis&eacute;s (BackEnd) pour r&eacute;aliser des actions du c&ocirc;t&eacute; du serveur web afin de g&eacute;n&eacute;rer les diff&eacute;rentes pages du site et g&eacute;rer des bases de donn&eacute;es.</p></div><div class="rBk "><p>Ces fonctionnalit&eacute;s peuvent &ecirc;tre autoris&eacute; l'utilisateur &agrave; &eacute;crire sur le site (ajout de commentaire sur un blog).</p></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Ces sites sont beaucoup plus utile et permettent de faire &eacute;norm&eacute;ment de choses mais leur temps de chargement est plus long car l'ensemble des fichiers est plus lourd en dynamique. Comme il a &eacute;t&eacute; dit dans la partie pr&eacute;c&eacute;dente du m&eacute;moire le rallongement du temps de chargement peut faire perdre beaucoup de client potentiels ce qui implique que les sites vitrines par exemple, qui n'ont pas besoin de beaucoup de fonctionnalit&eacute; ne sont g&eacute;n&eacute;ralement pas des sites dynamiques mais des sites statiques.</p></div><div class="rBk "><p>On peut aussi citer que la taille globale d'un site dynamique est en moyenne bien sup&eacute;rieure &agrave; celle d'un site statique ce qui correspond &agrave; un co&ucirc;t plus important pour le serveur d&rsquo;accueil et une plus grande d&eacute;gradation de l'environnement.</p></div></div></div><div class="example pBk"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Exemple</span></i><span class="hidden"> : </span><span class="title">Librecours</span></span></h3><div class="example_co pBk_co"><div class="rBk "><p>On peut voir que Librecours est un site dynamique notamment car on peut s'y connecter &agrave; l'aide d'un compte personnel = pr&eacute;sence d'une gestion de bases de donn&eacute;es (Cf cours NF17/NF18 pour plus d'informations sur les bases de donn&eacute;es).</p></div><div class="rBk res"><figure role="group" class="resInFlow png"><div class="resInFlow_co "><img src="../res/librecours.png" width="602" height="308" alt></div></figure></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="qcm_wiki.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Exercice)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="qcu_statique.html" target="_self" class="btnNav next" title="Suivant (Exercice)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="16"><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="site_vitrine.html"><a href="site_vitrine.html" target="_self" class="item"><span>Les sites vitrines</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcm_vitrine.html"><a href="qcm_vitrine.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcu_vitrine.html"><a href="qcu_vitrine.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="web_app.html"><a href="web_app.html" target="_self" class="item"><span>Web-app</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcu_webapp.html"><a href="qcu_webapp.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcu_webapp2.html"><a href="qcu_webapp2.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="blogs.html"><a href="blogs.html" target="_self" class="item"><span>Les blogs</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcu_blog.html"><a href="qcu_blog.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="intranet.html"><a href="intranet.html" target="_self" class="item"><span>Les sites intranets</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcu_intranet.html"><a href="qcu_intranet.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcm_intranet.html"><a href="qcm_intranet.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="wiki.html"><a href="wiki.html" target="_self" class="item"><span>Les sites wiki</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcm_wiki.html"><a href="qcm_wiki.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_yes anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="DynamiqueStatique.html"><span class="item"><span>Site statique/dynamique</span></span></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcu_statique.html"><a href="qcu_statique.html" target="_self" class="item"><span>Exercice</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 quiz"><div class="lbl type_l" id="qcm_dynamique.html"><a href="qcm_dynamique.html" target="_self" class="item"><span>Exercice</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Memoire.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="parent"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><span class="legalInfo">
+								<span>Mehdi LARID</span>
+								</span><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>
