@@ -14,15 +14,14 @@
 		<li><a href="#intro">Introduction</a></li>
 		<li><a href="02-histoire.html">Brève histoire des sites web</a></li>
 		<li><a href="03-taille.html">La taille des sites web</a></li>
-		<li>Comparaison entre les types de sites web</li>
+		<li><a href="04-types/index.html">Comparaison entre les types de sites web</a></li>
 		<li><a href="05-services.html">Les services les plus gourmands</a></li>
-		<li>L'hébergement aujourd'hui</li>
-		<li>Les commandements des sites low-tech</li>
-		<li>Développement d'un site low-tech</li>
-		<li>L'hébergement d'un site low-tech</li>
-		<li>Exemples de sites low-tech</li>
-		<li>Comparaison des temps de chargement</li>
-		<li>L'avenir...</li>
+		<li><a href="06-hebergement.html">L'hébergement aujourd'hui</a></li>
+		<li><a href="07-commandements.md">Les commandements des sites low-tech</a></li>
+		<li><a href="08-developpement.md">Développement d'un site low-tech</a></li>
+		<li><a href="09-exemples_site_low_tech.html">Exemples de sites low-tech</a></li>
+		<li>Chapitre X</li>
+		<li>Chapitre XI (conclusion)</li>
 	</ol>
 
 	<h2><a name="intro">Introduction</a></h2>
@@ -37,19 +36,22 @@
 	</p>
 
 	<p>
-		2Mo, c’est la taille médiane d’une page web en 2020 ; soit 1.5Mo de plus qu’en 2010 selon le projet HTTP Archive*. Cette taille correspond à la somme de toutes les ressources demandées lors d’un appel à une page. On peut cité pour un site statique, le HTML pour la structure
-		de la page, le CSS pour la mise en forme et par exemple le JavaScript pour intégrer de l'interactivité (menu déroulant, boutons, etc). Notament avec HTML5 on note l'utilisation API multimédia et graphiques, par exemples avec &lt;audio/&gt;, &lt;video/&gt; et &lt;canvas/&gt;.
+		2Mo, c’est la taille médiane d’une page web en 2020 ; soit 1.5Mo de plus qu’en 2010 selon le projet HTTP Archive*. Cette taille correspond à la somme de toutes les ressources demandées lors d’un appel à une page. On peut citer pour un site statique, le HTML pour la structure
+		de la page, le CSS pour la mise en forme et par exemple le JavaScript pour intégrer de l'interactivité (menu déroulant, boutons, etc). Notament avec HTML5 on note l'utilisation d'API multimédia et graphiques, par exemples avec &lt;audio/&gt;, &lt;video/&gt; et &lt;canvas/&gt;.
   </p>
   <p>
 		Cela signifie que chaque utilisateur se connectant à une page web via un navigateur va recevoir environ 2Mo de ressources pour afficher la page comme les développeurs la souhaitent affichée. Cette taille est aussi liée au nombre de requêtes faites par une page comme l’appel à des ressources CSS connues, ou encore une communication avec le serveur avec des langages de programmation comme le PHP ou par une architecture comme Ajax par exemple, afin d'ajouter des opérations en temps réel (chat).
   </p>
-
-
-
+  <img src="web-page-size.png">
 	<p>
 		Les réseaux sociaux et les sites de e-commerces sont rapidement devenus les sites web les plus consultés. Le point commun entre toutes ces pages est qu’elles affichent assez librement des
 		images et des vidéos bien plus volumineuses que du simple texte. Images et vidéos qui d'ailleurs ont un volume qui ne cesse d'augmenter (qualité d'image en pixel en nette augmentation depuis des années). Aujourd'hui on rencontre de plus en plus de fichiers vidéos 4K et d'images hautes définitions.
   </p>
+  <p>
+    On peut voir sur le graphique suivant que tandis que la taille des fichiers HTML ou CSS a doublé en 6 ans, celle des scripts JS et des images a triplé. 
+  </p>
+  <img src="croissance.jpg">
+  <p>
     Par ailleurs, il est devenu simple d’intégrer n’importe quel fichier JavaScript/CSS pour rendre son site web plus attirant sans forcément prendre le temps de récupérer uniquement les parties du code qui nous intéressent. Il faut connaitre toutes les subtilités de JavaScript pour éviter au maximum cette prise de volume. Nous pouvons ajouter à cela l’augmentation de la popularité des CMS (Content Management System) telle que Wordpress qui propose des bases de sites web qui sont créés au préalable et réutilisables permettant à n'importe qui de créer facilement un site web. Cependant ce genre de template de site n'offre pas une optimisation parfaite au besoin de chacun et devront souvent être adaptés.
   </p>
   <p>
@@ -59,7 +61,7 @@
 		Cela signifie que le code CSS contenant les différents design ainsi que les règles d'adaptation sont toujours chargées, augmentant inévitablement la taille du code.
   </p>
   <p>
-    Autre élément important, il faut prendre en compte qu’une partie très importante des revenus du Web proviennent de la publicité qui contribue à alourdir les pages web avec des images, vidéos et/ou des scripts récoltant des données, par exemple dans le jeu vidéo Angry Birds, cela représentait 75% de la consommation électrique. Il y a aussi des addons, des fonctionnalités externes, qui consomment de l'énergie et qui sont implémentés dans la majorité de sites web de nos jours comme Google Analytics ou certains Cookies.
+    Autre élément important, il faut prendre en compte qu’une partie très importante des revenus du Web provient de la publicité ce qui contribue à alourdir les pages web avec des images, vidéos et/ou des scripts récoltant des données, par exemple dans le jeu vidéo Angry Birds, cela représentait 75% de la consommation électrique. Il y a aussi des addons, des fonctionnalités externes, qui consomment de l'énergie et qui sont implémentés dans la majorité de sites web de nos jours comme Google Analytics ou certains Cookies.
   </p>
 
   <p>
@@ -80,12 +82,12 @@
     <ul>
       <li>Utilité sociale : Répond à un besoin réel</li>
       <li>Facilité d’appropriation : Ne nécessite pas de compétences techniques particulières</li>
-      <li>Respect de l’environnement : Necessite peut de ressources</li>
+      <li>Respect de l’environnement : Nécessite peu de ressources</li>
     </ul>
     </p>
 
     <p>
-      Les adeptes du mouvement “low-tech” proposent un retour au Web simple. C’est-à-dire revenir à des solutions techniques simples et bien dimensionnées. Il s’agit alors d’identifier ce qui prend le plus de ressources et aux priorités des différents fonctionnalitées à déployer ou alors des alternatives possibles. <br />
+      Les adeptes du mouvement “low-tech” proposent un retour au Web simple. C’est-à-dire revenir à des solutions techniques simples et bien dimensionnées. Il s’agit alors d’identifier ce qui prend le plus de ressources et aux priorités des différentes fonctionnalitées à déployer ou alors des alternatives possibles. <br />
       Dans le contexte du Web, cela peut se traduire par le chargement du minimum de ressources possible.
       <ul>
         <li>
@@ -98,7 +100,7 @@
       Le but du low-tech en général est de faire appel à l'ingéniosité des concepteurs pour réussir à créer le plus de matière avec le minimum de ressources et de prendre le recul nécessaire pour voir ce qui est nécessaire.
       <ul>
         <li>
-          Créer et utiliser son propre fichier CSS et à contrario éviter d'utiliser des fichiers CSS pré-établis contenant trop de fonctionnalités inutilisés et inadaptées à son produit.
+          Créer et utiliser son propre fichier CSS et à contrario éviter d'utiliser des fichiers CSS pré-établis contenant trop de fonctionnalités inutilisées et inadaptées à son produit.
         </li>
         <li>
           Programmer en finesse, réduire la taille de son code au maximum.
@@ -114,7 +116,7 @@
       </ul>
     </p>
     <p>
-      Bien que ce mémoire s'intéresse aux sites web low-tech, ce sont les utlisateurs aussi sont un facteur de la consommation d'énergie, il faut alors non seulement que les développeurs et concepteurs fassent des efforts mais aussi les utilisateurs. Il y a par ailleurs des bons gestes à prendre en considération :
+      Bien que ce mémoire s'intéresse aux sites web low-tech, les utlisateurs sont aussi sont un facteur de la consommation d'énergie, il faut alors non seulement que les développeurs et concepteurs fassent des efforts mais aussi les utilisateurs. Il y a par ailleurs des bons gestes à prendre en considération :
       <ul>
         <li>
           Fermer les onglets inactifs.
