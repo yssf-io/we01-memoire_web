@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <meta http-equiv="x-ua-compatible" content="IE=EDGE">
+  <title>Codage de la voix [Alan Turing]</title>
+  <meta charset="UTF-8">
+  <meta name="generator" content="SCENARI 4.2.107 / Opale 3.7.001">
+  <meta name="revision" content="2020-10-11 10:41">
+  <link rel="start" href="module_Turing.html" title="D&eacute;fi collaboratif&nbsp;: Alan Turing">
+  <meta name="author" content>
+  <meta name="keywords" content="Alan, Turing, Codage, Voix, Cryptanalyse, T&eacute;l&eacute;scripteur de Fish, ">
+  <meta name="date" content="11/10/2020">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scImgMgr/scImgMgr.css">
+  <link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {id:"kg4z9zn7"};
+/*1*/ window.scLoadParams = {destUri:"/co/3_codage_voix.html", pathToRoot:"../"};
+</script>
+  <script type="text/JavaScript" src="../lib-sc/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_assmnt.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sc/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/s_scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_searchMgr/searchMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scMediaMgr/scMediaMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-md/w_outMgr/outMgr.js"></script>
+  <script type="text/JavaScript">
+
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerAdaptedImage("ide:content/des:img");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerSvg("des:svg");
+scImgMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+  <script type="text/JavaScript">
+outMgr.declareOutline("module_Turing.txt");
+	</script> </head>
+ <body class="default module coQuiz">
+  <div id="root"><header id="header" role="banner"><h1><span>D&eacute;fi collaboratif&nbsp;: Alan Turing</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk quiz article coQuiz"><h2 class="hBk_ti"><span>Codage de la voix</span></h2><div class="hBk_co" id="i0"><script type="text/JavaScript">
+var RCM547UfM1cWBTTobeLSRd = {
+
+	fId : "RCM547UfM1cWBTTobeLSRd",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+scAssmntMgr.setMode(sc$("RCM547UfM1cWBTTobeLSRd_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("RCM547UfM1cWBTTobeLSRd_S_N35"), false);
+
+		this.computeScore = function(pInput, pIdx) {
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			this.fScorePts = 0;
+			var vRate;
+
+		var vSubAssmnt = {fSession:"", compute:function(pParent, pId, pRate){
+			this.fMinPts = scServices.assmntMgr.getMinPts(pId, this.fSession)||0;
+			this.fScorePts = scServices.assmntMgr.getScorePts(pId, this.fSession)||0;
+			this.fMaxPts = scServices.assmntMgr.getMaxPts(pId, this.fSession)||1;
+
+			pParent.fMinPts += this.fMinPts;
+			pParent.fScorePts += this.fScorePts;
+			pParent.fMaxPts += this.fMaxPts;
+		}};
+
+		vSubAssmnt.compute(this, "WsuAT5J7ngiw7sjA7IRiqc", 1);
+
+		vSubAssmnt.compute(this, "IvYqlcOmB1gGaiAcvwqlqc", 1);
+
+		vSubAssmnt.compute(this, "Hi9AdEb1i3ePfkuVXuxhmj", 1);
+
+		vSubAssmnt.compute(this, "Ku7T2T0qFNh3L4NhhTJIsd", 1);
+
+		if(this.fMaxPts < 100) {
+
+				this.fScorePts = this.fMinPts + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (100-this.fMinPts); 
+
+			this.fMaxPts = 100;
+		}
+var vScoreSession = "";
+			scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+						this.refreshScoresFeedbacks();
+		}
+
+		this.handleAssmntPts = function(pEvent){if(pEvent.fId=="WsuAT5J7ngiw7sjA7IRiqc" || pEvent.fId=="IvYqlcOmB1gGaiAcvwqlqc" || pEvent.fId=="Hi9AdEb1i3ePfkuVXuxhmj" || pEvent.fId=="Ku7T2T0qFNh3L4NhhTJIsd" || false) this.computeScore();}
+		scServices.assmntMgr.addEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	onActionN57 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+WsuAT5J7ngiw7sjA7IRiqc_Alist.fct_reset(); 
+IvYqlcOmB1gGaiAcvwqlqc_Alist.fct_reset(); 
+Hi9AdEb1i3ePfkuVXuxhmj_Alist.fct_reset(); 
+Ku7T2T0qFNh3L4NhhTJIsd_Alist.fct_reset(); 
+this.initSeq("play");
+
+		scServices.assmntMgr.commit();
+	},
+	onActionN35 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+WsuAT5J7ngiw7sjA7IRiqc_Alist.fct_play(); 
+IvYqlcOmB1gGaiAcvwqlqc_Alist.fct_play(); 
+Hi9AdEb1i3ePfkuVXuxhmj_Alist.fct_play(); 
+Ku7T2T0qFNh3L4NhhTJIsd_Alist.fct_play(); 
+scAssmntMgr.setMode(sc$("RCM547UfM1cWBTTobeLSRd_N_score"), "invisible");
+
+		} else {
+WsuAT5J7ngiw7sjA7IRiqc_Alist.fct_displaySol(); 
+IvYqlcOmB1gGaiAcvwqlqc_Alist.fct_displaySol(); 
+Hi9AdEb1i3ePfkuVXuxhmj_Alist.fct_displaySol(); 
+Ku7T2T0qFNh3L4NhhTJIsd_Alist.fct_displaySol(); 
+scAssmntMgr.setMode(sc$("RCM547UfM1cWBTTobeLSRd_N_score"), "visible");
+
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.RCM547UfM1cWBTTobeLSRd_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		scServices.assmntMgr.removeEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("RCM547UfM1cWBTTobeLSRd_SN73");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("RCM547UfM1cWBTTobeLSRd_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = RCM547UfM1cWBTTobeLSRd;
+scOnUnloads[scOnUnloads.length] = RCM547UfM1cWBTTobeLSRd;
+</script><div id="RCM547UfM1cWBTTobeLSRd_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Lire la partie <q class="txt_quote_is "><span class="txt_quote_isp ">&laquo;&nbsp;</span>1.3.1 Codage de la voix<span class="txt_quote_iss ">&nbsp;&raquo;</span></q> sur <a class="op_txt_ul" target="_blank" href="https://fr.wikipedia.org/wiki/Alan_Turing" rel="noopener" title="Alan Turing (nouvelle fen&ecirc;tre)"><span>la page Wikip&eacute;dia d'Alan Turing</span></a> et r&eacute;pondre aux questions suivantes.</p></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Mission aux Etats-Unis</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var WsuAT5J7ngiw7sjA7IRiqc_Alist = {
+
+	fId : "WsuAT5J7ngiw7sjA7IRiqc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.WsuAT5J7ngiw7sjA7IRiqc_Alist_form;
+		this._Sol = {field:{s:[{isMatch:function(pResp){try{if(typeof pResp == 'undefined') return false; return Number(pResp.replace(",",".")) == Number('1943') && true;}catch(e){return false;}}, score:1},null],min:0,max:1},_:null};
+		this.getSolIdx = function(pFieldIndex){
+			var vF = this._Sol[pFieldIndex];
+			var vVal = vForm[pFieldIndex].value;
+			for (var i = 0; i < vF.s.length-1; i++) if(vF.s[i].isMatch(vVal)) return i;
+			return -1;
+		};
+		this.getFieldScore = function(pFieldIndex) {
+			var vI = this.getSolIdx(pFieldIndex);
+			if(vI >= 0) return this._Sol[pFieldIndex].s[vI].score;
+			return 0;
+		};
+		this.refreshResultInput = function(pInput){
+			if(this._resultDisplay == "none") pInput.parentNode.className="";
+			else {
+				var vSol = this._Sol[pInput.name];
+				var vRes = Math.round((this.getFieldScore(pInput.name) - vSol.min) / (vSol.max - vSol.min) * 1);
+				pInput.parentNode.className= "assmntResult_" + vRes;
+			}
+		};
+var vLoadRespSession = "";
+
+		for (var i=0; i < vForm.length; i++) {
+			var vFi = vForm.elements[i];
+			if (vFi.name) {
+				this.setInteraction(vFi, "enabled");
+				vFi.value = vLoadRespSession == null ? "" : scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vFi.name) || "";
+			}
+		}
+	this.refreshResult("");
+
+
+		this.setSolution('collapsed', 'collapsed');
+scAssmntMgr.setMode(sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pInput.name, pInput.value);
+			this.computeScore();
+			scServices.assmntMgr.commit();
+			this.refreshResultInput(pInput);
+		}				
+
+		this.computeScore = function() {
+
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			for(var vF in this._Sol) if(vF!="_") {this.fMinPts += this._Sol[vF].min; this.fMaxPts += this._Sol[vF].max;}
+			this.fScorePts = this.getFieldScore("field")+0;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+			//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+			if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) scServices.assmntMgr.setResponse(this.fId, vRespSession, vFi.name, vFi.value);}}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+this.setSolution('collapsed', 'visible'); scAssmntMgr.setMode(sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_N_score"), "visible");
+var vForm=document.forms.WsuAT5J7ngiw7sjA7IRiqc_Alist_form; for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) this.setInteraction(vFi, "disabled");}this.refreshResult("addClass");
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.WsuAT5J7ngiw7sjA7IRiqc_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_SN8e");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	setSolution : function(pIfRight, pIfNotBest){
+		for(var vF in this._Sol) if(vF != "_") scAssmntMgr.setMode(sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_X_"+vF), this.getSolIdx(vF)==0 ? pIfRight || "collapsed" : pIfNotBest || "collapsed");
+	},
+	setInteraction : function(pElt, pMode){
+		if(!pElt) return;
+		switch(pMode) {
+		case "collapsed" :
+			pElt.style.display = "none";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "invisible" :
+			pElt.style.display = "";
+			pElt.style.visibility = "hidden";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "enabled" : 
+		case "disabled" : 
+			pElt.disabled = (pMode=="disabled");
+		default :
+			pElt.style.display = "";
+			pElt.style.visibility = "visible";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+		}
+	},
+	refreshResult : function(pMode){
+		this._resultDisplay = pMode || "none";
+		var vForm = document.forms.WsuAT5J7ngiw7sjA7IRiqc_Alist_form;
+		for (var i=0; i < vForm.length; i++) { var vFi = vForm.elements[i]; if (vFi.name) this.refreshResultInput(vFi);}
+
+	},
+	onLoad: function(){
+		if (!String.prototype.trim) {String.prototype.trim = function () {return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');};}	
+
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("WsuAT5J7ngiw7sjA7IRiqc_Alist_A");
+		vNodeRoot.style.display = "block"; 
+
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = WsuAT5J7ngiw7sjA7IRiqc_Alist;
+scOnUnloads[scOnUnloads.length] = WsuAT5J7ngiw7sjA7IRiqc_Alist;
+</script><div id="WsuAT5J7ngiw7sjA7IRiqc_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>En quelle ann&eacute;e Alan Turing part-il aux USA en mission de liaison avec les cryptanalystes am&eacute;ricains&nbsp;?</p></div></div><div class="response" aria-live="polite"><form action="javascript:void(0);" name="WsuAT5J7ngiw7sjA7IRiqc_Alist_form" id="WsuAT5J7ngiw7sjA7IRiqc_Alist_form"><div class="exoAsw"><span><input type="text" name="field" onblur="WsuAT5J7ngiw7sjA7IRiqc_Alist.setResp(this);" class="exoInput "></span><span id="WsuAT5J7ngiw7sjA7IRiqc_Alist_X_field" class="exoSol "><span>La r&eacute;ponse est 1943.</span></span></div></form></div><div class="globalExp " id="WsuAT5J7ngiw7sjA7IRiqc_Alist_N_globalExp" aria-live="polite"><div class="rBk "><p><q class="txt_quote_is "><span class="txt_quote_isp ">&laquo;&nbsp;</span>Turing part en 1943 pour les &Eacute;tats-Unis, en mission de liaison avec les cryptanalystes am&eacute;ricains.<span class="txt_quote_iss ">&nbsp;&raquo;</span></q></p></div></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="WsuAT5J7ngiw7sjA7IRiqc_Alist_N_score"><span id="WsuAT5J7ngiw7sjA7IRiqc_Alist_SN8e"><span></span></span></span></span></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Nom de code</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var IvYqlcOmB1gGaiAcvwqlqc_Alist = {
+
+	fId : "IvYqlcOmB1gGaiAcvwqlqc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.IvYqlcOmB1gGaiAcvwqlqc_Alist_form;
+		for (var i=0; i < vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input.length; i++) {
+			vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].disabled = false;
+			vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_in"+vResp).checked = true;
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N2_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.IvYqlcOmB1gGaiAcvwqlqc_Alist_form.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[0].checked ?  this.fMaxPts : this.fMinPts;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input.length; i++) if(vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input.length) ? vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+var vForm=document.forms.IvYqlcOmB1gGaiAcvwqlqc_Alist_form; for (var i=0; i < vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input.length; i++) vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].disabled = true; this.setSolution(true); scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N2_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N_score"), "visible");
+scAssmntMgr.setMode(sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_N_responseTi"), "visible");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.IvYqlcOmB1gGaiAcvwqlqc_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_SNa4");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.IvYqlcOmB1gGaiAcvwqlqc_Alist_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				vTR.className = ( i+1 == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+
+				var vSol = vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = (i+1 == 1);
+				vForm.IvYqlcOmB1gGaiAcvwqlqc_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("IvYqlcOmB1gGaiAcvwqlqc_Alist_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = IvYqlcOmB1gGaiAcvwqlqc_Alist;
+scOnUnloads[scOnUnloads.length] = IvYqlcOmB1gGaiAcvwqlqc_Alist;
+</script><div id="IvYqlcOmB1gGaiAcvwqlqc_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Quel est le nom de code de sa machine &agrave; coder la voix&nbsp;?</p></div></div><div class="response" aria-live="polite"><h4 id="IvYqlcOmB1gGaiAcvwqlqc_Alist_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></h4><form action name="IvYqlcOmB1gGaiAcvwqlqc_Alist_form" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IvYqlcOmB1gGaiAcvwqlqc_Alist_input" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_in0" value="0" onclick="IvYqlcOmB1gGaiAcvwqlqc_Alist.setResp(this, 0);" aria-labelledby="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IvYqlcOmB1gGaiAcvwqlqc_Alist_sol" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_sol0" value disabled aria-labelledby="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl0"></div><div class="choiceList_la " id="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl0"><div class="choice"><div class="label"><p>Delilah</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IvYqlcOmB1gGaiAcvwqlqc_Alist_input" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_in1" value="1" onclick="IvYqlcOmB1gGaiAcvwqlqc_Alist.setResp(this, 1);" aria-labelledby="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IvYqlcOmB1gGaiAcvwqlqc_Alist_sol" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_sol1" value disabled aria-labelledby="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl1"></div><div class="choiceList_la " id="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl1"><div class="choice"><div class="label"><p>Dalila</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="radio" name="IvYqlcOmB1gGaiAcvwqlqc_Alist_input" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_in2" value="2" onclick="IvYqlcOmB1gGaiAcvwqlqc_Alist.setResp(this, 2);" aria-labelledby="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="radio" name="IvYqlcOmB1gGaiAcvwqlqc_Alist_sol" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_sol2" value disabled aria-labelledby="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl2"></div><div class="choiceList_la " id="IvYqlcOmB1gGaiAcvwqlqc_Alist_lbl2"><div class="choice"><div class="label"><p>Vox</p></div></div></div></li></ul></form></div><div class="globalExp " id="IvYqlcOmB1gGaiAcvwqlqc_Alist_N_globalExp" aria-live="polite"><div class="rBk "><p>Aux Etats-Unis, Turing d&eacute;couvre les progr&egrave;s des technologies &eacute;lectroniques et con&ccedil;oit une machine pour coder la voix, avec pour nom de code &quot;Delilah&quot;.</p></div></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="IvYqlcOmB1gGaiAcvwqlqc_Alist_N_score"><span id="IvYqlcOmB1gGaiAcvwqlqc_Alist_SNa4"><span></span></span></span></span></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Le t&eacute;l&eacute;scripteur de Fish</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var Hi9AdEb1i3ePfkuVXuxhmj_Alist = {
+
+	fId : "Hi9AdEb1i3ePfkuVXuxhmj",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.Hi9AdEb1i3ePfkuVXuxhmj_Alist_form;
+		for (var i=0; i < vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input.length; i++) {
+			vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].disabled = false;
+			vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+for (var i=0; i < vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input.length; i++) {
+			var vInput = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i];
+			vInput.checked = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vInput.value);
+		}
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N2_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N3_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pIdx, pInput.checked);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = true && ! vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[0].checked && vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[1].checked && vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[2].checked && ! vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[3].checked ? this.fMaxPts : this.fMinPts;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for (var i=0; i < vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input.length; i++) {
+			var vInput = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i];
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, vInput.value, vInput.checked);
+		}
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+var vForm=document.forms.Hi9AdEb1i3ePfkuVXuxhmj_Alist_form; for (var i=0; i < vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input.length; i++) vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].disabled = true; this.setSolution(true); scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N2_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N3_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_score"), "visible");
+scAssmntMgr.setMode(sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_responseTi"), "visible");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.Hi9AdEb1i3ePfkuVXuxhmj_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_SNa4");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTRs = null;
+		var vForm = document.forms.Hi9AdEb1i3ePfkuVXuxhmj_Alist_form;
+		var vTable = scPaLib.findNode("chi:" ,vForm);
+		if (vTable.nodeName.toLowerCase()=="table") vTRs = scPaLib.findNodes("chi:/chi:tr" ,vTable);
+		else vTRs = scPaLib.findNodes("chi:" ,vTable);
+	
+		if(!pShown && this.solIsShown) {
+			for(var i=0; i<vTRs.length; i++){
+				var vTR = vTRs[i]; 
+				var vOffs = vTR.className.indexOf("assmntSol");
+				if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+
+				var vSol = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].removeAttribute("aria-hidden");
+
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var i = 0, vTR = null;
+
+			var vSol = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol[i];
+			scAssmntMgr.setMode(vSol.parentNode, "visible");
+			vSol.checked = false;
+			vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			vTR = vTRs[i++];
+			vTR.className = "assmntSolUnche " + vTR.className;
+
+			var vSol = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol[i];
+			scAssmntMgr.setMode(vSol.parentNode, "visible");
+			vSol.checked = true;
+			vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			vTR = vTRs[i++];
+			vTR.className = "assmntSolCheck " + vTR.className;
+
+			var vSol = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol[i];
+			scAssmntMgr.setMode(vSol.parentNode, "visible");
+			vSol.checked = true;
+			vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			vTR = vTRs[i++];
+			vTR.className = "assmntSolCheck " + vTR.className;
+
+			var vSol = vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol[i];
+			scAssmntMgr.setMode(vSol.parentNode, "visible");
+			vSol.checked = false;
+			vForm.Hi9AdEb1i3ePfkuVXuxhmj_Alist_input[i].setAttribute("aria-hidden", "true");
+
+			vTR = vTRs[i++];
+			vTR.className = "assmntSolUnche " + vTR.className;
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("Hi9AdEb1i3ePfkuVXuxhmj_Alist_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = Hi9AdEb1i3ePfkuVXuxhmj_Alist;
+scOnUnloads[scOnUnloads.length] = Hi9AdEb1i3ePfkuVXuxhmj_Alist;
+</script><div id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Turing a contribu&eacute; &agrave; des recherches math&eacute;matiques, l'une d'elles &eacute;tant men&eacute;e par <a class="op_txt_ul" target="_blank" href="https://fr.wikipedia.org/wiki/William_Tutte" rel="noopener" title="William Tutte (nouvelle fen&ecirc;tre)"><span>William Tutte</span></a> ayant cass&eacute; le code g&eacute;n&eacute;r&eacute; par le <a class="op_txt_ul" target="_blank" href="https://fr.wikipedia.org/wiki/Fish_(cryptographie)" rel="noopener" title="T&eacute;l&eacute;scripteur de Fish (nouvelle fen&ecirc;tre)"><span>t&eacute;l&eacute;scripteur de Fish</span></a>. Qui a construit ce t&eacute;l&eacute;scripteur&nbsp;?</p></div></div><div class="response" aria-live="polite"><h4 id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_responseTi" class="response_ti"><span aria-hidden="true"><span>Votre choix</span></span><span><span>Choix attendu</span></span><span aria-hidden="true"><span>R&eacute;ponse</span></span></h4><form action name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_form" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_form"><ul class="choiceList "><li class="choiceList_ch "><div class="choiceList_in "><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_input" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_in0" value="0" onclick="Hi9AdEb1i3ePfkuVXuxhmj_Alist.setResp(this, 0);" aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl0"></div><div class="choiceList_sol " style="display:none;"><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol0" value disabled aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl0"></div><div class="choiceList_la " id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl0"><div class="choice"><div class="label"><p>Samsung</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_input" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_in1" value="1" onclick="Hi9AdEb1i3ePfkuVXuxhmj_Alist.setResp(this, 1);" aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl1"></div><div class="choiceList_sol " style="display:none;"><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol1" value disabled aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl1"></div><div class="choiceList_la " id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl1"><div class="choice"><div class="label"><p>Siemens</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_input" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_in2" value="2" onclick="Hi9AdEb1i3ePfkuVXuxhmj_Alist.setResp(this, 2);" aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl2"></div><div class="choiceList_sol " style="display:none;"><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol2" value disabled aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl2"></div><div class="choiceList_la " id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl2"><div class="choice"><div class="label"><p>Laurenz</p></div></div></div></li><li class="choiceList_ch "><div class="choiceList_in "><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_input" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_in3" value="3" onclick="Hi9AdEb1i3ePfkuVXuxhmj_Alist.setResp(this, 3);" aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl3"></div><div class="choiceList_sol " style="display:none;"><input type="checkbox" name="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_sol3" value disabled aria-labelledby="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl3"></div><div class="choiceList_la " id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_lbl3"><div class="choice"><div class="label"><p>Austin</p></div></div></div></li></ul></form></div><div class="globalExp " id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_globalExp" aria-live="polite"><div class="rBk "><p>Il a &eacute;t&eacute; construit par Laurenz et Siemens en partenariat.</p></div><div class="rBk "><div class="txtRes "><div class="txt "><p>La machine de Lorenz</p></div><div class="img rgt "><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><a href="../res/machine_lorenz.jpg" class="imgZoom" target="_blank" onclick="scImgMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/machine_lorenz_1.jpg" width="300" height="223" alt></a></div></figure></div></div></div></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_N_score"><span id="Hi9AdEb1i3ePfkuVXuxhmj_Alist_SNa4"><span></span></span></span></span></div></div></div></div></div><div class="subQuiz "><h3 class="subQuiz_ti"><span>Texte &agrave; trou&nbsp;: le t&eacute;l&eacute;scripteur de Fish</span></h3><div class="subQuiz_co "><script type="text/JavaScript">
+var Ku7T2T0qFNh3L4NhhTJIsd_Alist = {
+
+	fId : "Ku7T2T0qFNh3L4NhhTJIsd",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.Ku7T2T0qFNh3L4NhhTJIsd_Alist_form;
+		this._Sol = {N17e:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'ALLEMANDE'==pResp || false;}, score:1},null],min:0,max:1},N181:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'CHIFFREMENT'==pResp || false;}, score:1},null],min:0,max:1},N184:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'ENIGMA'==pResp || false;}, score:1},null],min:0,max:1},N18a:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'ROBINSON'==pResp || false;}, score:1},null],min:0,max:1},N18d:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'COLOSSUS'==pResp || false;}, score:1},null],min:0,max:1},N190:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'CALCULATEUR'==pResp || false;}, score:1},null],min:0,max:1},N193:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return '1943'==pResp || false;}, score:1},null],min:0,max:1},N196:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=pResp.toUpperCase().trim(); return 'FLOWERS'==pResp || false;}, score:1},null],min:0,max:1},_:null};
+		this.getSolIdx = function(pFieldIndex){
+			var vF = this._Sol[pFieldIndex];
+			var vVal = vForm[pFieldIndex].value;
+			for (var i = 0; i < vF.s.length-1; i++) if(vF.s[i].isMatch(vVal)) return i;
+			return -1;
+		};
+		this.getFieldScore = function(pFieldIndex) {
+			var vI = this.getSolIdx(pFieldIndex);
+			if(vI >= 0) return this._Sol[pFieldIndex].s[vI].score;
+			return 0;
+		};
+		this.refreshResultInput = function(pInput){
+			if(this._resultDisplay == "none") pInput.parentNode.className="";
+			else {
+				var vSol = this._Sol[pInput.name];
+				var vRes = Math.round((this.getFieldScore(pInput.name) - vSol.min) / (vSol.max - vSol.min) * 1);
+				pInput.parentNode.className= "assmntResult_" + vRes;
+			}
+		};
+var vLoadRespSession = "";
+
+		for (var i=0; i < vForm.length; i++) {
+			var vFi = vForm.elements[i];
+			if (vFi.name) {
+				this.setInteraction(vFi, "enabled");
+				vFi.value = vLoadRespSession == null ? "" : scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vFi.name) || "";
+			}
+		}
+	this.refreshResult("none");
+
+
+		this.setSolution('collapsed', 'collapsed');
+scAssmntMgr.setMode(sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_N_score"), "invisible");
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pInput.name, pInput.value);
+			this.computeScore();
+			scServices.assmntMgr.commit();
+			this.refreshResultInput(pInput);
+		}				
+
+		this.computeScore = function() {
+
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			for(var vF in this._Sol) if(vF!="_") {this.fMinPts += this._Sol[vF].min; this.fMaxPts += this._Sol[vF].max;}
+			this.fScorePts = this.getFieldScore("N17e")+this.getFieldScore("N181")+this.getFieldScore("N184")+this.getFieldScore("N18a")+this.getFieldScore("N18d")+this.getFieldScore("N190")+this.getFieldScore("N193")+this.getFieldScore("N196")+0;
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+
+			//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "";
+			if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) scServices.assmntMgr.setResponse(this.fId, vRespSession, vFi.name, vFi.value);}}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+	fct_play : function(){
+this.initSeq("play");
+
+	},
+	fct_reset : function(){
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+
+	},
+	fct_displaySol : function(){
+this.setSolution('collapsed', 'visible'); scAssmntMgr.setMode(sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_N_globalExp"), "visible");
+this.refreshResult("addClass");scAssmntMgr.setMode(sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_N_score"), "visible");
+var vForm=document.forms.Ku7T2T0qFNh3L4NhhTJIsd_Alist_form; for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) this.setInteraction(vFi, "disabled");}
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.Ku7T2T0qFNh3L4NhhTJIsd_Alist_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	return "play";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_SN85");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse <\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	setSolution : function(pIfRight, pIfNotBest){
+		for(var vF in this._Sol) if(vF != "_") scAssmntMgr.setMode(sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_"+vF), this.getSolIdx(vF)==0 ? pIfRight || "collapsed" : pIfNotBest || "collapsed");
+	},
+	setInteraction : function(pElt, pMode){
+		if(!pElt) return;
+		switch(pMode) {
+		case "collapsed" :
+			pElt.style.display = "none";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "invisible" :
+			pElt.style.display = "";
+			pElt.style.visibility = "hidden";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "enabled" : 
+		case "disabled" : 
+			pElt.disabled = (pMode=="disabled");
+		default :
+			pElt.style.display = "";
+			pElt.style.visibility = "visible";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+		}
+	},
+	refreshResult : function(pMode){
+		this._resultDisplay = pMode || "none";
+		var vForm = document.forms.Ku7T2T0qFNh3L4NhhTJIsd_Alist_form;
+		for (var i=0; i < vForm.length; i++) { var vFi = vForm.elements[i]; if (vFi.name) this.refreshResultInput(vFi);}
+
+	},
+	onLoad: function(){
+		if (!String.prototype.trim) {String.prototype.trim = function () {return this.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');};}	
+
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("Ku7T2T0qFNh3L4NhhTJIsd_Alist_A");
+		vNodeRoot.style.display = "block"; 
+
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = Ku7T2T0qFNh3L4NhhTJIsd_Alist;
+scOnUnloads[scOnUnloads.length] = Ku7T2T0qFNh3L4NhhTJIsd_Alist;
+</script><div id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_A" style="display:none;"><div class="quizBody"><div class="question"><div class="rBk "><p>Remplir ce texte &agrave; trous&nbsp;:</p></div></div><div class="response" aria-live="polite"><form action="javascript:void(0);" name="Ku7T2T0qFNh3L4NhhTJIsd_Alist_form" id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_form"><p>Le t&eacute;l&eacute;scripteur de Fish est une machine <span class="txt_gap_tl "><span><input name="N17e" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N17e" class="gapAnswer "><span>allemande</span></span></span> qui permettait le <span class="txt_gap_tl "><span><input name="N181" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N181" class="gapAnswer "><span>chiffrement</span></span></span> des communications d'&eacute;tats-majors. Elle est tr&egrave;s diff&eacute;rente du syst&egrave;me <span class="txt_gap_tl "><span><input name="N184" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N184" class="gapAnswer "><span>Enigma</span></span></span> et a longtemps r&eacute;sist&eacute; aux attaques des cryptanalystes.</p><p>Des nouvelles m&eacute;thodes et nouvelles machines ont permis de percer ses codes&nbsp;: Heath <span class="txt_gap_tl "><span><input name="N18a" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N18a" class="gapAnswer "><span>Robinson</span></span></span> puis <span class="txt_gap_tl "><span><input name="N18d" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N18d" class="gapAnswer "><span>Colossus</span></span></span>. Colossus est le premier grand <span class="txt_gap_tl "><span><input name="N190" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N190" class="gapAnswer "><span>calculateur</span></span></span> &eacute;lectronique de l'histoire, con&ccedil;u par Max Newman et construite en <span class="txt_gap_tl "><span><input name="N193" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N193" class="gapAnswer "><span>1943</span></span></span> par une &eacute;quipe dirig&eacute;e par Thomas <span class="txt_gap_tl "><span><input name="N196" type="text" size="11" onblur="Ku7T2T0qFNh3L4NhhTJIsd_Alist.setResp(this);" class="gapInput "></span><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_X_N196" class="gapAnswer "><span>Flowers</span></span></span>. Turing n'a pas particip&eacute; &agrave; sa conception.</p></form></div><div class="toolbar"><span class="scoreBox"><span class="score " aria-live="polite" id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_N_score"><span id="Ku7T2T0qFNh3L4NhhTJIsd_Alist_SN85"><span></span></span></span></span></div></div></div></div></div><div class="toolbar"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="RCM547UfM1cWBTTobeLSRd.onActionN35(this); return false;" class="btnQuiz correction " id="RCM547UfM1cWBTTobeLSRd_S_N35"><span>Correction</span></a><a role="button" title="Effacer les r&eacute;ponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="RCM547UfM1cWBTTobeLSRd.onActionN57(this); return false;" class="btnQuiz reset "><span>Recommencer</span></a><span class="scoreBox"><span class="score " aria-live="polite" id="RCM547UfM1cWBTTobeLSRd_N_score"><span id="RCM547UfM1cWBTTobeLSRd_SN73"><span></span></span></span></span></div></div></div></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" href="GrainCodageVoix.html" target="_self" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Codage de la voix)"><span>Pr&eacute;c&eacute;dent</span></a></li><li><a rel="next" href="grain_enigma.html" target="_self" class="btnNav next" title="Suivant (Enigma)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav id="menu" class="pageSelector" role="navigation" tabindex="-1" aria-label="menu principal"><hr class="hidden"><ul class="mnu static" data-totalPages="21"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Turing_1.html"><a href="module_Turing_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 intro"><div class="lbl type_l" id="module_Turing_2.html"><a href="module_Turing_2.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="jeunesse_grain.html"><a href="jeunesse_grain.html" target="_self" class="item"><span>Jeunesse</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="exerciceTuringFinDeVie.html"><a href="exerciceTuringFinDeVie.html" target="_self" class="item"><span>La jeunesse de Turing, en quelques questions</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="TuringEtude_Grain.html"><a href="TuringEtude_Grain.html" target="_self" class="item"><span>&Eacute;tudes</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="quiz_Etudes.html"><a href="quiz_Etudes.html" target="_self" class="item"><span>Etudes</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="GrainCodageVoix.html"><a href="GrainCodageVoix.html" target="_self" class="item"><span>Codage de la voix</span></a></div></li><li class="sel_yes anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="3_codage_voix.html"><span class="item"><span>Codage de la voix</span></span></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain_enigma.html"><a href="grain_enigma.html" target="_self" class="item"><span>Enigma</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="quizTuringEnigma.html"><a href="quizTuringEnigma.html" target="_self" class="item"><span>Enigma - Quiz</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain_hut8.html"><a href="grain_hut8.html" target="_self" class="item"><span>Hut 8</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="Hut8Quiz.html"><a href="Hut8Quiz.html" target="_self" class="item"><span>Testez vos connaissances de la Hut 8!</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="Turing_Bombe.html"><a href="Turing_Bombe.html" target="_self" class="item"><span>Bombe de Turing</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="ExercicesGroupesBombeTuring.html"><a href="ExercicesGroupesBombeTuring.html" target="_self" class="item"><span>Contr&ocirc;le tes connaissances sur la Bombe de Turing ici&nbsp;!</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grainTuring.html"><a href="grainTuring.html" target="_self" class="item"><span>Machine de Turing</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="premier_ordinateurs.html"><a href="premier_ordinateurs.html" target="_self" class="item"><span>Travaux sur les premiers ordinateurs</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="test_Turing.html"><a href="test_Turing.html" target="_self" class="item"><span>Test de Turing</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="exo_turing_IA.html"><a href="exo_turing_IA.html" target="_self" class="item"><span>Le test de Turing dans la culture populaire</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 expUc"><div class="lbl type_l" id="grain_findevie_Alan_Turing.html"><a href="grain_findevie_Alan_Turing.html" target="_self" class="item"><span>Fin de vie Alan Turing</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 coQuiz"><div class="lbl type_l" id="quizList.html"><a href="quizList.html" target="_self" class="item"><span>Fin de vie d'Alan Turing - Quiz</span></a></div></li><li class="sel_no anc_no type_l  dpt_0 conclu"><div class="lbl type_l" id="module_Turing_3.html"><a href="module_Turing_3.html" target="_self" class="item"><span>Conclusion</span></a></div></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Turing.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="parent"><div class="lbl"><span class="item"><span>Module</span></span></div></li><li class="anc_no tools" data-position="uncle"><div class="lbl"><a href="Turing_web.html" target="_self" class="item" title="Outils transverses du module"><span>Outils</span></a></div></li></ul></nav></div></div></main><footer id="footer" role="contentinfo" tabindex="-1"><hr class="hidden"><span class="legalInfo">
+								<span>Liste d'exercices cr&eacute;&eacute;e par Edgar Lebrun</span>
+								<span class="hidden"> | </span><a rel="license" href="http://creativecommons.org/licenses/publicdomain/1.0/deed.fr" target="_blank" class="cc-button" title="Licence : Domaine Public (nouvelle fen&ecirc;tre)"><img alt="Licence : Domaine Public" width="80" height="15" src="../skin/img/lic/publicdomain.png"></a></span><a id="linkSp" target="_blank" href="https://www.scenari.org" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scMediaMgr.init("ide:content/chi:div/chi:section/des:.mediaPlayer",{processYoutubeUrls :true});scImgMgr.init();outMgr.init();</script>
+ </body>
+</html>
