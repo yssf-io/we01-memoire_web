@@ -20,7 +20,9 @@ h4 {
 }
 
 img {
-  width: 100%;
+  width: 80%;
+  margin:auto;
+  display: block;
 }
 
 h2,
@@ -50,4 +52,11 @@ td {
   padding: 5px;
   text-align: center;
   margin: auto;
+}
+
+.code
+{
+  margin:auto;
+  display:block;
+  width:40%;
 }

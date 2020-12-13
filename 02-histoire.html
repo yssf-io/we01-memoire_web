@@ -48,7 +48,14 @@
         exemple d'outil mêlant le formalisme "humain", c'est-à-dire la
         possibilité d'écrire en langage naturel (Français, Anglais, ...) et le
         formalisme logique via des balises, compréhensible par un programme
-        informatique.
+        informatique. Ci-dessous un exemple du balisage HTML de 1991 venant
+        d'une des plus anciennes page web référencée.
+      </p>
+      <p class="code">
+        &lt;title&gt;Hypertext Links&lt;/title&gt;<br />
+        &lt;h1&gt;Links and Anchors&lt;/h1&gt; <br />
+        A link is the connection between one piece of <br />
+        &lt;a href=WhatIs.html&gt;hypertext&lt;/a&gt; and another.
       </p>
       <p>
         La première page web contient les informations sur le HTML et tout
@@ -91,10 +98,22 @@
         l'évolution des sites web puisqu'elles ont permis, avec l'utilisation de
         bases de données, de personnaliser les pages transmises en fonction de
         l'utilisateur de ces pages et d'autres paramètres comme l'adresse du
-        site. On imagine bien que Wikipédia (utilisant le PHP) n'héberge pas,
-        dans ses serveurs, un fichier HTML par article (et par langue) mais que
-        les pages sont générées à la demande d'un utilisateur avec des données
-        venant de leur base de données.
+        site. On pourrait imaginer que Wikipédia (utilisant le PHP) n'héberge
+        pas dans ses serveurs un fichier HTML par article (et par langue) mais
+        que les pages sont générées à la demande d'un utilisateur avec des
+        données venant de leur base de données, en effet il y a plus de 2
+        millions d'article sur
+        <a href="https://stats.wikimedia.org/FR/ChartsWikipediaFR.htm#2"
+          >Wikipedia</a
+        >
+        qui font en moyenne 2500 octets soit donc environ 5 Go. Les articles
+        pourraient donc théoriquement être contenus dans un serveur mais le
+        problème est que le nombre d'article sur Wikipedia augmente chaque jour,
+        donc faut donc réduire le plus possible la taille de stockage des
+        informations. On peut aussi dire que la mise en page étant toujours la
+        même il n'est pas nécessaire de stocker tout le fichier HTML, ainsi
+        juste stocker les informations dans une base de données reste la
+        solution la plus pratique, c'est ce qu'à fait Wikipedia.
       </p>
       <h4>1995 - Les tableaux</h4>
       <p>
@@ -105,6 +124,22 @@
           href="#source2"
           >[2]</a
         >
+      </p>
+      Voici ci-dessous un exemple de code en HTML 2.0 venant de
+      <a href="https://www.w3.org/MarkUp/html-spec/html-spec_5.html#SEC5.3"
+        >www.w3.org</a
+      >
+      <p class="code">
+        &lt;OL&gt;<br />
+        &lt;LI&gt;Click the Web button to open URI window.<br />
+        &lt;LI&gt;Enter the URI number in the text field of the Open URI <br />
+        window. The Web document you specified is displayed.<br />
+        &lt;ol&gt;<br />
+        &lt;li&gt;substep 1<br />
+        &lt;li&gt;substep 2<br />
+        &lt;/ol&gt;<br />
+        &lt;LI&gt;Click highlighted text to move from one link to another.<br />
+        &lt;/OL&gt;
       </p>
       <p>
         Parmi ces améliorations, on retrouve les tableaux, qui permettent de
@@ -118,7 +153,12 @@
         d'améliorer l'esthétique des pages web et de les rendre plus intuitives
         pour les utilisateurs. Bien sûr, l'utilisation de tableaux de manière
         esthétique est à prohiber car sémantiquement c'est une erreur. Il faudra
-        attendre le <a href="#css-part">CSS</a> pour cela.
+        attendre le <a href="#css-part">CSS</a> pour cela. En effet, les
+        tableaux HTML ont été créés pour organiser des données sous formes de
+        tableaux, les utiliser de manière esthétique risque de considérablement
+        ralentir le navigateur car il doit télécharger tout le tableau pour
+        l'affichage. C'est aussi plus difficile de maintenir ce code, ainsi que
+        de rendre le site responsive.
       </p>
       <img
         src="./images/tabledesign.png"
@@ -139,12 +179,19 @@
         informatique. C'est une avancée majeure en ce qui concerne
         l'interactivité du Web. On peut commencer à avoir de véritables
         applications servies sur le Web et plus uniquement des informations à
-        partager.
+        partager. Les principales différences entre une application web et un
+        site web sont qu'une application est contenue dans un site web, le
+        développement d'une application web est bien plus coûteux et chronophage
+        que celui du site web dans lequel il est contenu et qu'un site web est
+        une source d'information alors qu'une application web fonctionne de
+        manière interactive.
       </p>
       <h4>1995 - JavaScript</h4>
       <p>
         JavaScript (JS) conclue l'année 1995 en beauté. Les développeurs peuvent
-        désormais intégrer de la logique dans leurs pages web.
+        désormais intégrer des éléments de logique booléennes dans leurs pages
+        web et ainsi manipuler les objets conventionnels des informaticiens
+        comme les instructions conditionnelles et les boucles.
       </p>
       <p>
         Les utilisateurs peuvent maintenant interagir avec les pages qu'ils
@@ -167,14 +214,20 @@
       </p>
       <p>
         C'est une autre technologie qui contribue à l'enrichissement des sites
-        web.
+        web. Cependant, Flash a maintenant quasiment disparu, la raison en est
+        très simple, Apple n'a pas accepté d'intégrer Flash à ses produits (dont
+        l'iPhone) ce qui a fortement contribuer au déclin de Flash. D'autres
+        problèmes sont toutes fois à noter comme le fait qu'il a été une des
+        seules technologies du web qui ne soit pas libre et qu'elle comportait
+        certains problèmes techniques et de sécurités.
       </p>
       <h4 id="css-part">1998 - CSS</h4>
       <p>Donnons du style à nos pages web !</p>
       <p>
         L'ajout des feuilles de styles, bien qu'elles aient mis du temps à être
         bien intégrées aux navigateurs, montre l'envie de vouloir séparer la
-        forme du fond.
+        forme du fond. On gagnera alors en structuration logique et donc en
+        pérennité, maintenance, portabilité et malléabilité du contenu.
       </p>
       <p>La stack du développement web devient :</p>
       <ul>
@@ -190,7 +243,25 @@
 
       <p>
         La page web que vous lisez actuellement est un exemple de HTML augmenté
-        par du CSS.
+        par du CSS. On peut voir ci-dessous les détails de mise en forme de la
+        majorité de cette page comme par exemple que notre zone de texte
+        représente 70% de la taille de la page ou encore que la police par
+        défaut est "Segoe UI" mais que si le navigateur ne l'a pas en mémoire il
+        peut utiliser plusieurs polices de remplacements.
+      </p>
+      <p>
+        <code class="code">
+          .main {<br />
+          width: 70%;<br />
+          margin: auto;<br />
+          padding: 10px;<br />
+          text-align: justify;<br />
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;<br />
+          background-color: ghostwhite;<br />
+          border-radius: 15px;<br />
+          box-shadow: 0px 0px 24px 2px rgba(202, 209, 209, 1);<br />
+          }
+        </code>
       </p>
       <h4>2007 - Mobile</h4>
       <p>
@@ -214,8 +285,9 @@
       <p>
         C'est en 2010 que l'on réfléchit à l'idée de n'avoir qu'un seul site web
         capable de rendre une page aussi belle sur ordinateur que sur mobile. Le
-        changement a été fait dans CSS avec la possibilité de préciser pour
-        quelle résolution un style doit s'appliquer.
+        changement a été fait dans CSS3 avec la possibilité de préciser pour
+        quelle résolution un style doit s'appliquer, on appelles cela les medias
+        queries.
       </p>
       <p>
         On note que, désormais, toutes les pages web responsive intègrent le CSS
@@ -264,13 +336,13 @@
           class="footnote"
           href="#source4"
           >[4]</a
-        >. Cela ne semble pas beaucoup mais ces chiffres sont le résultat de
-        l'évolution d'une industrie tout entière et reflète l'impact de cette
-        évolution au travers des développeurs et utilisateurs.
+        >. Ces chiffres sont le résultat de l'évolution d'une industrie tout
+        entière et reflète l'impact de cette évolution au travers des
+        développeurs et utilisateurs.
       </p>
       <h3>L'impact sur le développement</h3>
       <p>
-        Cette chronologie montre que le nombre de technologie que l’on peut
+        Cette chronologie montre que le nombre de technologies que l’on peut
         utiliser lors de la réalisation d’un site web a considérablement
         augmenté. Cela apporte de très nombreuses solutions lors du
         développement, mais il est clair que cela a aussi eu un impact métier.
@@ -280,9 +352,23 @@
         (interface utilisateur) tandis que le back-end se consacre au
         développement fonctionnel de la base de données et des programmes côté
         serveur : ce que l'utilisateur ne voit pas. Le profil full-stack émerge
-        également. C'est un développeur au profile transversal qui maitrise
+        également. C'est un développeur au profil transversal qui maitrise
         l’ensemble des stacks techniques permettant une meilleure communiation
-        entre front-end et back-end.
+        entre front-end et back-end. Dans la pratique ce métier est revandiquer
+        comme "faux" par la plupart de ceux qui l'exerce car les métiers de
+        développeur FrontEnd (mise en forme, intégration), développeur
+        BackEnd(scripts et gestions de BDD) et de DevOPS(gestion des serveurs,
+        opérabilité) sont des métiers demandant des années d'expériences pour
+        une compréhension globale des enjeux et des méthodes. Ce sont aussi des
+        métiers évoluant tous les jours et demandant une veille régulière, ces
+        métiers ne sont donc pas vraiment propices à être mélangés. On attend en
+        réalité simplement d'un ingénieur type Fullstack de connaitre les
+        rudiments et les méthodes de travails de ces 3 métiers dans des buts
+        différents selon le profil de l'entreprise. Dans une petite entreprise
+        voir une start-up le but est d'avoir quelqu'un de débrouillard qui
+        arrivera à gérer aux mieux les trois parties de la conception web, dans
+        une grande entreprise on attend de lui un rôle de médiateur entre les
+        trois parties car il est le seul à connaitre les objectifs de ceux-ci.
       </p>
       <p>
         Outre cela, il est maintenant nécessaire de maitriser de nombreuses
@@ -291,9 +377,21 @@
         il peut aussi se reposer sur les frameworks tel que jQuery, Angular,
         Bootstrap et bien d’autres. De la même façon, un développeur back-end va
         devoir maitriser les langages : PHP, Ruby, Python, SQL et pourra
-        connaitre de nombreux framework comme Symfony etc.
+        connaitre de nombreux framework comme Symfony etc. Un problème
+        d'aujourd'hui est donc la quantité de technologie à maitriser pour
+        rentrer dans le marché du web en tant que développeur. Pour reprendre un
+        langage plus économiste il s'agit d'une grosse barrière à l'entrée de
+        cette partie du marché de l'emploi.
       </p>
-
+      <p>
+        Avant, le problème était différent, il y avait aussi différentes
+        technologies mais aucun organisme de standardisation n'existait. Chaque
+        technologie utilisant ces propres formalismes il était très difficile
+        voire impossible de faire fonctionner plusieurs technologies dans un
+        même projet. Par exemple, chaque site web devait avoir plusieurs
+        versions en fonction du navigateur web car certains supportait des
+        technologies que les autres ne supportait pas.
+      </p>
       <p>
         Aussi, il est maintenant nécessaire de s’assurer de la compatibilité et
         de la communication entre ces technologies. Par exemple il peut être
@@ -345,14 +443,19 @@
       </p>
       <p>
         Parmi les conséquences que l'on peut deviner pour les utilisateurs, il y
-        a le besoin de rester à jour sur les technologies ainsi que le besoin
-        d'améliorer son accès à Internet pour supporter les fichiers chargés.
-        L'utilisateur doit aussi faire attention à son utilisation du Web tant
-        la limite entre "information" et "information personnalisée"
-        s'assombrie. De nouvelles questions peuvent émerger : "Est-ce que je
-        vois cette information parce que je suis celui que la cherche ?". Dans
-        une approche low-tech, où la simplicité est privilégiée, il serait
-        difficile de concevoir un site web où cette limite n'est pas visible.
+        a le besoin de rester à jour sur les technologies afin d'accèder aux
+        derniers jeux, applications ou encore sites web, ainsi que le besoin
+        d'améliorer son accès à Internet pour supporter les fichiers chargés de
+        plus en plus volumineux (voir prochain chapitre). L'utilisateur doit
+        aussi faire attention à son utilisation du Web tant la limite entre
+        "information" et "information personnalisée" s'assombrie. De nouvelles
+        questions peuvent émerger : "Est-ce que je vois cette information parce
+        que je l'ai cherchée ou bien c'est l'information qui est venu me trouver
+        ?". Dans une approche low-tech, où la simplicité est privilégiée,
+        l'information ne sera quasiment jamais personnalisée car cela implique
+        l'utilisation d'algorithme qui, la plupart du temps, ne sont pas
+        nécessaire. Or le but du low-tech est de ne garder ce qui est
+        strictement utile à servir le propos.
       </p>
       <h3>Sources</h3>
       <p>Pour aller plus loin...</p>
