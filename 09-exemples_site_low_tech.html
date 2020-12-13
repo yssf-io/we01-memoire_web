@@ -9,30 +9,32 @@
 
   <body id="body">
     <nav id="navigation">
-    <ul>
-      <li><a href="#intro">Introduction</a></li>
-      <li><a href="02-histoire.html">Brève histoire des sites web</a></li>
-      <li><a href="03-taille.html">La taille des sites web</a></li>
-      <li>
-        <a href="04-types/index.html"
-          >Comparaison entre les types de sites web</a
-        >
-      </li>
-      <li><a href="05-services.html">Les services les plus gourmands</a></li>
-      <li><a href="06-hebergement.html">L'hébergement aujourd'hui</a></li>
-      <li>
-        <a href="07-commandements.md">Les commandements des sites low-tech</a>
-      </li>
-      <li>
-        <a href="08-developpement.md">Développement d'un site low-tech</a>
-      </li>
-      <li>
-        <a href="09-exemples_site_low_tech.html">Exemples de sites low-tech</a>
-      </li>
-      <li>Chapitre X</li>
-      <li>Chapitre XI (conclusion)</li>
-    </ul>
-  </nav>
+      <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="02-histoire.html">Brève histoire des sites web</a></li>
+        <li><a href="03-taille.html">La taille des sites web</a></li>
+        <li>
+          <a href="04-types/index.html"
+            >Comparaison entre les types de sites web</a
+          >
+        </li>
+        <li><a href="05-services.html">Les services les plus gourmands</a></li>
+        <li><a href="06-hebergement.html">L'hébergement aujourd'hui</a></li>
+        <li>
+          <a href="07-commandements.md">Les commandements des sites low-tech</a>
+        </li>
+        <li>
+          <a href="08-developpement.md">Développement d'un site low-tech</a>
+        </li>
+        <li>
+          <a href="09-exemples_site_low_tech.html"
+            >Exemples de sites low-tech</a
+          >
+        </li>
+        <li>Chapitre X</li>
+        <li>Chapitre XI (conclusion)</li>
+      </ul>
+    </nav>
     <section class="main">
       <h2>Exemples de site low-tech</h2>
       <p>
@@ -164,9 +166,9 @@
             Les redirections d'URL sont effectuées à l'aide des codes d'état
             HTTP 301 et 302. Elles indiquent au navigateur d'aller vers un autre
             emplacement. L'insertion d'une redirection entre l'utilisateur et le
-            document HTML final retarde tout sur la page, car rien sur la page ne
-            peut être rendu et aucun composant ne peut être téléchargé jusqu'à
-            ce que le document HTML arrive.
+            document HTML final retarde tout sur la page, car rien sur la page
+            ne peut être rendu et aucun composant ne peut être téléchargé
+            jusqu'à ce que le document HTML arrive.
           </p>
         </li>
         <li>
@@ -201,9 +203,9 @@
             au DOM plus lent en JavaScript. Réduisez le nombre d'éléments DOM
             sur la page pour améliorer les performances. Cette technique ne fait
             pas vraiment sens pour un développeur web qui écrit son propre HTML,
-            cependant il faut le garder en tête lorsque des frameworks JavaScript
-            (comme React.js) sont utilisés pour générer du HTML. Ces frameworks
-            ont tendance à créer un grand nombre d'éléments DOM.
+            cependant il faut le garder en tête lorsque des frameworks
+            JavaScript (comme React.js) sont utilisés pour générer du HTML. Ces
+            frameworks ont tendance à créer un grand nombre d'éléments DOM.
           </p>
         </li>
       </ul>
@@ -239,19 +241,22 @@
       </p>
       <div class="content">
         <div class="left">
-          <img src="images/benjamincode_tv.PNG" class="compare" />le site vitrine de
-          BenjaminCode<a href="#source2" class="footnote">[2]</a>
+          <img src="images/benjamincode_tv.PNG" class="compare" />le site
+          vitrine de BenjaminCode<a href="#source2" class="footnote">[2]</a>
           <p>
             Niveu de performance : 74 C<br />
             Taille de la page : 13.5 MB<br />
             Temps de chargement : 786 ms
           </p>
-          <img src="images/performance_benjamincode.PNG" class="compare" /><br />
+          <img
+            src="images/performance_benjamincode.PNG"
+            class="compare"
+          /><br />
           <img src="images/content_benjamincode.PNG" class="compare" />
         </div>
         <div class="right">
-          <img src="images/The_green_emporium.PNG" class="compare" />le site de The
-          Green Emporium<a href="#source3" class="footnote">[3]</a>
+          <img src="images/The_green_emporium.PNG" class="compare" />le site de
+          The Green Emporium<a href="#source3" class="footnote">[3]</a>
           <p>
             Niveu de performance : 84 C<br />
             Taille de la page : 799.8 KB<br />
@@ -266,9 +271,9 @@
         Nous observons que le site vitrine de The Green Emporium est plus
         performant que le site de BenjaminCode avec une différence de 10 points
         selon l'outil Pingdom, il est aussi environ 17 fois plus petit. Il faut
-        noter que c'est un cas exceptionnel, car le site de BenjaminCode contient
-        énormément de vidéos. Le temps de chargement de ce dernier est 2.5 fois
-        plus lent que son homologue low-tech.
+        noter que c'est un cas exceptionnel, car le site de BenjaminCode
+        contient énormément de vidéos. Le temps de chargement de ce dernier est
+        2.5 fois plus lent que son homologue low-tech.
       </p>
       <p>
         Ensuite, pour les différents critères de performances, nous voyons que
@@ -282,8 +287,8 @@
       <p>
         Enfin, en observant les différents contenus, nous pouvons constater que
         les contenus les plus lourds sont bien les vidéos (XHR), les images et
-        les scripts dont nous avons parlé dans les chapitres précédents, ces trois
-        types de contenus représentent 90% d'un site web.
+        les scripts dont nous avons parlé dans les chapitres précédents, ces
+        trois types de contenus représentent 90% d'un site web.
       </p>
 
       <h3>Les blogs</h3>
@@ -307,17 +312,26 @@
         chapitres.
       </p>
       <p>
-        Pour illustrer nos propos, nous comparons ces trois blogs (cliquez sur la
-        partie colorée pour avoir les résultats) :
+        Pour illustrer nos propos, nous comparons ces trois blogs (cliquez sur
+        la partie colorée pour avoir les résultats) :
       </p>
       <ul>
         <li class="blog">
           <a href="https://adventureblog.net/">Adventure Blog</a>, qui est un
           blog WordPress classique et plutôt connu
           <div class="spoiler">
-            <img src="images/adventure1.png" alt="adventure blog global score" />
-            <img src="images/adventure2.png" alt="adventure blog performance score" />
-            <img src="images/adventure3.png" alt="adventure blog weight score" />
+            <img
+              src="images/adventure1.png"
+              alt="adventure blog global score"
+            />
+            <img
+              src="images/adventure2.png"
+              alt="adventure blog performance score"
+            />
+            <img
+              src="images/adventure3.png"
+              alt="adventure blog weight score"
+            />
           </div>
         </li>
         <li class="blog">
@@ -326,9 +340,18 @@
           programmation, c'est un blog fait maison par les développeurs de
           StackOverflow
           <div class="spoiler">
-            <img src="images/stack1.png" alt="stack overflow blog global score" />
-            <img src="images/stack2.png" alt="stack overflow blog performance score" />
-            <img src="images/stack3.png" alt="stack overflow blog weight score" />
+            <img
+              src="images/stack1.png"
+              alt="stack overflow blog global score"
+            />
+            <img
+              src="images/stack2.png"
+              alt="stack overflow blog performance score"
+            />
+            <img
+              src="images/stack3.png"
+              alt="stack overflow blog weight score"
+            />
           </div>
         </li>
         <li class="blog">
@@ -396,10 +419,9 @@
         </tr>
       </table>
 
-
       <p>
-            Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et Xiang
-            Li.
+        Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
+        Xiang Li.
       </p>
     </section>
   </body>
