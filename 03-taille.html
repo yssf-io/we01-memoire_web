@@ -56,7 +56,9 @@
         On peut constater que ce poids augmente fortement d'année en année, il
         était en moyenne de 1.92Mo pour un site Desktop en 2015 et avoisinnait
         les 2.5Mo en 2018<a class="footnote" href="#source2">[2]</a>. C'est
-        autant que le jeu vidéo Doom dans son ensemble !<br />
+        autant que le jeu vidéo Doom dans son ensemble  (Doom étant un jeu
+        vidéo emblématique avec énormément de contenu sans pour étant être très
+        lourd pour un jeu de son époque soit 1993) !<br />
         Il est aussi dit que le poids des sites mobiles a augmenté de 50% entre
         2018 et 2020<a class="footnote" href="#source3">[3]</a>.
       </p>
@@ -113,30 +115,38 @@
         D'un point de vue écologique, cela reste bien évidémment contestable :
         si on augmente la puissance des infrastructures, il est évident que l'on
         pourra transmettre plus de données mais cela sera inévitablement plus
-        couteux en ressources. D'autant que l'on peut questionner la pertinence
-        de développer des sites plus lourd. Transmet-on aujourd'hui plus
-        d'information sur une page web qu'avant ? On peut douter du fait que
-        l'augmentation du poids d'une page soit proportionnelle à
+        couteux en ressources. On peut alors parler d'effet rebond, en effet
+        plus l'accès aux données informatiques est facile et économique, plus
+        elles seront consommées et donc plus l'infrastructure devra évolué afin
+        de suivre la demande. Donc en faisait tout ce qui est possible
+        techniquement pour économiser des ressources on se retrouve à augmenter
+        la consommation globale. D'autant que l'on peut questionner la
+        pertinence de développer des sites plus lourd. Transmet-on aujourd'hui
+        plus d'information sur une page web qu'avant ? On peut douter du fait
+        que l'augmentation du poids d'une page soit proportionnelle à
         l'enrichissement de son contenu et même à l'amélioration de l'experience
         utilisateur. Un exemple de cela serait le "No Fucking JS Spirit" employé
         entre autre par la société Artwai<a class="footnote" href="#source7"
           >[7]</a
         >. Si on devait résumer ce concept, ce serait programmer intelligemment
         le site web en connaissant certaines subtilités du JavaScript comme le
-        Binding ou la fermeture lexicale afin d'obtenir un site remplissant sa
+        <i>binding</i>(consistant à associer l'instance d'un objet à une
+        fonction) ou la fermeture lexicale (ensemble fonction+variables non
+        locales qu'elle a capturé) afin d'obtenir un site remplissant sa
         fonction avec le poids minimum possible.
       </p>
       <p>
         Par ailleurs, l'économie du web aujourd'hui est fondé en grande partie
         sur la publicité qui contribut à une partie de l'augmentation du poids
-        des pages. Dans un premier temps parce que les publicités peuvent peser
-        très lourd (images et vidéos pour identifier un produit, des liens ou
-        même des scripts JS). Mais aussi car cela est lié à l'économie de
-        l'attention : il s'agit d'attirer et de faire rester les utilisateurs
-        sur la page web. Pour cela les <i>designers</i> cherchent à stimuler
-        l'esprit de l'utilisateur par de nombreuses images et animations. La
-        figure suivante montre l'avancée et l'importance de la publicité sur
-        Internet.
+        des pages et aussi, indirectement, à l'environnement car cela incite à
+        la consommation de biens. Dans un premier temps parce que les publicités
+        peuvent peser très lourd (images et vidéos pour identifier un produit,
+        des liens ou même des scripts JS). Mais aussi car cela est lié à
+        l'économie de l'attention : il s'agit d'attirer et de faire rester les
+        utilisateurs sur la page web. Pour cela les <i>designers</i> cherchent à
+        stimuler l'esprit de l'utilisateur par de nombreuses images et
+        animations. La figure suivante montre l'avancée et l'importance de la
+        publicité sur Internet.
       </p>
 
       <img
@@ -237,8 +247,11 @@
           >"Un site web low-tech est composé de pages web ne présentant que le
           contenu."</cite
         >
-        Dis autrement en fonction de la taille, un site web low-tech a une
-        taille qui ne reflète que du contenu.
+        Dis autrement en fonction de la taille, la taille d'un site web low-tech
+        ne reflète que son contenu. Néanmoins, même si on évite alors
+        l'utilisation de JavaScript, il permet, dans certains cas de diminuer la
+        taille d'une page web. Par exemple, par un affichage conditionnel
+        s'adaptant à la situation.
       </p>
       <p>
         La difficulté serait ici de faire cette séparation. Quel est le contenu
@@ -268,9 +281,7 @@
         quantifier la "superflu-itude" d'un contenu pour nous dire quoi retirer
         sans changer le contenu que va recevoir l'utilisateur. Si une telle
         machine existait, elle aurait sûrement été créée dans la continuité des
-        recherches de Goody et Bachimont puisqu'elle arriverait à renvoyer le
-        même type de rationalité avec le contenu minimal (en terme de fond avec
-        le HTML et de forme avec le CSS et JS).
+        recherches de Goody et Bachimont.
       </p>
 
       <h3>Sources</h3>
