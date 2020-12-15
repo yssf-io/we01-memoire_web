@@ -64,6 +64,34 @@
         frameworks JavaScript vu précédemment. Cependant, nous réfléchissons en
         terme de moyenne et, d'un point de vue low-tech, certains frameworks ont
         aussi des avantages tels que générer uniquement le CSS qu'il faut.
+        <br />
+        Il y a aussi plusieurs autres raisons pour lesquelles le HTML généré
+        côté client en excès est une mauvaise idée. Par exemple on sait qu'un
+        contenu fait uniquement en JavaScript est très difficile d'accès et
+        d'indexation pour la plupart des moteurs de recherches, en réalité pour
+        l'instant ce n'est possible qu'avec Google. Et encore cet indexation sur
+        Google prend un temps infini pour les standarts d'Internet, on parle
+        généralement de microsecondes, de secondes ou de minutes mais
+        l'indexation de contenu crée 100% côté client prend en fait des jours<a
+          href="#source2"
+          class="footnote"
+          >[2]</a
+        >
+        ! Ce temps s'explique par le fait que l'entièreté du code JavaScript
+        doit être disponible sur Internet et pris en compte par le moteur de
+        recherche (Google donc...). De la même source on trouve le schéma
+        ci-dessous : <br />
+        <img src="images/indexation-JS.png" /><br />
+        On peut alors avoir une explication plus approfondie du processus
+        d'indexation. Tout d'abord il faut expliquer la différence entre "crawl"
+        et "index", en effet le "crawling" est l'action que fait le Googlebot
+        quand il analyse l'entiereté du contenu/code alors que l'"index" est le
+        fait de rendre la page apparente dans une recherche Google. On comprend
+        alors le cycle décrit par le schéma, le robot de Google analyse la page
+        et instanément rend disponible les premières ressources crée par JS (si
+        bien sûr il n'y a pas de problème) puis les ressources deviennent de
+        plus en plus disponible jusqu'à une seconde vague de d'indexation qui
+        resultera en un nouveau "crawling" et ce jusqu'à ce que tout soit rendu.
       </p>
 
       <h3>Exemple: React</h3>
@@ -82,7 +110,7 @@
         développeurs appellent « bonne abstraction ». Mais cela signifie
         également que les développeurs sont impuissants sans leurs outils et ne
         reconnaissent pas quand l’outil fait la mauvaise chose.» - Chris
-        Ferdinandi<a href="#source2" class="footnote">[2]</a> <br />
+        Ferdinandi<a href="#source3" class="footnote">[3]</a> <br />
         En effet, React est un outil très puissant mais il consomme beaucoup
         trop de bande passante et de temps de processeurs, donc beaucoup
         d'énergie. Il faut donc éviter à tout prix l'utilisation de ces
@@ -104,9 +132,9 @@
         et de les rendre réutilisables par tout un tas d'autres services
         informatiques. Cela évite de tout recréer. On parle alors d'API, soit
         d'interface de programmation d’application<a
-          href="#source3"
+          href="#source4"
           class="footnote"
-          >[3]</a
+          >[4]</a
         >
         (Application Programming Interface). c'est un ensemble normalisé de
         briques de codes déjà écrites.<br />
@@ -127,8 +155,16 @@
         du code proposé par le site du publicitaire. Or l'économie du web repose
         en partie sur la publicité. <br />
         Une étude a montré que la publicité représente 39% du poids des pages
-        web<a href="#source4" class="footnote">[4]</a>, en supprimant les
-        publicités, le chargement d'une page web deviendra beaucoup plus vite.
+        web<a href="#source5" class="footnote">[5]</a>, en supprimant les
+        publicités, le chargement d'une page web deviendra beaucoup plus rapide.
+        Il a même été prouvé que le temps de chargement d'une page web était un
+        élément primordial de l'expérience utilisateur est qu'elle était à
+        prendre en compte ! 40% des internautes mobiles abandonnent la
+        connecition à un site si celle-ci prend plus de 3 secondes<a
+          href="#source8"
+          class="footnote"
+          >[8]</a
+        >.
         <br />
         De plus, à cause de la nuisance de la publicité, beaucoup d'internautes
         installent en plus des extensions comme Adblock Plus, qui téléchargent
@@ -150,8 +186,8 @@
         plateforme Twitch qu'il serait quasiment impossible à refaire sur un
         site personnel sinon. On peut même avancer que dans ce cas précis l'API
         public de Twitch nous permet surtout d'accèder à des données précieuses
-        que nous n'aurions pas, comme l'API SNFC, privée cette fois-ci, qui
-        à permis par exemple au Youtubeur
+        que nous n'aurions pas, comme l'API SNFC, privée cette fois-ci, qui à
+        permis par exemple au Youtubeur
         <a href="https://twitter.com/sncfisajoke?lang=fr">Micode</a> de créer un
         robot sur le réseau social Twitter qui va annoncer les retards de train
         de la SCNF.
@@ -205,7 +241,7 @@
         Cependant cette pratique est loin de faire l'unanimité. Notamment on
         peut remettre en question l'efficacité de ce genre de logiciel. En effet
         cela nécessite qu'un outil de type navigateur (à l'instar de Chrome,
-        Firefox etc) interprète le HTML, CSS JS utilisé. On perd largement en
+        Firefox etc) interprète le HTML, CSS ou JS utilisé. On perd largement en
         performances devant un langage compilé (par exemple le C), ou le code
         est prétraduit en langage machine dans un exécutable. Mais on perd même
         en performances par rapport à un langage interprété (comme le python)
@@ -231,13 +267,22 @@
           <td id="source2">[2]</td>
           <td>
             <a
+              href="https://www.search-foresight.com/generer-du-contenu-en-js-cote-client-nest-vraiment-pas-une-bonne-idee/"
+              >JS client, mauvaise idée ?</a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td id="source3">[3]</td>
+          <td>
+            <a
               href="https://bertrandkeller.info/2020/02/12/react-gouffre-energetique/"
               >ReactJs gouffre énergétique ?</a
             >
           </td>
         </tr>
         <tr>
-          <td id="source3">[3]</td>
+          <td id="source4">[4]</td>
           <td>
             <a
               href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
@@ -246,7 +291,7 @@
           </td>
         </tr>
         <tr>
-          <td id="source4">[4]</td>
+          <td id="source5">[5]</td>
           <td>
             <a
               href="https://www.greenit.fr/2015/09/01/la-publicite-represente-39-du-poids-des-pages-web/"
@@ -255,7 +300,7 @@
           </td>
         </tr>
         <tr>
-          <td id="source5">[5]</td>
+          <td id="source6">[6]</td>
           <td>
             <a href="https://httparchive.org/reports/page-weight"
               >Report page-weight</a
@@ -263,7 +308,7 @@
           </td>
         </tr>
         <tr>
-          <td id="source7">[6]</td>
+          <td id="source7">[7]</td>
           <td>
             <a href="https://www.alioze.com/chiffres-web"
               >CHIFFRES & TENDANCES DU WEB 2020</a
@@ -271,7 +316,7 @@
           </td>
         </tr>
         <tr>
-          <td id="source8">[7]</td>
+          <td id="source8">[8]</td>
           <td>
             <a href="https://neilpatel.com/blog/loading-time/?wide=1"
               >How loading time affects your bottom line</a
@@ -279,7 +324,7 @@
           </td>
         </tr>
         <tr>
-          <td id="source9">[8]</td>
+          <td id="source9">[9]</td>
           <td>
             <a href="https://www.artwai.com/a-propos/integration-web/"
               >Intégration web selon Artwai</a
