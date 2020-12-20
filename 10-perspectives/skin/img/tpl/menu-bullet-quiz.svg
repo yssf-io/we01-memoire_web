@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="20.000002"
+   height="20"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="menu-bullet-quiz.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1881"
+     inkscape:window-height="1056"
+     id="namedview41"
+     showgrid="false"
+     inkscape:object-nodes="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.3606886"
+     inkscape:cx="-19.227242"
+     inkscape:cy="94.865731"
+     inkscape:window-x="39"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="color:#000000;fill:#434e52;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.52008224;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="m 2.2422437,5.0597117 c 1.76158,0.05766 5.370708,0.02257 4.562449,-1.428641 -4.549659,-2.042812 2.872118,-6.405092 1.411195,-1.098328 0.473518,1.018058 3.3899313,-0.35078 6.2195063,-1.76170595 0.429989,1.66854595 -0.02144,5.00269795 2.072259,4.17475595 2.83742,-4.10329695 5.552656,3.137966 1.24539,2.164476 -2.380866,-0.843301 0.216556,4.4913723 0.67931,7.1769463 -1.815723,0.720843 -5.973322,0.307123 -5.208014,2.278396 5.78762,3.278913 -2.265701,5.413262 -1.811476,0.683517 0.591006,-2.530658 -3.3132553,0.90102 -4.9815723,1.36704 -0.892798,-1.83435 1.105731,-6.033219 -2.637167,-5.30705 -3.75553,5.023947 -5.81475,-2.811572 -0.90574,-2.620154 3.578481,1.723276 -0.45745,-3.8065343 -0.64614,-5.6292523 z"
+     id="path3948"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccccccc" />
+</svg>
