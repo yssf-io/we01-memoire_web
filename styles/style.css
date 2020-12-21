@@ -4,10 +4,10 @@ body {
 }
 
 #navigation {
-width: 10%;
-float : left;
-margin : 0px;
-padding : 0px;
+  width: 10%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
 }
 
 .main {
