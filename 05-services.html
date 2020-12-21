@@ -4,339 +4,372 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Les sites web low-tech</title>
-    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body id="body">
-    <section class="main">
-      <h2>Quelques services gourmands</h2>
-      <p>
-        Les chapitres précédents nous ont permis de nous familiariser avec les
-        sites web : leur évolution, leurs tailles ainsi que les différences
-        entre-eux. Ce chapitre entre dans ces différences de manière plus
-        précise en essayant de mettre en lumière ce qui alourdit réellement une
-        page web.
-      </p>
-      <h3>Les images de hautes résolutions</h3>
-      <p>
-        Les images représentent en moyenne plus de 50% du poids total d'une
-        page. La taille de transfert des images a même augmenté de 200% entre
-        2010 et 2015. Il semblerait cependant que cette taille de transfert
-        n'ait pas augmenté à cause du nombre d'images partagées mais à cause de
-        l'augmentation de leurs résolutions. Ce sont des choses qui sont simples
-        à remarquer sur les sites de e-commerce par exemple ; un tel site poste
-        des images de haute résolution pour permettre à l'utilisateur de zoomer
-        sur les produits. C'est aussi à mettre en relation avec les
-        améliorations impressionnantes en terme de qualité de caméra de
-        smartphone. Nous sommes passés de 5 mégapixels pour le Nokia N95 des
-        années 2000 à 64 mégapixels pour l'iPhone 12 Pro d'aujourd'hui<a
-          href="#source1"
-          class="footnote"
-          >[1]</a
-        >.
-      </p>
-
-      <h3>Le design responsive</h3>
-      <p>
-        Le design responsive apporte de la facilité aux utilisateurs dans le
-        sens où la même adresse de site web emmène à des design différents en
-        fonction de la taille de l'écran utilisé. Cette simplicité vient au prix
-        du poids des fichiers CSS. En effet, quel que soit l'écran utilisé,
-        c'est tout le fichier CSS qui est transmis. Tout en sachant que ce
-        dernier est peut-être servi par un fournisseur tiers.
-      </p>
-      <p>
-        D'un point de vue développeur, il est normal de récupérer une image et
-        la redimensionner dynamiquement pour la rendre responsive. Les
-        développeurs peuvent faire différemment en passant par des hébergeurs
-        d'images qui fournissent (via leur API) des moyens de choisir la
-        dimension au moment de l'appel.
-      </p>
-
-      <h3>Le HTML généré côté client</h3>
-      <p>
-        C'est un aspect qui a déjà été vu dans un chapitre précédent.
-        Concrètement, il est simple de comprendre pourquoi le HTML généré chez
-        le client rend les pages web plus lourde : au lieu d'envoyer directement
-        le contenu, on envoie le contenu en JavaScript avec en plus la logique
-        JavaScript pour générer ledit contenu. Cela permet des choses très
-        intéressantes côté développement, ce qui explique la popularité des
-        frameworks JavaScript vu précédemment. Cependant, nous réfléchissons en
-        terme de moyenne et, d'un point de vue low-tech, certains frameworks ont
-        aussi des avantages tels que générer uniquement le CSS qu'il faut.
-        <br />
-        Il y a aussi plusieurs autres raisons pour lesquelles le HTML généré
-        côté client en excès est une mauvaise idée. Par exemple on sait qu'un
-        contenu fait uniquement en JavaScript est très difficile d'accès et
-        d'indexation pour la plupart des moteurs de recherches, en réalité pour
-        l'instant ce n'est possible qu'avec Google. Et encore cet indexation sur
-        Google prend un temps infini pour les standarts d'Internet, on parle
-        généralement de microsecondes, de secondes ou de minutes mais
-        l'indexation de contenu crée 100% côté client prend en fait des jours<a
-          href="#source2"
-          class="footnote"
-          >[2]</a
+    <h1>Les sites web low-tech</h1>
+    <p style="text-align: center">
+      <a href="00-sommaire.html">(revenir à l'index)</a>
+    </p>
+    <ol>
+      <li><a href="01-introduction.html">Introduction</a></li>
+      <li><a href="02-histoire.html">Brève histoire des sites web</a></li>
+      <li><a href="03-taille.html">La taille des sites web</a></li>
+      <li>
+        <a href="04-types/index.html" target="_blank"
+          >Comparaison entre les types de sites web (nouvel onglet)</a
         >
-        ! Ce temps s'explique par le fait que l'entièreté du code JavaScript
-        doit être disponible sur Internet et pris en compte par le moteur de
-        recherche (Google donc...). De la même source on trouve le schéma
-        ci-dessous : <br />
-        <img src="images/indexation-JS.png" /><br />
-        On peut alors avoir une explication plus approfondie du processus
-        d'indexation. Tout d'abord il faut expliquer la différence entre "crawl"
-        et "index", en effet le "crawling" est l'action que fait le Googlebot
-        quand il analyse l'entiereté du contenu/code alors que l'"index" est le
-        fait de rendre la page apparente dans une recherche Google. On comprend
-        alors le cycle décrit par le schéma, le robot de Google analyse la page
-        et instanément rend disponible les premières ressources crée par JS (si
-        bien sûr il n'y a pas de problème) puis les ressources deviennent de
-        plus en plus disponible jusqu'à une seconde vague de d'indexation qui
-        resultera en un nouveau "crawling" et ce jusqu'à ce que tout soit rendu.
-      </p>
-
-      <h3>Exemple: React</h3>
-      <p>
-        React est une bibliothèque JavaScript développée par Facebook en 2013.
-        Elle facilite la création des pages web en créant des composants qui
-        génèrent une page HTML. <br />
-        React est devenue une tendance dans le marché du travail, même si des
-        développeurs connaissent React mieux que JavaScript, ils trouveront
-        facilement un travail surtout qu'il est possible de construire n'importe
-        quel projet autour du web avec React même si elle n'est pas spécialement
-        adaptée à tous les cas de figure. <br />
-        «Au lieu d’apprendre les meilleures pratiques, nous enseignons aux
-        développeurs à faire ce qui est le plus simple et à laisser le cadre
-        gérer tout ce truc dégueulasse pour vous. C’est ce que beaucoup de
-        développeurs appellent « bonne abstraction ». Mais cela signifie
-        également que les développeurs sont impuissants sans leurs outils et ne
-        reconnaissent pas quand l’outil fait la mauvaise chose.» - Chris
-        Ferdinandi<a href="#source3" class="footnote">[3]</a> <br />
-        En effet, React est un outil très puissant mais il consomme beaucoup
-        trop de bande passante et de temps de processeurs, donc beaucoup
-        d'énergie. Il faut donc éviter à tout prix l'utilisation de ces
-        frameworks dans le développement low-tech.<br />
-        Cette citation entraine aussi un autre raisonnement, beaucoup de
-        développeurs sont devenus bien trop dépendant de cet outil, si bien que
-        le marché du travail s'est adapté car toutes les entreprises dans le
-        milieu utilise React ou un de ses concurrents comme Angular. C'est un
-        problème car pour intégrer ce marché les futurs développeurs mettent
-        l'accent sur React et en oublie d'apprendre les bases du JavaScript, ils
-        ne comprennent donc pas la logique derrière l'outil et ne seront pas
-        capable de contester ses choix ou de règler les problèmes cette
-        technologie toujours en perpetuel développement.
-      </p>
-
-      <h3>Les API</h3>
-      <p>
-        En informatique il est courant de développer des applications et outils
-        et de les rendre réutilisables par tout un tas d'autres services
-        informatiques. Cela évite de tout recréer. On parle alors d'API, soit
-        d'interface de programmation d’application<a
-          href="#source4"
-          class="footnote"
-          >[4]</a
+      </li>
+      <li><a href="05-services.html">Les services les plus gourmands</a></li>
+      <li><a href="06-hebergement.html">L'hébergement aujourd'hui</a></li>
+      <li>
+        <a href="https://md.picasoft.net/s/tKDGtKk4t" target="_blank"
+          >Les commandements des sites low-tech (onglet md.picasoft.net)</a
         >
-        (Application Programming Interface). c'est un ensemble normalisé de
-        briques de codes déjà écrites.<br />
-        Par exemple il existe une API pour google maps, cela permet d'autres
-        sites (Uber eat par exemple) d'intégrer une carte sans avoir à en
-        recréer une. Cela serait très long et onéreux.<br />
-        Cette pratique est donc très utile, mais comme souvent, dans le cadre
-        d'un développement lowtech, elle est à encadrer. En effet l'utilisation
-        trop régulière de code pré-écrit (et donc pas forcément nécessaire) peut
-        nuire à la légèreté d'une page.
-      </p>
+      </li>
+      <li>
+        <a href="https://md.picasoft.net/s/iHF0yo12N" target="_blank"
+          >Développement d'un site low-tech (onglet md.picasoft.net)</a
+        >
+      </li>
+      <li>
+        <a href="09-exemples_site_low_tech.html">Exemples de sites low-tech</a>
+      </li>
+      <li>
+        <a href="10-perspectives/index.html" target="_blank"
+          >Les perspectives (nouvel onglet)</a
+        >
+      </li>
+      <li><a href="11-conclusion.html">Conclusion</a></li>
+    </ol>
+    <h2>Quelques services gourmands</h2>
+    <p>
+      Les chapitres précédents nous ont permis de nous familiariser avec les
+      sites web : leur évolution, leurs tailles ainsi que les différences
+      entre-eux. Ce chapitre entre dans ces différences de manière plus précise
+      en essayant de mettre en lumière ce qui alourdit réellement une page web.
+    </p>
+    <h3>Les images de hautes résolutions</h3>
+    <p>
+      Les images représentent en moyenne plus de 50% du poids total d'une page.
+      La taille de transfert des images a même augmenté de 200% entre 2010 et
+      2015. Il semblerait cependant que cette taille de transfert n'ait pas
+      augmenté à cause du nombre d'images partagées mais à cause de
+      l'augmentation de leurs résolutions. Ce sont des choses qui sont simples à
+      remarquer sur les sites de e-commerce par exemple ; un tel site poste des
+      images de haute résolution pour permettre à l'utilisateur de zoomer sur
+      les produits. C'est aussi à mettre en relation avec les améliorations
+      impressionnantes en terme de qualité de caméra de smartphone. Nous sommes
+      passés de 5 mégapixels pour le Nokia N95 des années 2000 à 64 mégapixels
+      pour l'iPhone 12 Pro d'aujourd'hui<a href="#source1" class="footnote"
+        >[1]</a
+      >.
+    </p>
 
-      <h3>La publicité</h3>
+    <h3>Le design responsive</h3>
+    <p>
+      Le design responsive apporte de la facilité aux utilisateurs dans le sens
+      où la même adresse de site web emmène à des design différents en fonction
+      de la taille de l'écran utilisé. Cette simplicité vient au prix du poids
+      des fichiers CSS. En effet, quel que soit l'écran utilisé, c'est tout le
+      fichier CSS qui est transmis. Tout en sachant que ce dernier est peut-être
+      servi par un fournisseur tiers.
+    </p>
+    <p>
+      D'un point de vue développeur, il est normal de récupérer une image et la
+      redimensionner dynamiquement pour la rendre responsive. Les développeurs
+      peuvent faire différemment en passant par des hébergeurs d'images qui
+      fournissent (via leur API) des moyens de choisir la dimension au moment de
+      l'appel.
+    </p>
 
-      <p>
-        S’il existe bien un type d'API auquel beaucoup de sites ont recours, ce
-        sont bien les publicités. En général il s'agit de liens qui vont charger
-        du code proposé par le site du publicitaire. Or l'économie du web repose
-        en partie sur la publicité. <br />
-        Une étude a montré que la publicité représente 39% du poids des pages
-        web<a href="#source5" class="footnote">[5]</a>, en supprimant les
-        publicités, le chargement d'une page web deviendra beaucoup plus rapide.
-        Il a même été prouvé que le temps de chargement d'une page web était un
-        élément primordial de l'expérience utilisateur est qu'elle était à
-        prendre en compte ! 40% des internautes mobiles abandonnent la
-        connecition à un site si celle-ci prend plus de 3 secondes<a
-          href="#source8"
-          class="footnote"
-          >[8]</a
-        >.
-        <br />
-        De plus, à cause de la nuisance de la publicité, beaucoup d'internautes
-        installent en plus des extensions comme Adblock Plus, qui téléchargent
-        toute la page web avec la publicité, puis l'analysent, et cachent les
-        publicités, ainsi AdBlock Plus double la consommation mémoire du
-        navigateur.<br />
-        Les bénéfices possibles d'utiliser les API sont aussi contrebalancés par
-        des problèmes de résilience. En effet, trop dépendre de contenu externe
-        comme les librairies et les APIs peut rendre les données très difficile
-        à récupérer après une attaque ou un problème matériel.<br />
-        On peut alors conclure que c'est une technologie qu'il est possible
-        d'utiliser, mais avec précaution ! Il faut bien définir le cahier des
-        charges de son site afin de reconnaitre les fonctionnalités attendues
-        des fonctionnalités "gadjets" qui au mieux seront appréciés de certains
-        utilisateurs et au pire n'auront juste qu'augmenter la taille du code et
-        donc diminué l'efficacité globale du site web. Certes cela permet de
-        régler des problèmes qui demanderai énormément de travail à refaire
-        comme par exemple une fenêtre pour accèder à un live vidéo sur la
-        plateforme Twitch qu'il serait quasiment impossible à refaire sur un
-        site personnel sinon. On peut même avancer que dans ce cas précis l'API
-        public de Twitch nous permet surtout d'accèder à des données précieuses
-        que nous n'aurions pas, comme l'API SNFC, privée cette fois-ci, qui à
-        permis par exemple au Youtubeur
-        <a href="https://twitter.com/sncfisajoke?lang=fr">Micode</a> de créer un
-        robot sur le réseau social Twitter qui va annoncer les retards de train
-        de la SCNF.
-      </p>
+    <h3>Le HTML généré côté client</h3>
+    <p>
+      C'est un aspect qui a déjà été vu dans un chapitre précédent.
+      Concrètement, il est simple de comprendre pourquoi le HTML généré chez le
+      client rend les pages web plus lourde : au lieu d'envoyer directement le
+      contenu, on envoie le contenu en JavaScript avec en plus la logique
+      JavaScript pour générer ledit contenu. Cela permet des choses très
+      intéressantes côté développement, ce qui explique la popularité des
+      frameworks JavaScript vu précédemment. Cependant, nous réfléchissons en
+      terme de moyenne et, d'un point de vue low-tech, certains frameworks ont
+      aussi des avantages tels que générer uniquement le CSS qu'il faut.
+      <br />
+      Il y a aussi plusieurs autres raisons pour lesquelles le HTML généré côté
+      client en excès est une mauvaise idée. Par exemple on sait qu'un contenu
+      fait uniquement en JavaScript est très difficile d'accès et d'indexation
+      pour la plupart des moteurs de recherches, en réalité pour l'instant ce
+      n'est possible qu'avec Google. Et encore cet indexation sur Google prend
+      un temps infini pour les standarts d'Internet, on parle généralement de
+      microsecondes, de secondes ou de minutes mais l'indexation de contenu crée
+      100% côté client prend en fait des jours<a
+        href="#source2"
+        class="footnote"
+        >[2]</a
+      >
+      ! Ce temps s'explique par le fait que l'entièreté du code JavaScript doit
+      être disponible sur Internet et pris en compte par le moteur de recherche
+      (Google donc...). De la même source on trouve le schéma ci-dessous :
+      <br />
+      <img src="images/indexation-JS.png" /><br />
+      On peut alors avoir une explication plus approfondie du processus
+      d'indexation. Tout d'abord il faut expliquer la différence entre "crawl"
+      et "index", en effet le "crawling" est l'action que fait le Googlebot
+      quand il analyse l'entiereté du contenu/code alors que l'"index" est le
+      fait de rendre la page apparente dans une recherche Google. On comprend
+      alors le cycle décrit par le schéma, le robot de Google analyse la page et
+      instanément rend disponible les premières ressources crée par JS (si bien
+      sûr il n'y a pas de problème) puis les ressources deviennent de plus en
+      plus disponible jusqu'à une seconde vague de d'indexation qui resultera en
+      un nouveau "crawling" et ce jusqu'à ce que tout soit rendu.
+    </p>
 
-      <h3>Le web au service du developpement logiciel ?</h3>
+    <h3>Exemple: React</h3>
+    <p>
+      React est une bibliothèque JavaScript développée par Facebook en 2013.
+      Elle facilite la création des pages web en créant des composants qui
+      génèrent une page HTML. <br />
+      React est devenue une tendance dans le marché du travail, même si des
+      développeurs connaissent React mieux que JavaScript, ils trouveront
+      facilement un travail surtout qu'il est possible de construire n'importe
+      quel projet autour du web avec React même si elle n'est pas spécialement
+      adaptée à tous les cas de figure. <br />
+      «Au lieu d’apprendre les meilleures pratiques, nous enseignons aux
+      développeurs à faire ce qui est le plus simple et à laisser le cadre gérer
+      tout ce truc dégueulasse pour vous. C’est ce que beaucoup de développeurs
+      appellent « bonne abstraction ». Mais cela signifie également que les
+      développeurs sont impuissants sans leurs outils et ne reconnaissent pas
+      quand l’outil fait la mauvaise chose.» - Chris Ferdinandi<a
+        href="#source3"
+        class="footnote"
+        >[3]</a
+      >
+      <br />
+      En effet, React est un outil très puissant mais il consomme beaucoup trop
+      de bande passante et de temps de processeurs, donc beaucoup d'énergie. Il
+      faut donc éviter à tout prix l'utilisation de ces frameworks dans le
+      développement low-tech.<br />
+      Cette citation entraine aussi un autre raisonnement, beaucoup de
+      développeurs sont devenus bien trop dépendant de cet outil, si bien que le
+      marché du travail s'est adapté car toutes les entreprises dans le milieu
+      utilise React ou un de ses concurrents comme Angular. C'est un problème
+      car pour intégrer ce marché les futurs développeurs mettent l'accent sur
+      React et en oublie d'apprendre les bases du JavaScript, ils ne comprennent
+      donc pas la logique derrière l'outil et ne seront pas capable de contester
+      ses choix ou de règler les problèmes cette technologie toujours en
+      perpetuel développement.
+    </p>
 
-      <h4>Le web dépasse ses frontière !</h4>
-      <p>
-        Le développement web évolue très rapidement et s'accompagne de
-        l'apparition de nombreuses nouvelles technologies. L'utilisation de ses
-        langages et pratiques devient de plus en plus populaire. Et ceux à tel
-        point qu'on pourrait se demander si le web, plus simple et universelle
-        ne pourrait pas voir son utilisation dépasse ses seules frontières...
-      </p>
+    <h3>Les API</h3>
+    <p>
+      En informatique il est courant de développer des applications et outils et
+      de les rendre réutilisables par tout un tas d'autres services
+      informatiques. Cela évite de tout recréer. On parle alors d'API, soit
+      d'interface de programmation d’application<a
+        href="#source4"
+        class="footnote"
+        >[4]</a
+      >
+      (Application Programming Interface). c'est un ensemble normalisé de
+      briques de codes déjà écrites.<br />
+      Par exemple il existe une API pour google maps, cela permet d'autres sites
+      (Uber eat par exemple) d'intégrer une carte sans avoir à en recréer une.
+      Cela serait très long et onéreux.<br />
+      Cette pratique est donc très utile, mais comme souvent, dans le cadre d'un
+      développement lowtech, elle est à encadrer. En effet l'utilisation trop
+      régulière de code pré-écrit (et donc pas forcément nécessaire) peut nuire
+      à la légèreté d'une page.
+    </p>
 
-      <p>
-        Les gros logiciels de montage vidéo proposent à l'utilisateur
-        l'implémentation d'outils supplémentaires appelée "extensions". Ces
-        outils permettent d'ajouter de nouvelles fonctionnalités créées par des
-        développeurs, parfois différents de l'éditeur du logiciel. Et bien il se
-        trouve que sur Adobe Premier les extensions sont en réalité des pages
-        web. Cela signifie que des morceaux qui s'intègrent aux logiciels sont
-        en réalité des pages web, exactement comme on peut en trouver sur le
-        web. Ainsi on pourrait imaginer charger Google.com comme extension dans
-        Premier.<br />
+    <h3>La publicité</h3>
 
-        Ces possibilités sont permises grâce à des technologies (NW.js et
-        electron) qui permettent de faire le pont entre des services web et le
-        système d'exploitation ; ce qui normalement est impossible.
-      </p>
+    <p>
+      S’il existe bien un type d'API auquel beaucoup de sites ont recours, ce
+      sont bien les publicités. En général il s'agit de liens qui vont charger
+      du code proposé par le site du publicitaire. Or l'économie du web repose
+      en partie sur la publicité. <br />
+      Une étude a montré que la publicité représente 39% du poids des pages
+      web<a href="#source5" class="footnote">[5]</a>, en supprimant les
+      publicités, le chargement d'une page web deviendra beaucoup plus rapide.
+      Il a même été prouvé que le temps de chargement d'une page web était un
+      élément primordial de l'expérience utilisateur est qu'elle était à prendre
+      en compte ! 40% des internautes mobiles abandonnent la connecition à un
+      site si celle-ci prend plus de 3 secondes<a
+        href="#source8"
+        class="footnote"
+        >[8]</a
+      >.
+      <br />
+      De plus, à cause de la nuisance de la publicité, beaucoup d'internautes
+      installent en plus des extensions comme Adblock Plus, qui téléchargent
+      toute la page web avec la publicité, puis l'analysent, et cachent les
+      publicités, ainsi AdBlock Plus double la consommation mémoire du
+      navigateur.<br />
+      Les bénéfices possibles d'utiliser les API sont aussi contrebalancés par
+      des problèmes de résilience. En effet, trop dépendre de contenu externe
+      comme les librairies et les APIs peut rendre les données très difficile à
+      récupérer après une attaque ou un problème matériel.<br />
+      On peut alors conclure que c'est une technologie qu'il est possible
+      d'utiliser, mais avec précaution ! Il faut bien définir le cahier des
+      charges de son site afin de reconnaitre les fonctionnalités attendues des
+      fonctionnalités "gadjets" qui au mieux seront appréciés de certains
+      utilisateurs et au pire n'auront juste qu'augmenter la taille du code et
+      donc diminué l'efficacité globale du site web. Certes cela permet de
+      régler des problèmes qui demanderai énormément de travail à refaire comme
+      par exemple une fenêtre pour accèder à un live vidéo sur la plateforme
+      Twitch qu'il serait quasiment impossible à refaire sur un site personnel
+      sinon. On peut même avancer que dans ce cas précis l'API public de Twitch
+      nous permet surtout d'accèder à des données précieuses que nous n'aurions
+      pas, comme l'API SNFC, privée cette fois-ci, qui à permis par exemple au
+      Youtubeur
+      <a href="https://twitter.com/sncfisajoke?lang=fr">Micode</a> de créer un
+      robot sur le réseau social Twitter qui va annoncer les retards de train de
+      la SCNF.
+    </p>
 
-      <p>
-        En réalité ces pratiques sont très courantes de nos jours. On peut citer
-        Discord, Spotify ou encore Slack qui sont, en réalité, des sortes de
-        pages web.
-        <br />
-        En effet le développement de ce type d'application apporte des
-        avantages. Déjà si l'entreprise possède une expertise dans le
-        développement web cela lui permet de s'attaquer à de nouveaux marchés
-        plus facilement. Ensuite le développement web est généralement moins
-        cher que du softdev car plus générale (moins de technologies qui
-        dépendent du support, d'API pour les interfaces graphiques, etc). Enfin
-        ce type de produit est plus facilement portable sur les divers systèmes
-        : pas besoin de tout redévelopper pour changer d'OS, il suffit d'un
-        "navigateur" et de quelques outils..
-      </p>
+    <h3>Le web au service du developpement logiciel ?</h3>
 
-      <h4>Une idée pas très "low-tech" compatible</h4>
-      <p>
-        Cependant cette pratique est loin de faire l'unanimité. Notamment on
-        peut remettre en question l'efficacité de ce genre de logiciel. En effet
-        cela nécessite qu'un outil de type navigateur (à l'instar de Chrome,
-        Firefox etc) interprète le HTML, CSS ou JS utilisé. On perd largement en
-        performances devant un langage compilé (par exemple le C), ou le code
-        est prétraduit en langage machine dans un exécutable. Mais on perd même
-        en performances par rapport à un langage interprété (comme le python)
-        car l'outil est moins adapté.
-      </p>
+    <h4>Le web dépasse ses frontière !</h4>
+    <p>
+      Le développement web évolue très rapidement et s'accompagne de
+      l'apparition de nombreuses nouvelles technologies. L'utilisation de ses
+      langages et pratiques devient de plus en plus populaire. Et ceux à tel
+      point qu'on pourrait se demander si le web, plus simple et universelle ne
+      pourrait pas voir son utilisation dépasse ses seules frontières...
+    </p>
 
-      <h3>Sources</h3>
-      <p>Pour aller plus loin...</p>
-      <table>
-        <tr>
-          <th>ID</th>
-          <th>Lien</th>
-        </tr>
-        <tr>
-          <td id="source1">[1]</td>
-          <td>
-            <a href="https://www.artwai.com/poids-moyen-des-pages-web-en-2018/"
-              >Web 2018: plus lourd, plus lent</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source2">[2]</td>
-          <td>
-            <a
-              href="https://www.search-foresight.com/generer-du-contenu-en-js-cote-client-nest-vraiment-pas-une-bonne-idee/"
-              >JS client, mauvaise idée ?</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source3">[3]</td>
-          <td>
-            <a
-              href="https://bertrandkeller.info/2020/02/12/react-gouffre-energetique/"
-              >ReactJs gouffre énergétique ?</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source4">[4]</td>
-          <td>
-            <a
-              href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
-              >Demystifying API Rate Limiting</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source5">[5]</td>
-          <td>
-            <a
-              href="https://www.greenit.fr/2015/09/01/la-publicite-represente-39-du-poids-des-pages-web/"
-              >La publicité représente 39 % du poids des pages web</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source6">[6]</td>
-          <td>
-            <a href="https://httparchive.org/reports/page-weight"
-              >Report page-weight</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source7">[7]</td>
-          <td>
-            <a href="https://www.alioze.com/chiffres-web"
-              >CHIFFRES & TENDANCES DU WEB 2020</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source8">[8]</td>
-          <td>
-            <a href="https://neilpatel.com/blog/loading-time/?wide=1"
-              >How loading time affects your bottom line</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source9">[9]</td>
-          <td>
-            <a href="https://www.artwai.com/a-propos/integration-web/"
-              >Intégration web selon Artwai</a
-            >
-          </td>
-        </tr>
-      </table>
-      <p>
-        Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
-        Xiang Li.
-      </p>
-    </section>
+    <p>
+      Les gros logiciels de montage vidéo proposent à l'utilisateur
+      l'implémentation d'outils supplémentaires appelée "extensions". Ces outils
+      permettent d'ajouter de nouvelles fonctionnalités créées par des
+      développeurs, parfois différents de l'éditeur du logiciel. Et bien il se
+      trouve que sur Adobe Premier les extensions sont en réalité des pages web.
+      Cela signifie que des morceaux qui s'intègrent aux logiciels sont en
+      réalité des pages web, exactement comme on peut en trouver sur le web.
+      Ainsi on pourrait imaginer charger Google.com comme extension dans
+      Premier.<br />
+
+      Ces possibilités sont permises grâce à des technologies (NW.js et
+      electron) qui permettent de faire le pont entre des services web et le
+      système d'exploitation ; ce qui normalement est impossible.
+    </p>
+
+    <p>
+      En réalité ces pratiques sont très courantes de nos jours. On peut citer
+      Discord, Spotify ou encore Slack qui sont, en réalité, des sortes de pages
+      web.
+      <br />
+      En effet le développement de ce type d'application apporte des avantages.
+      Déjà si l'entreprise possède une expertise dans le développement web cela
+      lui permet de s'attaquer à de nouveaux marchés plus facilement. Ensuite le
+      développement web est généralement moins cher que du softdev car plus
+      générale (moins de technologies qui dépendent du support, d'API pour les
+      interfaces graphiques, etc). Enfin ce type de produit est plus facilement
+      portable sur les divers systèmes : pas besoin de tout redévelopper pour
+      changer d'OS, il suffit d'un "navigateur" et de quelques outils..
+    </p>
+
+    <h4>Une idée pas très "low-tech" compatible</h4>
+    <p>
+      Cependant cette pratique est loin de faire l'unanimité. Notamment on peut
+      remettre en question l'efficacité de ce genre de logiciel. En effet cela
+      nécessite qu'un outil de type navigateur (à l'instar de Chrome, Firefox
+      etc) interprète le HTML, CSS ou JS utilisé. On perd largement en
+      performances devant un langage compilé (par exemple le C), ou le code est
+      prétraduit en langage machine dans un exécutable. Mais on perd même en
+      performances par rapport à un langage interprété (comme le python) car
+      l'outil est moins adapté.
+    </p>
+
+    <h3>Sources</h3>
+    <p>Pour aller plus loin...</p>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Lien</th>
+      </tr>
+      <tr>
+        <td id="source1">[1]</td>
+        <td>
+          <a href="https://www.artwai.com/poids-moyen-des-pages-web-en-2018/"
+            >Web 2018: plus lourd, plus lent</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source2">[2]</td>
+        <td>
+          <a
+            href="https://www.search-foresight.com/generer-du-contenu-en-js-cote-client-nest-vraiment-pas-une-bonne-idee/"
+            >JS client, mauvaise idée ?</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source3">[3]</td>
+        <td>
+          <a
+            href="https://bertrandkeller.info/2020/02/12/react-gouffre-energetique/"
+            >ReactJs gouffre énergétique ?</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source4">[4]</td>
+        <td>
+          <a
+            href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
+            >Demystifying API Rate Limiting</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source5">[5]</td>
+        <td>
+          <a
+            href="https://www.greenit.fr/2015/09/01/la-publicite-represente-39-du-poids-des-pages-web/"
+            >La publicité représente 39 % du poids des pages web</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source6">[6]</td>
+        <td>
+          <a href="https://httparchive.org/reports/page-weight"
+            >Report page-weight</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source7">[7]</td>
+        <td>
+          <a href="https://www.alioze.com/chiffres-web"
+            >CHIFFRES & TENDANCES DU WEB 2020</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source8">[8]</td>
+        <td>
+          <a href="https://neilpatel.com/blog/loading-time/?wide=1"
+            >How loading time affects your bottom line</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source9">[9]</td>
+        <td>
+          <a href="https://www.artwai.com/a-propos/integration-web/"
+            >Intégration web selon Artwai</a
+          >
+        </td>
+      </tr>
+    </table>
+    <p>
+      Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et Xiang
+      Li.
+    </p>
   </body>
   <script src="03-taille.js"></script>
 </html>

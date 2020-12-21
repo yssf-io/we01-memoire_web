@@ -4,517 +4,540 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Les sites web low-tech</title>
-    <link href="styles/02-histoire.css" rel="stylesheet" type="text/css" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
-    <section class="main">
-      <h2>Une brève histoire des sites web</h2>
-      <cite id="ref1"
-        >"Avant, il était difficile d'expliquer ce que le Web deviendrait,
-        aujourd'hui, c'est difficle d'expliquer pourquoi c'était difficile."<a
-          class="footnote"
-          href="#source1"
-          >[1]</a
+    <h1>Les sites web low-tech</h1>
+    <p style="text-align: center">
+      <a href="00-sommaire.html">(revenir à l'index)</a>
+    </p>
+    <ol>
+      <li><a href="01-introduction.html">Introduction</a></li>
+      <li><a href="02-histoire.html">Brève histoire des sites web</a></li>
+      <li><a href="03-taille.html">La taille des sites web</a></li>
+      <li>
+        <a href="04-types/index.html" target="_blank"
+          >Comparaison entre les types de sites web (nouvel onglet)</a
         >
-      </cite>
-      <p>- Tim Berners-Lee</p>
-      <p>
-        C'est ce que nous allons essayer de faire dans ce chapitre, nous
-        commencerons par une chronologie simple mais représentative de
-        l'évolution des sites web, puis nous enchaînerons sur l'impact que cette
-        évolution a pu avoir sur les pratiques de développement et du côté des
-        utilisateurs.
-      </p>
-
-      <p>
-        Cette chronologie présente les technologies qui ont permis et permettent
-        encore aujourd'hui de faire des sites web. Il ne s'agit pas d'une liste
-        exhaustive, mais simplement des technologies qui ont pour objectif de
-        présenter de l'information à des utilisateurs au travers d'un site web.
-        Autrement dit, cette chronologie n'inclut pas les technologies telles
-        que le protocole HTTP ou Internet en général. Ces dernières permettent
-        de faire circuler les fichiers web qui sont créés à partir des
-        technologies que nous allons évoquer.
-      </p>
-      <h3>Chronologie</h3>
-      <h4>1991 - HTML</h4>
-      <p>
-        C'est un langage de balisage fait pour créer des pages web<a
-          class="footnote"
-          href="#source2"
-          >[2]</a
-        >. Dans sa première version, il contenait déjà tout ce qu'il fallait
-        pour écrire du texte et le structurer sémantiquement. C'est un bon
-        exemple d'outil mêlant le formalisme "humain", c'est-à-dire la
-        possibilité d'écrire en langage naturel (Français, Anglais, ...) et le
-        formalisme logique via des balises, compréhensible par un programme
-        informatique. Ci-dessous un exemple du balisage HTML de 1991 venant
-        d'une des plus anciennes page web référencée.
-      </p>
-      <p class="code">
-        &lt;title&gt;Hypertext Links&lt;/title&gt;<br />
-        &lt;h1&gt;Links and Anchors&lt;/h1&gt; <br />
-        A link is the connection between one piece of <br />
-        &lt;a href=WhatIs.html&gt;hypertext&lt;/a&gt; and another.
-      </p>
-      <p>
-        La première page web contient les informations sur le HTML et tout
-        l'écosystème du Web de l'époque (HTTP, le serveur web qui hébergeait la
-        page, ...). Elle est disponible à cette adresse :
-        <a href="http://info.cern.ch/hypertext/WWW/TheProject.html"
-          >http://info.cern.ch/hypertext/WWW/TheProject.html</a
-        >.
-      </p>
-      <img
-        src="./images/firstwebpage.png"
-        alt="Première page web de l'histoire"
-      />
-      <p class="caption">
-        Première page web de l'Histoire. Crédit : Tim Berners-Lee, CERN.
-      </p>
-      <p>
-        Aujourd'hui, dans notre conception low-tech, l'utilisation de HTML n'est
-        pas débattable tant cette technologie est importante et se trouve dans
-        tous les standards du Web. Au contraire, dans notre approche low-tech,
-        nous aurons très envie de remettre le HTML au centre de notre
-        développement. En effet, le HTML contient déjà tout ce qu'il faut pour
-        présenter/partager de l'information ; ce ne serait pas absurde de dire
-        que tous les sites web qui ne font que présenter de l'information
-        peuvent exister sans avoir besoin des prochaines technologies de cette
-        chronologie.
-      </p>
-      <h4>1994 - PHP</h4>
-      <p>
-        L'histoire des sites web incluent aussi les technologies qui permettent
-        de générer du HTML. Le PHP en est un bon exemple ; il s'agit d'un
-        langage utilisé pour écrire des programmes qui seront exécutés sur un
-        serveur web. Basiquement, du côté client (c'est-à-dire utilisateur) le
-        navigateur envoie des requêtes à un serveur qui va répondre en envoyant
-        les fichiers permettant au navigateur d'afficher le site. Un programme
-        PHP permet de dialoguer avec le serveur afin qu'il génère des pages web.
-      </p>
-      <p>
-        Les générations "côté serveur" de page web ont été très importantes dans
-        l'évolution des sites web puisqu'elles ont permis, avec l'utilisation de
-        bases de données, de personnaliser les pages transmises en fonction de
-        l'utilisateur de ces pages et d'autres paramètres comme l'adresse du
-        site. On pourrait imaginer que Wikipédia (utilisant le PHP) n'héberge
-        pas dans ses serveurs un fichier HTML par article (et par langue) mais
-        que les pages sont générées à la demande d'un utilisateur avec des
-        données venant de leur base de données, en effet il y a plus de 2
-        millions d'article sur
-        <a href="https://stats.wikimedia.org/FR/ChartsWikipediaFR.htm#2"
-          >Wikipedia</a
+      </li>
+      <li><a href="05-services.html">Les services les plus gourmands</a></li>
+      <li><a href="06-hebergement.html">L'hébergement aujourd'hui</a></li>
+      <li>
+        <a href="https://md.picasoft.net/s/tKDGtKk4t" target="_blank"
+          >Les commandements des sites low-tech (onglet md.picasoft.net)</a
         >
-        qui font en moyenne 2500 octets soit donc environ 5 Go. Les articles
-        pourraient donc théoriquement être contenus dans un serveur mais le
-        problème est que le nombre d'article sur Wikipedia augmente chaque jour,
-        donc faut donc réduire le plus possible la taille de stockage des
-        informations. On peut aussi dire que la mise en page étant toujours la
-        même il n'est pas nécessaire de stocker tout le fichier HTML, ainsi
-        juste stocker les informations dans une base de données reste la
-        solution la plus pratique, c'est ce qu'à fait Wikipedia.
-      </p>
-      <h4>1995 - Les tableaux</h4>
-      <p>
-        Le HTML a connu une grande évolution après sa première publication. De
-        nombreuses améliorations ont été proposées et intégrées dans une
-        nouvelle version sortie en 1995 : HTML 2.0.<a
-          class="footnote"
-          href="#source2"
-          >[2]</a
+      </li>
+      <li>
+        <a href="https://md.picasoft.net/s/iHF0yo12N" target="_blank"
+          >Développement d'un site low-tech (onglet md.picasoft.net)</a
         >
-      </p>
-      Voici ci-dessous un exemple de code en HTML 2.0 venant de
-      <a href="https://www.w3.org/MarkUp/html-spec/html-spec_5.html#SEC5.3"
-        >www.w3.org</a
+      </li>
+      <li>
+        <a href="09-exemples_site_low_tech.html">Exemples de sites low-tech</a>
+      </li>
+      <li>
+        <a href="10-perspectives/index.html" target="_blank"
+          >Les perspectives (nouvel onglet)</a
+        >
+      </li>
+      <li><a href="11-conclusion.html">Conclusion</a></li>
+    </ol>
+    <h2>Une brève histoire des sites web</h2>
+    <cite id="ref1"
+      >"Avant, il était difficile d'expliquer ce que le Web deviendrait,
+      aujourd'hui, c'est difficle d'expliquer pourquoi c'était difficile."<a
+        class="footnote"
+        href="#source1"
+        >[1]</a
       >
-      <p class="code">
-        &lt;OL&gt;<br />
-        &lt;LI&gt;Click the Web button to open URI window.<br />
-        &lt;LI&gt;Enter the URI number in the text field of the Open URI <br />
-        window. The Web document you specified is displayed.<br />
-        &lt;ol&gt;<br />
-        &lt;li&gt;substep 1<br />
-        &lt;li&gt;substep 2<br />
-        &lt;/ol&gt;<br />
-        &lt;LI&gt;Click highlighted text to move from one link to another.<br />
-        &lt;/OL&gt;
-      </p>
-      <p>
-        Parmi ces améliorations, on retrouve les tableaux, qui permettent de
-        commencer à styliser ses pages web. Par exemple, un développeur pouvait
-        utiliser la balise <code>table</code> pour donner à sa page web une
-        apparence de journal. Cette version a aussi permis d'incruster des
-        images et des expressions mathématiques.
-      </p>
-      <p>
-        Nous incluons les tableaux dans notre chronologie car ils ont permis
-        d'améliorer l'esthétique des pages web et de les rendre plus intuitives
-        pour les utilisateurs. Bien sûr, l'utilisation de tableaux de manière
-        esthétique est à prohiber car sémantiquement c'est une erreur. Il faudra
-        attendre le <a href="#css-part">CSS</a> pour cela. En effet, les
-        tableaux HTML ont été créés pour organiser des données sous formes de
-        tableaux, les utiliser de manière esthétique risque de considérablement
-        ralentir le navigateur car il doit télécharger tout le tableau pour
-        l'affichage. C'est aussi plus difficile de maintenir ce code, ainsi que
-        de rendre le site responsive.
-      </p>
-      <img
-        src="./images/tabledesign.png"
-        alt="Exemple de page web avec tableaux"
-      />
-      <p class="caption">
-        Exemple de page web avec tableaux. Crédit : Iconic Developers
-      </p>
-      <p>
-        En surfant sur le Web durant ces temps-là, on peut commencer à voir des
-        pages web qui suivent le "block design". C'est-à-dire des pages web donc
-        les sections sont séparées en bloc grâce à des tables.
-      </p>
-      <p>
-        Parmi les contributions majeures, il y a aussi les formulaires du
-        navigateur NCSA Mosaic<a class="footnote" href="#source2">[2]</a> qui
-        permettent à la page web d'interagir avec d'autres programmes
-        informatique. C'est une avancée majeure en ce qui concerne
-        l'interactivité du Web. On peut commencer à avoir de véritables
-        applications servies sur le Web et plus uniquement des informations à
-        partager. Les principales différences entre une application web et un
-        site web sont qu'une application est contenue dans un site web, le
-        développement d'une application web est bien plus coûteux et chronophage
-        que celui du site web dans lequel il est contenu et qu'un site web est
-        une source d'information alors qu'une application web fonctionne de
-        manière interactive.
-      </p>
-      <h4>1995 - JavaScript</h4>
-      <p>
-        JavaScript (JS) conclue l'année 1995 en beauté. Les développeurs peuvent
-        désormais intégrer des éléments de logique booléennes dans leurs pages
-        web et ainsi manipuler les objets conventionnels des informaticiens
-        comme les instructions conditionnelles et les boucles.
-      </p>
-      <p>
-        Les utilisateurs peuvent maintenant interagir avec les pages qu'ils
-        consultent : cliquer sur des boutons qui ont chacun un comportement
-        spécifique, jouer à des jeux vidéos, etc. Du côté des développeurs, le
-        JavaScript change aussi beaucoup de choses, ils peuvent désormais :
-        valider ce que l'utilisateur tape dans un formulaire, transmettre des
-        informations sur le comportement de l'utilisateur, modifier
-        dynamiquement le site web pour afficher des publicités, etc.
-      </p>
-      <img src="./images/jsexemple.gif" alt="Exemple de JavaScript" />
-      <p class="caption">Exemple de JavaScript. Crédit : o7planning.org</p>
-      <h4>1996 - Flash</h4>
-      <p>
-        Flash offre la possibilité de manipuler des graphiques vectoriels et
-        tout type de contenu multimédia destiné à être publié sur le Web grâce à
-        Flash Player. Les pages web peuvent maintenant intégrer du contenu
-        multimédia bien plus riche qu'auparavant, en particulier des animations,
-        des publicités et des jeux vidéos.
-      </p>
-      <p>
-        C'est une autre technologie qui contribue à l'enrichissement des sites
-        web. Cependant, Flash a maintenant quasiment disparu, la raison en est
-        très simple, Apple n'a pas accepté d'intégrer Flash à ses produits (dont
-        l'iPhone) ce qui a fortement contribuer au déclin de Flash. D'autres
-        problèmes sont toutes fois à noter comme le fait qu'il a été une des
-        seules technologies du web qui ne soit pas libre et qu'elle comportait
-        certains problèmes techniques et de sécurités.
-      </p>
-      <h4 id="css-part">1998 - CSS</h4>
-      <p>Donnons du style à nos pages web !</p>
-      <p>
-        L'ajout des feuilles de styles, bien qu'elles aient mis du temps à être
-        bien intégrées aux navigateurs, montre l'envie de vouloir séparer la
-        forme du fond. On gagnera alors en structuration logique et donc en
-        pérennité, maintenance, portabilité et malléabilité du contenu.
-      </p>
-      <p>La stack du développement web devient :</p>
-      <ul>
-        <li>HTML -> Structure</li>
-        <li>CSS -> Présentation</li>
-        <li>JS -> Comportement</li>
-      </ul>
-      <p>
-        Les feuilles de styles permettent de styliser n'importe laquelle des
-        balises HTML présente dans une page web (titre, paragraphres, images,
-        listes, formulaires, etc).
-      </p>
+    </cite>
+    <p>- Tim Berners-Lee</p>
+    <p>
+      C'est ce que nous allons essayer de faire dans ce chapitre, nous
+      commencerons par une chronologie simple mais représentative de l'évolution
+      des sites web, puis nous enchaînerons sur l'impact que cette évolution a
+      pu avoir sur les pratiques de développement et du côté des utilisateurs.
+    </p>
 
-      <p>
-        La page web que vous lisez actuellement est un exemple de HTML augmenté
-        par du CSS. On peut voir ci-dessous les détails de mise en forme de la
-        majorité de cette page comme par exemple que notre zone de texte
-        représente 70% de la taille de la page ou encore que la police par
-        défaut est "Segoe UI" mais que si le navigateur ne l'a pas en mémoire il
-        peut utiliser plusieurs polices de remplacements.
-      </p>
-      <p>
-        <code class="code">
-          .main {<br />
-          width: 70%;<br />
-          margin: auto;<br />
-          padding: 10px;<br />
-          text-align: justify;<br />
-          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;<br />
-          background-color: ghostwhite;<br />
-          border-radius: 15px;<br />
-          box-shadow: 0px 0px 24px 2px rgba(202, 209, 209, 1);<br />
-          }
-        </code>
-      </p>
-      <h4>2007 - Mobile</h4>
-      <p>
-        Jusqu'à présent, tous les sites web avaient plus ou moins le même style
-        car les écrans sur lesquelles ils étaient affichés avaient tous, plus ou
-        moins, les mêmes proportions/résolutions. Cela a changé avec
-        l'apparition du premier smartphone en 2007.
-      </p>
-      <p>
-        Il est désormais possible de lire une page web depuis un écran bien plus
-        petit et disposant d'une résolution bien différente, avec des
-        proportions inversées (on passe de vue en paysage à portrait).
-      </p>
-      <p>
-        La première solution a été de développer plusieurs sites web.
-        Généralement un pour l'ordinateur de bureau/portable et, un second pour
-        le mobile. Il n'était pas rare que des sites web proposent une adresse
-        <code>mobile.site.com</code> en parallèle de <code>www.site.com</code>.
-      </p>
-      <h4>2010 - Design Responsive</h4>
-      <p>
-        C'est en 2010 que l'on réfléchit à l'idée de n'avoir qu'un seul site web
-        capable de rendre une page aussi belle sur ordinateur que sur mobile. Le
-        changement a été fait dans CSS3 avec la possibilité de préciser pour
-        quelle résolution un style doit s'appliquer, on appelles cela les medias
-        queries.
-      </p>
-      <p>
-        On note que, désormais, toutes les pages web responsive intègrent le CSS
-        de toutes les résolutions, contrairement à la solution précédente qui
-        permettait de charger uniquement les fichiers dont on avait besoin en
-        fonction de l'URL.
-      </p>
-      <p>
-        Toutes ces nouveautés en CSS contribuent à l'apparition de framework CSS
-        sous la forme de fichiers contenant un grand nombre de composants CSS
-        préconçus. Un exemple serait Bootstrap de Twitter permettant à tous les
-        développeurs d'adopter facilement le style de Twitter sur leurs sites
-        web. Ces framework demandent bien entendu de devoir les charger à chaque
-        visite.
-      </p>
-      <h4>2014 - NPM</h4>
-      <p>
-        Le <strong>Node Package Registry</strong> est un hub de librairies et
-        frameworks JavaScript. Il a permis la livraison d'un grand nombre de
-        framework JavaScript utilisés pour créer des sites web dont le rendu est
-        côté client. Cela signifie que le HTML reçu par le client est très
-        minimal mais par contre il reçoit de gros fichiers JavaScript que le
-        navigateur va interpréter pour générer le HTML sur l'ordinateur du
-        client ; c'est à comparer avec le rendu côté serveur comme ce que fait
-        le PHP. Aujourd'hui, la tendance est clairement aux framework JavaScript
-        côté client comme le montre ces résultats Google Trends<a
-          class="footnote"
-          href="#source3"
-          >[3]</a
-        >.
-      </p>
-      <img src="./images/reacttrend.png" alt="Tendences React.js" />
+    <p>
+      Cette chronologie présente les technologies qui ont permis et permettent
+      encore aujourd'hui de faire des sites web. Il ne s'agit pas d'une liste
+      exhaustive, mais simplement des technologies qui ont pour objectif de
+      présenter de l'information à des utilisateurs au travers d'un site web.
+      Autrement dit, cette chronologie n'inclut pas les technologies telles que
+      le protocole HTTP ou Internet en général. Ces dernières permettent de
+      faire circuler les fichiers web qui sont créés à partir des technologies
+      que nous allons évoquer.
+    </p>
+    <h3>Chronologie</h3>
+    <h4>1991 - HTML</h4>
+    <p>
+      C'est un langage de balisage fait pour créer des pages web<a
+        class="footnote"
+        href="#source2"
+        >[2]</a
+      >. Dans sa première version, il contenait déjà tout ce qu'il fallait pour
+      écrire du texte et le structurer sémantiquement. C'est un bon exemple
+      d'outil mêlant le formalisme "humain", c'est-à-dire la possibilité
+      d'écrire en langage naturel (Français, Anglais, ...) et le formalisme
+      logique via des balises, compréhensible par un programme informatique.
+      Ci-dessous un exemple du balisage HTML de 1991 venant d'une des plus
+      anciennes page web référencée.
+    </p>
+    <p class="code">
+      &lt;title&gt;Hypertext Links&lt;/title&gt;<br />
+      &lt;h1&gt;Links and Anchors&lt;/h1&gt; <br />
+      A link is the connection between one piece of <br />
+      &lt;a href=WhatIs.html&gt;hypertext&lt;/a&gt; and another.
+    </p>
+    <p>
+      La première page web contient les informations sur le HTML et tout
+      l'écosystème du Web de l'époque (HTTP, le serveur web qui hébergeait la
+      page, ...). Elle est disponible à cette adresse :
+      <a href="http://info.cern.ch/hypertext/WWW/TheProject.html"
+        >http://info.cern.ch/hypertext/WWW/TheProject.html</a
+      >.
+    </p>
+    <img
+      src="./images/firstwebpage.png"
+      alt="Première page web de l'histoire"
+    />
+    <p class="caption">
+      Première page web de l'Histoire. Crédit : Tim Berners-Lee, CERN.
+    </p>
+    <p>
+      Aujourd'hui, dans notre conception low-tech, l'utilisation de HTML n'est
+      pas débattable tant cette technologie est importante et se trouve dans
+      tous les standards du Web. Au contraire, dans notre approche low-tech,
+      nous aurons très envie de remettre le HTML au centre de notre
+      développement. En effet, le HTML contient déjà tout ce qu'il faut pour
+      présenter/partager de l'information ; ce ne serait pas absurde de dire que
+      tous les sites web qui ne font que présenter de l'information peuvent
+      exister sans avoir besoin des prochaines technologies de cette
+      chronologie.
+    </p>
+    <h4>1994 - PHP</h4>
+    <p>
+      L'histoire des sites web incluent aussi les technologies qui permettent de
+      générer du HTML. Le PHP en est un bon exemple ; il s'agit d'un langage
+      utilisé pour écrire des programmes qui seront exécutés sur un serveur web.
+      Basiquement, du côté client (c'est-à-dire utilisateur) le navigateur
+      envoie des requêtes à un serveur qui va répondre en envoyant les fichiers
+      permettant au navigateur d'afficher le site. Un programme PHP permet de
+      dialoguer avec le serveur afin qu'il génère des pages web.
+    </p>
+    <p>
+      Les générations "côté serveur" de page web ont été très importantes dans
+      l'évolution des sites web puisqu'elles ont permis, avec l'utilisation de
+      bases de données, de personnaliser les pages transmises en fonction de
+      l'utilisateur de ces pages et d'autres paramètres comme l'adresse du site.
+      On pourrait imaginer que Wikipédia (utilisant le PHP) n'héberge pas dans
+      ses serveurs un fichier HTML par article (et par langue) mais que les
+      pages sont générées à la demande d'un utilisateur avec des données venant
+      de leur base de données, en effet il y a plus de 2 millions d'article sur
+      <a href="https://stats.wikimedia.org/FR/ChartsWikipediaFR.htm#2"
+        >Wikipedia</a
+      >
+      qui font en moyenne 2500 octets soit donc environ 5 Go. Les articles
+      pourraient donc théoriquement être contenus dans un serveur mais le
+      problème est que le nombre d'article sur Wikipedia augmente chaque jour,
+      donc faut donc réduire le plus possible la taille de stockage des
+      informations. On peut aussi dire que la mise en page étant toujours la
+      même il n'est pas nécessaire de stocker tout le fichier HTML, ainsi juste
+      stocker les informations dans une base de données reste la solution la
+      plus pratique, c'est ce qu'à fait Wikipedia.
+    </p>
+    <h4>1995 - Les tableaux</h4>
+    <p>
+      Le HTML a connu une grande évolution après sa première publication. De
+      nombreuses améliorations ont été proposées et intégrées dans une nouvelle
+      version sortie en 1995 : HTML 2.0.<a class="footnote" href="#source2"
+        >[2]</a
+      >
+    </p>
+    Voici ci-dessous un exemple de code en HTML 2.0 venant de
+    <a href="https://www.w3.org/MarkUp/html-spec/html-spec_5.html#SEC5.3"
+      >www.w3.org</a
+    >
+    <p class="code">
+      &lt;OL&gt;<br />
+      &lt;LI&gt;Click the Web button to open URI window.<br />
+      &lt;LI&gt;Enter the URI number in the text field of the Open URI <br />
+      window. The Web document you specified is displayed.<br />
+      &lt;ol&gt;<br />
+      &lt;li&gt;substep 1<br />
+      &lt;li&gt;substep 2<br />
+      &lt;/ol&gt;<br />
+      &lt;LI&gt;Click highlighted text to move from one link to another.<br />
+      &lt;/OL&gt;
+    </p>
+    <p>
+      Parmi ces améliorations, on retrouve les tableaux, qui permettent de
+      commencer à styliser ses pages web. Par exemple, un développeur pouvait
+      utiliser la balise <code>table</code> pour donner à sa page web une
+      apparence de journal. Cette version a aussi permis d'incruster des images
+      et des expressions mathématiques.
+    </p>
+    <p>
+      Nous incluons les tableaux dans notre chronologie car ils ont permis
+      d'améliorer l'esthétique des pages web et de les rendre plus intuitives
+      pour les utilisateurs. Bien sûr, l'utilisation de tableaux de manière
+      esthétique est à prohiber car sémantiquement c'est une erreur. Il faudra
+      attendre le <a href="#css-part">CSS</a> pour cela. En effet, les tableaux
+      HTML ont été créés pour organiser des données sous formes de tableaux, les
+      utiliser de manière esthétique risque de considérablement ralentir le
+      navigateur car il doit télécharger tout le tableau pour l'affichage. C'est
+      aussi plus difficile de maintenir ce code, ainsi que de rendre le site
+      responsive.
+    </p>
+    <img
+      src="./images/tabledesign.png"
+      alt="Exemple de page web avec tableaux"
+    />
+    <p class="caption">
+      Exemple de page web avec tableaux. Crédit : Iconic Developers
+    </p>
+    <p>
+      En surfant sur le Web durant ces temps-là, on peut commencer à voir des
+      pages web qui suivent le "block design". C'est-à-dire des pages web donc
+      les sections sont séparées en bloc grâce à des tables.
+    </p>
+    <p>
+      Parmi les contributions majeures, il y a aussi les formulaires du
+      navigateur NCSA Mosaic<a class="footnote" href="#source2">[2]</a> qui
+      permettent à la page web d'interagir avec d'autres programmes
+      informatique. C'est une avancée majeure en ce qui concerne l'interactivité
+      du Web. On peut commencer à avoir de véritables applications servies sur
+      le Web et plus uniquement des informations à partager. Les principales
+      différences entre une application web et un site web sont qu'une
+      application est contenue dans un site web, le développement d'une
+      application web est bien plus coûteux et chronophage que celui du site web
+      dans lequel il est contenu et qu'un site web est une source d'information
+      alors qu'une application web fonctionne de manière interactive.
+    </p>
+    <h4>1995 - JavaScript</h4>
+    <p>
+      JavaScript (JS) conclue l'année 1995 en beauté. Les développeurs peuvent
+      désormais intégrer des éléments de logique booléennes dans leurs pages web
+      et ainsi manipuler les objets conventionnels des informaticiens comme les
+      instructions conditionnelles et les boucles.
+    </p>
+    <p>
+      Les utilisateurs peuvent maintenant interagir avec les pages qu'ils
+      consultent : cliquer sur des boutons qui ont chacun un comportement
+      spécifique, jouer à des jeux vidéos, etc. Du côté des développeurs, le
+      JavaScript change aussi beaucoup de choses, ils peuvent désormais :
+      valider ce que l'utilisateur tape dans un formulaire, transmettre des
+      informations sur le comportement de l'utilisateur, modifier dynamiquement
+      le site web pour afficher des publicités, etc.
+    </p>
+    <img src="./images/jsexemple.gif" alt="Exemple de JavaScript" />
+    <p class="caption">Exemple de JavaScript. Crédit : o7planning.org</p>
+    <h4>1996 - Flash</h4>
+    <p>
+      Flash offre la possibilité de manipuler des graphiques vectoriels et tout
+      type de contenu multimédia destiné à être publié sur le Web grâce à Flash
+      Player. Les pages web peuvent maintenant intégrer du contenu multimédia
+      bien plus riche qu'auparavant, en particulier des animations, des
+      publicités et des jeux vidéos.
+    </p>
+    <p>
+      C'est une autre technologie qui contribue à l'enrichissement des sites
+      web. Cependant, Flash a maintenant quasiment disparu, la raison en est
+      très simple, Apple n'a pas accepté d'intégrer Flash à ses produits (dont
+      l'iPhone) ce qui a fortement contribuer au déclin de Flash. D'autres
+      problèmes sont toutes fois à noter comme le fait qu'il a été une des
+      seules technologies du web qui ne soit pas libre et qu'elle comportait
+      certains problèmes techniques et de sécurités.
+    </p>
+    <h4 id="css-part">1998 - CSS</h4>
+    <p>Donnons du style à nos pages web !</p>
+    <p>
+      L'ajout des feuilles de styles, bien qu'elles aient mis du temps à être
+      bien intégrées aux navigateurs, montre l'envie de vouloir séparer la forme
+      du fond. On gagnera alors en structuration logique et donc en pérennité,
+      maintenance, portabilité et malléabilité du contenu.
+    </p>
+    <p>La stack du développement web devient :</p>
+    <ul>
+      <li>HTML -> Structure</li>
+      <li>CSS -> Présentation</li>
+      <li>JS -> Comportement</li>
+    </ul>
+    <p>
+      Les feuilles de styles permettent de styliser n'importe laquelle des
+      balises HTML présente dans une page web (titre, paragraphres, images,
+      listes, formulaires, etc).
+    </p>
 
-      <img src="./images/vuetrend.png" alt="Tendences Vue.js" />
-      <p class="caption">
-        Ces figures présentent les résultats de recherches de React.js et
-        Vue.js, des frameworks JavaScript côté client.
-      </p>
+    <p>
+      La page web que vous lisez actuellement est un exemple de HTML augmenté
+      par du CSS. On peut voir ci-dessous les détails de mise en forme de la
+      majorité de cette page comme par exemple que notre zone de texte
+      représente 70% de la taille de la page ou encore que la police par défaut
+      est "Segoe UI" mais que si le navigateur ne l'a pas en mémoire il peut
+      utiliser plusieurs polices de remplacements.
+    </p>
+    <p>
+      <code class="code">
+        .main {<br />
+        width: 70%;<br />
+        margin: auto;<br />
+        padding: 10px;<br />
+        text-align: justify;<br />
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;<br />
+        background-color: ghostwhite;<br />
+        border-radius: 15px;<br />
+        box-shadow: 0px 0px 24px 2px rgba(202, 209, 209, 1);<br />
+        }
+      </code>
+    </p>
+    <h4>2007 - Mobile</h4>
+    <p>
+      Jusqu'à présent, tous les sites web avaient plus ou moins le même style
+      car les écrans sur lesquelles ils étaient affichés avaient tous, plus ou
+      moins, les mêmes proportions/résolutions. Cela a changé avec l'apparition
+      du premier smartphone en 2007.
+    </p>
+    <p>
+      Il est désormais possible de lire une page web depuis un écran bien plus
+      petit et disposant d'une résolution bien différente, avec des proportions
+      inversées (on passe de vue en paysage à portrait).
+    </p>
+    <p>
+      La première solution a été de développer plusieurs sites web. Généralement
+      un pour l'ordinateur de bureau/portable et, un second pour le mobile. Il
+      n'était pas rare que des sites web proposent une adresse
+      <code>mobile.site.com</code> en parallèle de <code>www.site.com</code>.
+    </p>
+    <h4>2010 - Design Responsive</h4>
+    <p>
+      C'est en 2010 que l'on réfléchit à l'idée de n'avoir qu'un seul site web
+      capable de rendre une page aussi belle sur ordinateur que sur mobile. Le
+      changement a été fait dans CSS3 avec la possibilité de préciser pour
+      quelle résolution un style doit s'appliquer, on appelles cela les medias
+      queries.
+    </p>
+    <p>
+      On note que, désormais, toutes les pages web responsive intègrent le CSS
+      de toutes les résolutions, contrairement à la solution précédente qui
+      permettait de charger uniquement les fichiers dont on avait besoin en
+      fonction de l'URL.
+    </p>
+    <p>
+      Toutes ces nouveautés en CSS contribuent à l'apparition de framework CSS
+      sous la forme de fichiers contenant un grand nombre de composants CSS
+      préconçus. Un exemple serait Bootstrap de Twitter permettant à tous les
+      développeurs d'adopter facilement le style de Twitter sur leurs sites web.
+      Ces framework demandent bien entendu de devoir les charger à chaque
+      visite.
+    </p>
+    <h4>2014 - NPM</h4>
+    <p>
+      Le <strong>Node Package Registry</strong> est un hub de librairies et
+      frameworks JavaScript. Il a permis la livraison d'un grand nombre de
+      framework JavaScript utilisés pour créer des sites web dont le rendu est
+      côté client. Cela signifie que le HTML reçu par le client est très minimal
+      mais par contre il reçoit de gros fichiers JavaScript que le navigateur va
+      interpréter pour générer le HTML sur l'ordinateur du client ; c'est à
+      comparer avec le rendu côté serveur comme ce que fait le PHP. Aujourd'hui,
+      la tendance est clairement aux framework JavaScript côté client comme le
+      montre ces résultats Google Trends<a class="footnote" href="#source3"
+        >[3]</a
+      >.
+    </p>
+    <img src="./images/reacttrend.png" alt="Tendences React.js" />
 
-      <h4>Aujourd'hui</h4>
-      <p>
-        Toutes ces évolutions sont intéressantes, aussi bien pour les
-        développeurs que pour les utilisateurs, mais viennent à un prix. Ce ne
-        sont plus les quelques Ko de HTML qui transitent désormais dans les
-        canaux d'Internet mais bien des Mo de frameworks CSS/JS par page<a
-          class="footnote"
-          href="#source4"
-          >[4]</a
-        >. Ces chiffres sont le résultat de l'évolution d'une industrie tout
-        entière et reflète l'impact de cette évolution au travers des
-        développeurs et utilisateurs.
-      </p>
-      <h3>L'impact sur le développement</h3>
-      <p>
-        Cette chronologie montre que le nombre de technologies que l’on peut
-        utiliser lors de la réalisation d’un site web a considérablement
-        augmenté. Cela apporte de très nombreuses solutions lors du
-        développement, mais il est clair que cela a aussi eu un impact métier.
-        En effet, cela a conduit à marquer une division des métiers liée au
-        développement d’un site ; il est courant aujourd’hui de séparer
-        développeur front-end et back-end. Le front-end se consacre à l’UI
-        (interface utilisateur) tandis que le back-end se consacre au
-        développement fonctionnel de la base de données et des programmes côté
-        serveur : ce que l'utilisateur ne voit pas. Le profil full-stack émerge
-        également. C'est un développeur au profil transversal qui maitrise
-        l’ensemble des stacks techniques permettant une meilleure communiation
-        entre front-end et back-end. Dans la pratique ce métier est revandiquer
-        comme "faux" par la plupart de ceux qui l'exerce car les métiers de
-        développeur FrontEnd (mise en forme, intégration), développeur
-        BackEnd(scripts et gestions de BDD) et de DevOPS(gestion des serveurs,
-        opérabilité) sont des métiers demandant des années d'expériences pour
-        une compréhension globale des enjeux et des méthodes. Ce sont aussi des
-        métiers évoluant tous les jours et demandant une veille régulière, ces
-        métiers ne sont donc pas vraiment propices à être mélangés. On attend en
-        réalité simplement d'un ingénieur type Fullstack de connaitre les
-        rudiments et les méthodes de travails de ces 3 métiers dans des buts
-        différents selon le profil de l'entreprise. Dans une petite entreprise
-        voir une start-up le but est d'avoir quelqu'un de débrouillard qui
-        arrivera à gérer aux mieux les trois parties de la conception web, dans
-        une grande entreprise on attend de lui un rôle de médiateur entre les
-        trois parties car il est le seul à connaitre les objectifs de ceux-ci.
-      </p>
-      <p>
-        Outre cela, il est maintenant nécessaire de maitriser de nombreuses
-        technologies pour chaque type de développeur web. Ainsi, les compétences
-        du développeur front-end sont, au minimum : HTML, CSS et Javascript mais
-        il peut aussi se reposer sur les frameworks tel que jQuery, Angular,
-        Bootstrap et bien d’autres. De la même façon, un développeur back-end va
-        devoir maitriser les langages : PHP, Ruby, Python, SQL et pourra
-        connaitre de nombreux framework comme Symfony etc. Un problème
-        d'aujourd'hui est donc la quantité de technologie à maitriser pour
-        rentrer dans le marché du web en tant que développeur. Pour reprendre un
-        langage plus économiste il s'agit d'une grosse barrière à l'entrée de
-        cette partie du marché de l'emploi.
-      </p>
-      <p>
-        Avant, le problème était différent, il y avait aussi différentes
-        technologies mais aucun organisme de standardisation n'existait. Chaque
-        technologie utilisant ces propres formalismes il était très difficile
-        voire impossible de faire fonctionner plusieurs technologies dans un
-        même projet. Par exemple, chaque site web devait avoir plusieurs
-        versions en fonction du navigateur web car certains supportait des
-        technologies que les autres ne supportait pas.
-      </p>
-      <p>
-        Aussi, il est maintenant nécessaire de s’assurer de la compatibilité et
-        de la communication entre ces technologies. Par exemple il peut être
-        important de voir si un site web s’affiche de la même manière sur tous
-        les navigateurs. Par exemple, certaines balises CSS ne sont pas
-        universellement compatibles. Ce problème de compatibilité du CSS
-        (notamment présent à l'époque d'Internet Explorer) tend à se résoudre
-        avec l’amélioration des navigateurs, mais même si ces difficultés
-        concernent des supports anciens cela constitue un très bon exemple de
-        problème de compatibilité. Cependant, on pourrait aussi imaginer des
-        problèmes entre les versions de PHP sur les serveurs, les frameworks,
-        etc.
-      </p>
-      <p>
-        C'est là qu'entre en jeu le low-tech. Un support simple diminue ce
-        risque ; on réduit la surface possible d'incompatibilité. Cela diminue
-        également la dépendance aux technologies. En effet, plus les systèmes
-        sont complexes et reposent sur de nombreux éléments, plus les
-        développeurs sont dépendant de l’écosystème créé. Ainsi, certaines
-        normes et balises HTML peuvent ne pas être supportées par des
-        navigateurs ayant fait des choix d'implémentation différents. Un autre
-        exemple serait une technologie non libre de droits qui change ses règles
-        d’utilisation peut entrainer l’incapacité de maintenir un site. Une
-        implémentation low-tech implique donc plus de robustesse dans le temps.
-      </p>
+    <img src="./images/vuetrend.png" alt="Tendences Vue.js" />
+    <p class="caption">
+      Ces figures présentent les résultats de recherches de React.js et Vue.js,
+      des frameworks JavaScript côté client.
+    </p>
 
-      <h3>L'impact sur les utilisateurs</h3>
-      <p>
-        Cette chronologie nous montre qu'au début, les entreprises créaient des
-        pages web statiques ; les utilisateurs pouvaient consulter ces pages web
-        et obtenir les informations que les entreprises voulaient partager.
-        Cependant, les utilisateurs ne pouvaient pas interagir avec ces
-        informations.
-      </p>
-      <p>
-        Ensuite, grâce à l'utilisation des langages de programmation de serveur
-        comme le PHP, les pages web deviennent dynamiques, les utilisateurs
-        peuvent ainsi échanger avec les administrateurs du site et d'autres
-        utilisateurs. Les smartphones, blogs, wikis, forums, réseaux sociaux
-        sont en plein essor, on parle de web social<a
-          class="footnote"
-          href="#source5"
-          >. [5]</a
-        >
-        Au-delà d'avoir accès à l'information, les utilisateurs deviennent
-        eux-aussi des producteurs d'informations : partage de photos, blogs,
-        etc. Toutes ces choses-là contribuent à alourdir la quantité
-        d'informations transmises.
-      </p>
-      <p>
-        Parmi les conséquences que l'on peut deviner pour les utilisateurs, il y
-        a le besoin de rester à jour sur les technologies afin d'accèder aux
-        derniers jeux, applications ou encore sites web, ainsi que le besoin
-        d'améliorer son accès à Internet pour supporter les fichiers chargés de
-        plus en plus volumineux (voir prochain chapitre). L'utilisateur doit
-        aussi faire attention à son utilisation du Web tant la limite entre
-        "information" et "information personnalisée" s'assombrie. De nouvelles
-        questions peuvent émerger : "Est-ce que je vois cette information parce
-        que je l'ai cherchée ou bien c'est l'information qui est venu me trouver
-        ?". Dans une approche low-tech, où la simplicité est privilégiée,
-        l'information ne sera quasiment jamais personnalisée car cela implique
-        l'utilisation d'algorithme qui, la plupart du temps, ne sont pas
-        nécessaire. Or le but du low-tech est de ne garder ce qui est
-        strictement utile à servir le propos.
-      </p>
-      <h3>Sources</h3>
-      <p>Pour aller plus loin...</p>
-      <table>
-        <tr>
-          <th>ID</th>
-          <th>Objet</th>
-          <th>Lien</th>
-        </tr>
-        <tr>
-          <td id="source1">[1]</td>
-          <td>Citation Tim Berners-Lee</td>
-          <td>
-            <a href="https://www.youtube.com/watch?v=k0gvAyCubGQ"
-              >https://www.youtube.com/watch?v=k0gvAyCubGQ</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source2">[2]</td>
-          <td>Détails sur le HTML</td>
-          <td>
-            <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
-              >https://fr.wikipedia.org/wiki/Hypertext_Markup_Language</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source3">[3]</td>
-          <td>Google Trends</td>
-          <td>
-            <a href="https://trends.google.fr">https://trends.google.fr</a>
-          </td>
-        </tr>
-        <tr>
-          <td id="source4">[4]</td>
-          <td>Taille des pages web</td>
-          <td>
-            <a href="https://httparchive.org/reports/page-weight"
-              >https://httparchive.org/reports/page-weight</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source5">[5]</td>
-          <td>L'évolution du web dépuis sa création</td>
-          <td>
-            <a
-              href="http://www.iredacweb.com/blog/evolution-du-web-depuis-sa-creation.html"
-            >
-              http://www.iredacweb.com/blog/evolution-du-web-depuis-sa-creation.html
-            </a>
-          </td>
-        </tr>
-      </table>
-      <p>
-        Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
-        Xiang Li.
-      </p>
-    </section>
+    <h4>Aujourd'hui</h4>
+    <p>
+      Toutes ces évolutions sont intéressantes, aussi bien pour les développeurs
+      que pour les utilisateurs, mais viennent à un prix. Ce ne sont plus les
+      quelques Ko de HTML qui transitent désormais dans les canaux d'Internet
+      mais bien des Mo de frameworks CSS/JS par page<a
+        class="footnote"
+        href="#source4"
+        >[4]</a
+      >. Ces chiffres sont le résultat de l'évolution d'une industrie tout
+      entière et reflète l'impact de cette évolution au travers des développeurs
+      et utilisateurs.
+    </p>
+    <h3>L'impact sur le développement</h3>
+    <p>
+      Cette chronologie montre que le nombre de technologies que l’on peut
+      utiliser lors de la réalisation d’un site web a considérablement augmenté.
+      Cela apporte de très nombreuses solutions lors du développement, mais il
+      est clair que cela a aussi eu un impact métier. En effet, cela a conduit à
+      marquer une division des métiers liée au développement d’un site ; il est
+      courant aujourd’hui de séparer développeur front-end et back-end. Le
+      front-end se consacre à l’UI (interface utilisateur) tandis que le
+      back-end se consacre au développement fonctionnel de la base de données et
+      des programmes côté serveur : ce que l'utilisateur ne voit pas. Le profil
+      full-stack émerge également. C'est un développeur au profil transversal
+      qui maitrise l’ensemble des stacks techniques permettant une meilleure
+      communiation entre front-end et back-end. Dans la pratique ce métier est
+      revandiquer comme "faux" par la plupart de ceux qui l'exerce car les
+      métiers de développeur FrontEnd (mise en forme, intégration), développeur
+      BackEnd(scripts et gestions de BDD) et de DevOPS(gestion des serveurs,
+      opérabilité) sont des métiers demandant des années d'expériences pour une
+      compréhension globale des enjeux et des méthodes. Ce sont aussi des
+      métiers évoluant tous les jours et demandant une veille régulière, ces
+      métiers ne sont donc pas vraiment propices à être mélangés. On attend en
+      réalité simplement d'un ingénieur type Fullstack de connaitre les
+      rudiments et les méthodes de travails de ces 3 métiers dans des buts
+      différents selon le profil de l'entreprise. Dans une petite entreprise
+      voir une start-up le but est d'avoir quelqu'un de débrouillard qui
+      arrivera à gérer aux mieux les trois parties de la conception web, dans
+      une grande entreprise on attend de lui un rôle de médiateur entre les
+      trois parties car il est le seul à connaitre les objectifs de ceux-ci.
+    </p>
+    <p>
+      Outre cela, il est maintenant nécessaire de maitriser de nombreuses
+      technologies pour chaque type de développeur web. Ainsi, les compétences
+      du développeur front-end sont, au minimum : HTML, CSS et Javascript mais
+      il peut aussi se reposer sur les frameworks tel que jQuery, Angular,
+      Bootstrap et bien d’autres. De la même façon, un développeur back-end va
+      devoir maitriser les langages : PHP, Ruby, Python, SQL et pourra connaitre
+      de nombreux framework comme Symfony etc. Un problème d'aujourd'hui est
+      donc la quantité de technologie à maitriser pour rentrer dans le marché du
+      web en tant que développeur. Pour reprendre un langage plus économiste il
+      s'agit d'une grosse barrière à l'entrée de cette partie du marché de
+      l'emploi.
+    </p>
+    <p>
+      Avant, le problème était différent, il y avait aussi différentes
+      technologies mais aucun organisme de standardisation n'existait. Chaque
+      technologie utilisant ces propres formalismes il était très difficile
+      voire impossible de faire fonctionner plusieurs technologies dans un même
+      projet. Par exemple, chaque site web devait avoir plusieurs versions en
+      fonction du navigateur web car certains supportait des technologies que
+      les autres ne supportait pas.
+    </p>
+    <p>
+      Aussi, il est maintenant nécessaire de s’assurer de la compatibilité et de
+      la communication entre ces technologies. Par exemple il peut être
+      important de voir si un site web s’affiche de la même manière sur tous les
+      navigateurs. Par exemple, certaines balises CSS ne sont pas
+      universellement compatibles. Ce problème de compatibilité du CSS
+      (notamment présent à l'époque d'Internet Explorer) tend à se résoudre avec
+      l’amélioration des navigateurs, mais même si ces difficultés concernent
+      des supports anciens cela constitue un très bon exemple de problème de
+      compatibilité. Cependant, on pourrait aussi imaginer des problèmes entre
+      les versions de PHP sur les serveurs, les frameworks, etc.
+    </p>
+    <p>
+      C'est là qu'entre en jeu le low-tech. Un support simple diminue ce risque
+      ; on réduit la surface possible d'incompatibilité. Cela diminue également
+      la dépendance aux technologies. En effet, plus les systèmes sont complexes
+      et reposent sur de nombreux éléments, plus les développeurs sont dépendant
+      de l’écosystème créé. Ainsi, certaines normes et balises HTML peuvent ne
+      pas être supportées par des navigateurs ayant fait des choix
+      d'implémentation différents. Un autre exemple serait une technologie non
+      libre de droits qui change ses règles d’utilisation peut entrainer
+      l’incapacité de maintenir un site. Une implémentation low-tech implique
+      donc plus de robustesse dans le temps.
+    </p>
+
+    <h3>L'impact sur les utilisateurs</h3>
+    <p>
+      Cette chronologie nous montre qu'au début, les entreprises créaient des
+      pages web statiques ; les utilisateurs pouvaient consulter ces pages web
+      et obtenir les informations que les entreprises voulaient partager.
+      Cependant, les utilisateurs ne pouvaient pas interagir avec ces
+      informations.
+    </p>
+    <p>
+      Ensuite, grâce à l'utilisation des langages de programmation de serveur
+      comme le PHP, les pages web deviennent dynamiques, les utilisateurs
+      peuvent ainsi échanger avec les administrateurs du site et d'autres
+      utilisateurs. Les smartphones, blogs, wikis, forums, réseaux sociaux sont
+      en plein essor, on parle de web social<a class="footnote" href="#source5"
+        >. [5]</a
+      >
+      Au-delà d'avoir accès à l'information, les utilisateurs deviennent
+      eux-aussi des producteurs d'informations : partage de photos, blogs, etc.
+      Toutes ces choses-là contribuent à alourdir la quantité d'informations
+      transmises.
+    </p>
+    <p>
+      Parmi les conséquences que l'on peut deviner pour les utilisateurs, il y a
+      le besoin de rester à jour sur les technologies afin d'accèder aux
+      derniers jeux, applications ou encore sites web, ainsi que le besoin
+      d'améliorer son accès à Internet pour supporter les fichiers chargés de
+      plus en plus volumineux (voir prochain chapitre). L'utilisateur doit aussi
+      faire attention à son utilisation du Web tant la limite entre
+      "information" et "information personnalisée" s'assombrie. De nouvelles
+      questions peuvent émerger : "Est-ce que je vois cette information parce
+      que je l'ai cherchée ou bien c'est l'information qui est venu me trouver
+      ?". Dans une approche low-tech, où la simplicité est privilégiée,
+      l'information ne sera quasiment jamais personnalisée car cela implique
+      l'utilisation d'algorithme qui, la plupart du temps, ne sont pas
+      nécessaire. Or le but du low-tech est de ne garder ce qui est strictement
+      utile à servir le propos.
+    </p>
+    <h3>Sources</h3>
+    <p>Pour aller plus loin...</p>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Objet</th>
+        <th>Lien</th>
+      </tr>
+      <tr>
+        <td id="source1">[1]</td>
+        <td>Citation Tim Berners-Lee</td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=k0gvAyCubGQ"
+            >https://www.youtube.com/watch?v=k0gvAyCubGQ</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source2">[2]</td>
+        <td>Détails sur le HTML</td>
+        <td>
+          <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"
+            >https://fr.wikipedia.org/wiki/Hypertext_Markup_Language</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source3">[3]</td>
+        <td>Google Trends</td>
+        <td>
+          <a href="https://trends.google.fr">https://trends.google.fr</a>
+        </td>
+      </tr>
+      <tr>
+        <td id="source4">[4]</td>
+        <td>Taille des pages web</td>
+        <td>
+          <a href="https://httparchive.org/reports/page-weight"
+            >https://httparchive.org/reports/page-weight</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source5">[5]</td>
+        <td>L'évolution du web dépuis sa création</td>
+        <td>
+          <a
+            href="http://www.iredacweb.com/blog/evolution-du-web-depuis-sa-creation.html"
+          >
+            http://www.iredacweb.com/blog/evolution-du-web-depuis-sa-creation.html
+          </a>
+        </td>
+      </tr>
+    </table>
+    <p>
+      Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et Xiang
+      Li.
+    </p>
   </body>
 </html>

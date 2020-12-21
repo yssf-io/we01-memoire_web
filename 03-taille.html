@@ -4,365 +4,394 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Les sites web low-tech</title>
-    <link href="styles/03-taille.css" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body id="body">
-    <section class="main">
-      <h2>La taille des sites web</h2>
-      <p>
-        Remarque : cette version du chapitre a été rendu le mardi soir, soit
-        après la deadline de dimanche, cependant nous avions aussi rendu une
-        première version à temps mais nous avions eu envie d'y ajouter des
-        choses tant que ce n'était pas corrigé ; si c'est contre les règles de
-        l'UV nous pouvons vous rendre la 1ère version.
-      </p>
-      <h3>Qu'est-ce que la taille d'un site web ?</h3>
+    <h1>Les sites web low-tech</h1>
+    <p style="text-align: center">
+      <a href="00-sommaire.html">(revenir à l'index)</a>
+    </p>
+    <ol>
+      <li><a href="01-introduction.html">Introduction</a></li>
+      <li><a href="02-histoire.html">Brève histoire des sites web</a></li>
+      <li><a href="03-taille.html">La taille des sites web</a></li>
+      <li>
+        <a href="04-types/index.html" target="_blank"
+          >Comparaison entre les types de sites web (nouvel onglet)</a
+        >
+      </li>
+      <li><a href="05-services.html">Les services les plus gourmands</a></li>
+      <li><a href="06-hebergement.html">L'hébergement aujourd'hui</a></li>
+      <li>
+        <a href="https://md.picasoft.net/s/tKDGtKk4t" target="_blank"
+          >Les commandements des sites low-tech (onglet md.picasoft.net)</a
+        >
+      </li>
+      <li>
+        <a href="https://md.picasoft.net/s/iHF0yo12N" target="_blank"
+          >Développement d'un site low-tech (onglet md.picasoft.net)</a
+        >
+      </li>
+      <li>
+        <a href="09-exemples_site_low_tech.html">Exemples de sites low-tech</a>
+      </li>
+      <li>
+        <a href="10-perspectives/index.html" target="_blank"
+          >Les perspectives (nouvel onglet)</a
+        >
+      </li>
+      <li><a href="11-conclusion.html">Conclusion</a></li>
+    </ol>
 
-      <div id="définition">
-        La taille d'une page web - aussi appelé poids - correspond à la taille
-        globale des fichiers, de la page web, reçus par le navigateur.
-      </div>
+    <h2>La taille des sites web</h2>
+    <p>
+      Remarque : cette version du chapitre a été rendu le mardi soir, soit après
+      la deadline de dimanche, cependant nous avions aussi rendu une première
+      version à temps mais nous avions eu envie d'y ajouter des choses tant que
+      ce n'était pas corrigé ; si c'est contre les règles de l'UV nous pouvons
+      vous rendre la 1ère version.
+    </p>
+    <h3>Qu'est-ce que la taille d'un site web ?</h3>
 
-      Ce poids est mesuré, comme pour tout fichier informatique, en octet. Ainsi
-      pour une page web la taille est de l'ordre de grandeur de quelques méga
-      octets<a class="footnote" href="#source1">[1]</a>.
+    <div id="définition">
+      La taille d'une page web - aussi appelé poids - correspond à la taille
+      globale des fichiers, de la page web, reçus par le navigateur.
+    </div>
 
-      <h3>Le poids des pages web ne cesse d'augmenter</h3>
-      <div id="frise-taille">
-        <span id="2010" class="frise-annee">2010</span
-        ><img
-          class="frise-fleche"
-          src="./images/right-arrow.svg"
-          alt="Flèche vers la droite"
-        />
-        <span id="2015" class="frise-annee">2015</span
-        ><img
-          class="frise-fleche"
-          src="./images/right-arrow.svg"
-          alt="Flèche vers la droite"
-        />
-        <span id="2020" class="frise-annee">2020</span>
-      </div>
-      <div id="frise-popup">
-        <div id="frise-popup-container">
-          <p id="popup-taille"></p>
-          <button id="bouton-fermer">Fermer</button>
-        </div>
-      </div>
-      <p>Cliquez sur l'année pour avoir le point en octet.</p>
+    Ce poids est mesuré, comme pour tout fichier informatique, en octet. Ainsi
+    pour une page web la taille est de l'ordre de grandeur de quelques méga
+    octets<a class="footnote" href="#source1">[1]</a>.
 
-      <p>
-        On peut constater que ce poids augmente fortement d'année en année, il
-        était en moyenne de 1.92Mo pour un site Desktop en 2015 et avoisinnait
-        les 2.5Mo en 2018<a class="footnote" href="#source2">[2]</a>. C'est
-        autant que le jeu vidéo Doom dans son ensemble (Doom étant un jeu vidéo
-        emblématique avec énormément de contenu sans pour étant être très lourd
-        pour un jeu de son époque soit 1993) !<br />
-        Il est aussi dit que le poids des sites mobiles a augmenté de 50% entre
-        2018 et 2020<a class="footnote" href="#source3">[3]</a>.
-      </p>
-
-      <p>
-        Au-delà de cette évolution on peut se demander quels sont les sites web
-        qui sont les plus consultés aujourd'hui. En effet, il existe plus de 1,6
-        milliards de sites web dans le monde dont plus de 2 millions de blogs
-        publiés chaque jour sur Internet. Plus de 23,6 milliards de pages
-        chaques mois rien que sur WordPress (présent sur plus de 40% des sites
-        web en ligne actuellement)<a class="footnote" href="#source4">[4]</a>.
-        Wordpress héberge des sites comme le New York Times ou Forbes<a
-          class="footnote"
-          href="#source5"
-          >[5]</a
-        >. Or, comme il a été dit dans l'introduction et le chapitre 1,
-        l'utilisation de CMS engendre souvent des pages web plus lourdes. Aussi,
-        les réseaux sociaux occupent une part importante du trafic (3 milliards
-        d’utilisateurs en 2020). Les réseaux sociaux sont constitués de pages
-        lourdes : présence de boutons, de nombreuses images et vidéos, de
-        publicitées ou encore de trackers... L'ajout constant de nouvelles
-        <i>features</i> entraine un allongement du code qui lui même entraine un
-        alourdissement du site.
-      </p>
-
-      <h3>Plus c'est léger, mieux c'est.</h3>
-
-      Le poids est un facteur très alarmant de la vitesse de chargement d'un
-      site web. Google prend en compte le temps de chargements pour le
-      référencement des sites web, on a donc tout intéret à réduire la taille de
-      nos pages. Les sites figurants sur la premère page de résultats du moteur
-      de recherche (SERPs) Google ont une vitesse de chargement moyenne
-      inférieure à 2 secondes. Et pour cause en 2020, 40% des internautes
-      abandonnent un site web si le chargement prend plus de 3 secondes.<a
-        class="footnote"
-        href="#source6"
-        >[4]</a
-      >
-
-      Qu'on soit développeur ou non, il est indispensable de s'attarder sur
-      cette problématique.
-
-      <p>
-        Pour relativiser on peut noter que le standard de poids "à ne pas
-        dépasser", c'est-à-dire le poids qui rend le chargement d'un site trop
-        long, évolue lui aussi. En effet, les technologies évoluent dans leur
-        ensemble. La puissance des ordinateurs, la performance des navigateurs
-        mais aussi et surtout une amélioration considérable des systèmes réseaux
-        (démocratisation de la fibre optique dans le monde, l'apparition de la
-        3G puis 4G et maintenant la 5G) permettent un chargement rapide de
-        fichiers plus volumineux.
-      </p>
-      <p>
-        D'un point de vue écologique, cela reste bien évidémment contestable :
-        si on augmente la puissance des infrastructures, il est évident que l'on
-        pourra transmettre plus de données mais cela sera inévitablement plus
-        couteux en ressources. On peut alors parler d'effet rebond, en effet
-        plus l'accès aux données informatiques est facile et économique, plus
-        elles seront consommées et donc plus l'infrastructure devra évolué afin
-        de suivre la demande. Donc en faisait tout ce qui est possible
-        techniquement pour économiser des ressources on se retrouve à augmenter
-        la consommation globale. D'autant que l'on peut questionner la
-        pertinence de développer des sites plus lourd. Transmet-on aujourd'hui
-        plus d'information sur une page web qu'avant ? On peut douter du fait
-        que l'augmentation du poids d'une page soit proportionnelle à
-        l'enrichissement de son contenu et même à l'amélioration de l'experience
-        utilisateur. Un exemple de cela serait le "No Fucking JS Spirit" employé
-        entre autre par la société Artwai<a class="footnote" href="#source7"
-          >[7]</a
-        >. Si on devait résumer ce concept, ce serait programmer intelligemment
-        le site web en connaissant certaines subtilités du JavaScript comme le
-        <i>binding</i>(consistant à associer l'instance d'un objet à une
-        fonction) ou la fermeture lexicale (ensemble fonction+variables non
-        locales qu'elle a capturé) afin d'obtenir un site remplissant sa
-        fonction avec le poids minimum possible.
-      </p>
-      <p>
-        Par ailleurs, l'économie du web aujourd'hui est fondé en grande partie
-        sur la publicité qui contribut à une partie de l'augmentation du poids
-        des pages et aussi, indirectement, à l'environnement car cela incite à
-        la consommation de biens. Dans un premier temps parce que les publicités
-        peuvent peser très lourd (images et vidéos pour identifier un produit,
-        des liens ou même des scripts JS). Mais aussi car cela est lié à
-        l'économie de l'attention : il s'agit d'attirer et de faire rester les
-        utilisateurs sur la page web. Pour cela les <i>designers</i> cherchent à
-        stimuler l'esprit de l'utilisateur par de nombreuses images et
-        animations. La figure suivante montre l'avancée et l'importance de la
-        publicité sur Internet.
-      </p>
-
-      <img
-        src="./images/ads.jpeg"
-        alt="Chiffre d'affaire de l'industrie publicitaire"
+    <h3>Le poids des pages web ne cesse d'augmenter</h3>
+    <div id="frise-taille">
+      <span id="2010" class="frise-annee">2010</span
+      ><img
+        class="frise-fleche"
+        src="./images/right-arrow.svg"
+        alt="Flèche vers la droite"
       />
-      <p class="caption">Chiffre d'affaire de l'industrie publicitaire.</p>
+      <span id="2015" class="frise-annee">2015</span
+      ><img
+        class="frise-fleche"
+        src="./images/right-arrow.svg"
+        alt="Flèche vers la droite"
+      />
+      <span id="2020" class="frise-annee">2020</span>
+    </div>
+    <div id="frise-popup">
+      <div id="frise-popup-container">
+        <p id="popup-taille"></p>
+        <button id="bouton-fermer">Fermer</button>
+      </div>
+    </div>
+    <p>Cliquez sur l'année pour avoir le point en octet.</p>
 
-      <h3>Diminuer le poids d'une page</h3>
+    <p>
+      On peut constater que ce poids augmente fortement d'année en année, il
+      était en moyenne de 1.92Mo pour un site Desktop en 2015 et avoisinnait les
+      2.5Mo en 2018<a class="footnote" href="#source2">[2]</a>. C'est autant que
+      le jeu vidéo Doom dans son ensemble (Doom étant un jeu vidéo emblématique
+      avec énormément de contenu sans pour étant être très lourd pour un jeu de
+      son époque soit 1993) !<br />
+      Il est aussi dit que le poids des sites mobiles a augmenté de 50% entre
+      2018 et 2020<a class="footnote" href="#source3">[3]</a>.
+    </p>
 
-      <h4>Du côté developpeur</h4>
+    <p>
+      Au-delà de cette évolution on peut se demander quels sont les sites web
+      qui sont les plus consultés aujourd'hui. En effet, il existe plus de 1,6
+      milliards de sites web dans le monde dont plus de 2 millions de blogs
+      publiés chaque jour sur Internet. Plus de 23,6 milliards de pages chaques
+      mois rien que sur WordPress (présent sur plus de 40% des sites web en
+      ligne actuellement)<a class="footnote" href="#source4">[4]</a>. Wordpress
+      héberge des sites comme le New York Times ou Forbes<a
+        class="footnote"
+        href="#source5"
+        >[5]</a
+      >. Or, comme il a été dit dans l'introduction et le chapitre 1,
+      l'utilisation de CMS engendre souvent des pages web plus lourdes. Aussi,
+      les réseaux sociaux occupent une part importante du trafic (3 milliards
+      d’utilisateurs en 2020). Les réseaux sociaux sont constitués de pages
+      lourdes : présence de boutons, de nombreuses images et vidéos, de
+      publicitées ou encore de trackers... L'ajout constant de nouvelles
+      <i>features</i> entraine un allongement du code qui lui même entraine un
+      alourdissement du site.
+    </p>
 
-      De manière générale, il s'agit de minimiser la taille du code de la page
-      web mais aussi celle de toutes les ressources. Ainsi, il faut optimiser
-      l'utilisation de toutes les images ainsi qu'en compresser le maximum. Il
-      faut prendre en compte le poids de fichiers externes comme les CSS et
-      JavaScript, éviter d'utiliser trop de librairies JS différentes,
-      concaténer les fichiers, etc. - Certains designs peuvent augmenter le
-      poids d'une page. C'est-à-dire qu'une partie du travail revient aussi aux
-      graphistes, qui doivent avant tout s'assurer que le design répond aux
-      objectifs du site.
+    <h3>Plus c'est léger, mieux c'est.</h3>
 
-      <p>Voici quelques pistes :</p>
+    Le poids est un facteur très alarmant de la vitesse de chargement d'un site
+    web. Google prend en compte le temps de chargements pour le référencement
+    des sites web, on a donc tout intéret à réduire la taille de nos pages. Les
+    sites figurants sur la premère page de résultats du moteur de recherche
+    (SERPs) Google ont une vitesse de chargement moyenne inférieure à 2
+    secondes. Et pour cause en 2020, 40% des internautes abandonnent un site web
+    si le chargement prend plus de 3 secondes.<a
+      class="footnote"
+      href="#source6"
+      >[4]</a
+    >
 
-      <ul>
-        <li>
-          Les minimiseurs (Closure Compiler de Google, Clean CSS) sont des
-          outils qui permettent de réduire automatiquement la taille du code.
-        </li>
-        <li>
-          Il existe des équivalents de jQuery avec la même syntaxe mais
-          utilisant seulement les fonctions essentielles et, de manière
-          générale, les framework CSS/JS proposent généralement une version
-          minifiée ou des outils qui, en analysant votre code, créent des
-          versions spécialisés d'eux-même.
-        </li>
-        <li>
-          Adopter une syntaxe dite "vectorisé" qui permet de réduire la taille
-          du CSS.
-        </li>
-        <li>Supprimer les descriptions non utilisées.</li>
-      </ul>
+    Qu'on soit développeur ou non, il est indispensable de s'attarder sur cette
+    problématique.
 
-      <h4>Du côté utilisateur</h4>
+    <p>
+      Pour relativiser on peut noter que le standard de poids "à ne pas
+      dépasser", c'est-à-dire le poids qui rend le chargement d'un site trop
+      long, évolue lui aussi. En effet, les technologies évoluent dans leur
+      ensemble. La puissance des ordinateurs, la performance des navigateurs
+      mais aussi et surtout une amélioration considérable des systèmes réseaux
+      (démocratisation de la fibre optique dans le monde, l'apparition de la 3G
+      puis 4G et maintenant la 5G) permettent un chargement rapide de fichiers
+      plus volumineux.
+    </p>
+    <p>
+      D'un point de vue écologique, cela reste bien évidémment contestable : si
+      on augmente la puissance des infrastructures, il est évident que l'on
+      pourra transmettre plus de données mais cela sera inévitablement plus
+      couteux en ressources. On peut alors parler d'effet rebond, en effet plus
+      l'accès aux données informatiques est facile et économique, plus elles
+      seront consommées et donc plus l'infrastructure devra évolué afin de
+      suivre la demande. Donc en faisait tout ce qui est possible techniquement
+      pour économiser des ressources on se retrouve à augmenter la consommation
+      globale. D'autant que l'on peut questionner la pertinence de développer
+      des sites plus lourd. Transmet-on aujourd'hui plus d'information sur une
+      page web qu'avant ? On peut douter du fait que l'augmentation du poids
+      d'une page soit proportionnelle à l'enrichissement de son contenu et même
+      à l'amélioration de l'experience utilisateur. Un exemple de cela serait le
+      "No Fucking JS Spirit" employé entre autre par la société Artwai<a
+        class="footnote"
+        href="#source7"
+        >[7]</a
+      >. Si on devait résumer ce concept, ce serait programmer intelligemment le
+      site web en connaissant certaines subtilités du JavaScript comme le
+      <i>binding</i>(consistant à associer l'instance d'un objet à une fonction)
+      ou la fermeture lexicale (ensemble fonction+variables non locales qu'elle
+      a capturé) afin d'obtenir un site remplissant sa fonction avec le poids
+      minimum possible.
+    </p>
+    <p>
+      Par ailleurs, l'économie du web aujourd'hui est fondé en grande partie sur
+      la publicité qui contribut à une partie de l'augmentation du poids des
+      pages et aussi, indirectement, à l'environnement car cela incite à la
+      consommation de biens. Dans un premier temps parce que les publicités
+      peuvent peser très lourd (images et vidéos pour identifier un produit, des
+      liens ou même des scripts JS). Mais aussi car cela est lié à l'économie de
+      l'attention : il s'agit d'attirer et de faire rester les utilisateurs sur
+      la page web. Pour cela les <i>designers</i> cherchent à stimuler l'esprit
+      de l'utilisateur par de nombreuses images et animations. La figure
+      suivante montre l'avancée et l'importance de la publicité sur Internet.
+    </p>
 
-      <p>
-        Comme on l'a vu, les publicités jouent un rôle important dans le poids
-        des pages web. Il en va de même pour les trackers qu'utilisent certains
-        sites afin d'analyser leurs statistiques. En effet, ces trackers sont
-        souvent des outils lourds. À l'instar des librairies, ceux-ci ne sont
-        pas forcément adaptés aux besoins du site. Ce sont des outils génériques
-        proposées par exemple par Google, c'est-à-dire une société qui a intérêt
-        à proposer l'outil le plus général possible pour toucher le plus de
-        clients. De plus ceux-ci utilise généralement du JavaScript et jQuery
-        afin de réagir dynamiquement à l'activité de l'utilisateur et de
-        communiquer ces informations au serveur (ce qui, au passage, entraine
-        des requètes supplémentaires).
-      </p>
-      <p>
-        Une solution pour l'utilisateur peut alors être un bloqueur de
-        publicités et de trackers. Celui-ci à pour rôle de bloquer/supprimer les
-        trakers et publicités. L'effet du bloqueur peut être considérable. Par
-        exemple, le poids de la page d'acceuil du site du Figaro est divisé par
-        3 sans publicités<a class="footnote" href="#source8">[8]</a>. Cependant,
-        faire ça peut nuire au développement du site web car le modèle
-        économique de beaucoup d'entreprise basé en ligne se joue
-        essentiellement sur la publicité. C'est donc une pratique à modérer.
-        Au-delà de ça, certains navigateurs et extensions proposent des outils
-        pour bloquer certains scripts JavaScript ou pour réduire le chargement
-        d'images en les compressant. Malheureusement, ces solutions ne sont pas
-        parfaites. La page n'est plus légère que pour l'utilisateur. En effet,
-        la quantité de données qui aura transité entre le serveur et le client
-        sera la même.
-      </p>
+    <img
+      src="./images/ads.jpeg"
+      alt="Chiffre d'affaire de l'industrie publicitaire"
+    />
+    <p class="caption">Chiffre d'affaire de l'industrie publicitaire.</p>
 
-      <h3>La relation entre taille des sites web et informations à partager</h3>
-      <p>
-        Jack Goody s'est intéressé à l'effet de l'écriture sur la manière de
-        penser et la raison. Dans la continuité de ces recherches, Bruno
-        Bachimont s'est quant à lui intéressé à ce que la mise en calcul de
-        l'écriture change. Dans toutes ces recherches, il y a l'idée qu'un type
-        de support renvoie à un type de rationalité. Dans cette lignée, il est
-        intéressant de se demander à quel point la taille d'une page web change
-        son contenu ; ou plus précisément, si on ne prend pas en compte le
-        contenu à partager (les informations, connaissances, etc) dans la taille
-        mais qu'on ne garde que le "superflu" (CSS en trop, JavaScript inutile,
-        etc), quel effet ce superflu a sur le contenu, qui lui ne peut pas être
-        soustré de la page.
-      </p>
-      <p>
-        On peut même penser que cet exercice pourrait nous aider dans notre
-        objectif de création de sites web low-tech. En effet, si l'on parvient à
-        séparer ces deux éléments (contenu et superflu) des pages web, on aurait
-        une définition de ce qu'est un site low-tech et en conséquence un cadre
-        de travail à suivre sur comment créer un tel site. La définition serait
-        dans les lignes de :
-        <cite
-          >"Un site web low-tech est composé de pages web ne présentant que le
-          contenu."</cite
-        >
-        Dis autrement en fonction de la taille, la taille d'un site web low-tech
-        ne reflète que son contenu. Néanmoins, même si on évite alors
-        l'utilisation de JavaScript, il permet, dans certains cas de diminuer la
-        taille d'une page web. Par exemple, par un affichage conditionnel
-        s'adaptant à la situation.
-      </p>
-      <p>
-        La difficulté serait ici de faire cette séparation. Quel est le contenu
-        ? Si on prend l'exemple d'un cours distribué sous la forme d'une page
-        web : nous avons le texte, des images explicatives et potentiellement
-        des parties de textes plus importantes que d'autres. Pour le texte et
-        les images, la question ne se pose pas : c'est du contenu. Mais ce ne
-        serait pas faux de dire que le fait que des parties de textes soient
-        plus importantes que le reste est aussi du contenu ; c'est un contenu
-        qui pourrait être précisé avec le formalisme des balises HTML (<i
-          >strong</i
-        >
-        par exemple), dans ce cas, le CSS qui montre que c'est plus important
-        est lui aussi du contenu. En sachant cela, on peut retirer le reste sans
-        avoir peur de modifier la nature du cours.
-      </p>
-      <p>
-        Cela devient plus compliqué lorsque l'on souhaite par exemple ajouter à
-        ce cours des explications interactives en JavaScript car il faudrait
-        réussir à dire à quel point ça change positivement le cours. Dans
-        l'hypothèse où ça ne change rien (donc superflu), on peut retirer ce
-        JavaScript, mais dans l'hypothèse où ça améliore le contenu, on peut
-        ranger ce bout de JavaScript dans la partie "contenu".
-      </p>
-      <p>
-        La machine low-tech d'un monde idéal nous permettrait par exemple de
-        quantifier la "superflu-itude" d'un contenu pour nous dire quoi retirer
-        sans changer le contenu que va recevoir l'utilisateur. Si une telle
-        machine existait, elle aurait sûrement été créée dans la continuité des
-        recherches de Goody et Bachimont.
-      </p>
+    <h3>Diminuer le poids d'une page</h3>
 
-      <h3>Sources</h3>
-      <p>Pour aller plus loin...</p>
-      <table>
-        <tr>
-          <th>ID</th>
-          <th>Lien</th>
-        </tr>
-        <tr>
-          <td id="source1">[1]</td>
-          <td>
-            <a
-              href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
-              >Demystifying API Rate Limiting</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source2">[2]</td>
-          <td>
-            <a href="https://www.artwai.com/poids-moyen-des-pages-web-en-2018/"
-              >Web 2018: plus lourd, plus lent</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source3">[3]</td>
-          <td>
-            <a href="https://httparchive.org/reports/page-weight"
-              >Report page-weight</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source4">[4]</td>
-          <td>
-            <a href="https://w3techs.com/technologies/details/cm-wordpress"
-              >Usage statistics and market share of WordPress</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source5">[5]</td>
-          <td>
-            <a href="https://www.alioze.com/chiffres-web"
-              >CHIFFRES & TENDANCES DU WEB 2020</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source6">[6]</td>
-          <td>
-            <a href="https://neilpatel.com/blog/loading-time/?wide=1"
-              >How loading time affects your bottom line</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source7">[7]</td>
-          <td>
-            <a href="https://www.artwai.com/a-propos/integration-web/"
-              >Intégration web selon Artwai</a
-            >
-          </td>
-        </tr>
-        <tr>
-          <td id="source8">[8]</td>
-          <td>
-            <a
-              href="https://www.dsfc.net/internet/bloqueur-publicitaire/poids-reel-page-site-web/"
-              >Connaître le poids réel d’une page d’un site Web</a
-            >
-          </td>
-        </tr>
-      </table>
-      <p>
-        Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et
-        Xiang Li.
-      </p>
-    </section>
+    <h4>Du côté developpeur</h4>
+
+    De manière générale, il s'agit de minimiser la taille du code de la page web
+    mais aussi celle de toutes les ressources. Ainsi, il faut optimiser
+    l'utilisation de toutes les images ainsi qu'en compresser le maximum. Il
+    faut prendre en compte le poids de fichiers externes comme les CSS et
+    JavaScript, éviter d'utiliser trop de librairies JS différentes, concaténer
+    les fichiers, etc. - Certains designs peuvent augmenter le poids d'une page.
+    C'est-à-dire qu'une partie du travail revient aussi aux graphistes, qui
+    doivent avant tout s'assurer que le design répond aux objectifs du site.
+
+    <p>Voici quelques pistes :</p>
+
+    <ul>
+      <li>
+        Les minimiseurs (Closure Compiler de Google, Clean CSS) sont des outils
+        qui permettent de réduire automatiquement la taille du code.
+      </li>
+      <li>
+        Il existe des équivalents de jQuery avec la même syntaxe mais utilisant
+        seulement les fonctions essentielles et, de manière générale, les
+        framework CSS/JS proposent généralement une version minifiée ou des
+        outils qui, en analysant votre code, créent des versions spécialisés
+        d'eux-même.
+      </li>
+      <li>
+        Adopter une syntaxe dite "vectorisé" qui permet de réduire la taille du
+        CSS.
+      </li>
+      <li>Supprimer les descriptions non utilisées.</li>
+    </ul>
+
+    <h4>Du côté utilisateur</h4>
+
+    <p>
+      Comme on l'a vu, les publicités jouent un rôle important dans le poids des
+      pages web. Il en va de même pour les trackers qu'utilisent certains sites
+      afin d'analyser leurs statistiques. En effet, ces trackers sont souvent
+      des outils lourds. À l'instar des librairies, ceux-ci ne sont pas
+      forcément adaptés aux besoins du site. Ce sont des outils génériques
+      proposées par exemple par Google, c'est-à-dire une société qui a intérêt à
+      proposer l'outil le plus général possible pour toucher le plus de clients.
+      De plus ceux-ci utilise généralement du JavaScript et jQuery afin de
+      réagir dynamiquement à l'activité de l'utilisateur et de communiquer ces
+      informations au serveur (ce qui, au passage, entraine des requètes
+      supplémentaires).
+    </p>
+    <p>
+      Une solution pour l'utilisateur peut alors être un bloqueur de publicités
+      et de trackers. Celui-ci à pour rôle de bloquer/supprimer les trakers et
+      publicités. L'effet du bloqueur peut être considérable. Par exemple, le
+      poids de la page d'acceuil du site du Figaro est divisé par 3 sans
+      publicités<a class="footnote" href="#source8">[8]</a>. Cependant, faire ça
+      peut nuire au développement du site web car le modèle économique de
+      beaucoup d'entreprise basé en ligne se joue essentiellement sur la
+      publicité. C'est donc une pratique à modérer. Au-delà de ça, certains
+      navigateurs et extensions proposent des outils pour bloquer certains
+      scripts JavaScript ou pour réduire le chargement d'images en les
+      compressant. Malheureusement, ces solutions ne sont pas parfaites. La page
+      n'est plus légère que pour l'utilisateur. En effet, la quantité de données
+      qui aura transité entre le serveur et le client sera la même.
+    </p>
+
+    <h3>La relation entre taille des sites web et informations à partager</h3>
+    <p>
+      Jack Goody s'est intéressé à l'effet de l'écriture sur la manière de
+      penser et la raison. Dans la continuité de ces recherches, Bruno Bachimont
+      s'est quant à lui intéressé à ce que la mise en calcul de l'écriture
+      change. Dans toutes ces recherches, il y a l'idée qu'un type de support
+      renvoie à un type de rationalité. Dans cette lignée, il est intéressant de
+      se demander à quel point la taille d'une page web change son contenu ; ou
+      plus précisément, si on ne prend pas en compte le contenu à partager (les
+      informations, connaissances, etc) dans la taille mais qu'on ne garde que
+      le "superflu" (CSS en trop, JavaScript inutile, etc), quel effet ce
+      superflu a sur le contenu, qui lui ne peut pas être soustré de la page.
+    </p>
+    <p>
+      On peut même penser que cet exercice pourrait nous aider dans notre
+      objectif de création de sites web low-tech. En effet, si l'on parvient à
+      séparer ces deux éléments (contenu et superflu) des pages web, on aurait
+      une définition de ce qu'est un site low-tech et en conséquence un cadre de
+      travail à suivre sur comment créer un tel site. La définition serait dans
+      les lignes de :
+      <cite
+        >"Un site web low-tech est composé de pages web ne présentant que le
+        contenu."</cite
+      >
+      Dis autrement en fonction de la taille, la taille d'un site web low-tech
+      ne reflète que son contenu. Néanmoins, même si on évite alors
+      l'utilisation de JavaScript, il permet, dans certains cas de diminuer la
+      taille d'une page web. Par exemple, par un affichage conditionnel
+      s'adaptant à la situation.
+    </p>
+    <p>
+      La difficulté serait ici de faire cette séparation. Quel est le contenu ?
+      Si on prend l'exemple d'un cours distribué sous la forme d'une page web :
+      nous avons le texte, des images explicatives et potentiellement des
+      parties de textes plus importantes que d'autres. Pour le texte et les
+      images, la question ne se pose pas : c'est du contenu. Mais ce ne serait
+      pas faux de dire que le fait que des parties de textes soient plus
+      importantes que le reste est aussi du contenu ; c'est un contenu qui
+      pourrait être précisé avec le formalisme des balises HTML (<i>strong</i>
+      par exemple), dans ce cas, le CSS qui montre que c'est plus important est
+      lui aussi du contenu. En sachant cela, on peut retirer le reste sans avoir
+      peur de modifier la nature du cours.
+    </p>
+    <p>
+      Cela devient plus compliqué lorsque l'on souhaite par exemple ajouter à ce
+      cours des explications interactives en JavaScript car il faudrait réussir
+      à dire à quel point ça change positivement le cours. Dans l'hypothèse où
+      ça ne change rien (donc superflu), on peut retirer ce JavaScript, mais
+      dans l'hypothèse où ça améliore le contenu, on peut ranger ce bout de
+      JavaScript dans la partie "contenu".
+    </p>
+    <p>
+      La machine low-tech d'un monde idéal nous permettrait par exemple de
+      quantifier la "superflu-itude" d'un contenu pour nous dire quoi retirer
+      sans changer le contenu que va recevoir l'utilisateur. Si une telle
+      machine existait, elle aurait sûrement été créée dans la continuité des
+      recherches de Goody et Bachimont.
+    </p>
+
+    <h3>Sources</h3>
+    <p>Pour aller plus loin...</p>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Lien</th>
+      </tr>
+      <tr>
+        <td id="source1">[1]</td>
+        <td>
+          <a
+            href="https://developer.akamai.com/blog/2018/05/30/demystifying-api-rate-limiting"
+            >Demystifying API Rate Limiting</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source2">[2]</td>
+        <td>
+          <a href="https://www.artwai.com/poids-moyen-des-pages-web-en-2018/"
+            >Web 2018: plus lourd, plus lent</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source3">[3]</td>
+        <td>
+          <a href="https://httparchive.org/reports/page-weight"
+            >Report page-weight</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source4">[4]</td>
+        <td>
+          <a href="https://w3techs.com/technologies/details/cm-wordpress"
+            >Usage statistics and market share of WordPress</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source5">[5]</td>
+        <td>
+          <a href="https://www.alioze.com/chiffres-web"
+            >CHIFFRES & TENDANCES DU WEB 2020</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source6">[6]</td>
+        <td>
+          <a href="https://neilpatel.com/blog/loading-time/?wide=1"
+            >How loading time affects your bottom line</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source7">[7]</td>
+        <td>
+          <a href="https://www.artwai.com/a-propos/integration-web/"
+            >Intégration web selon Artwai</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td id="source8">[8]</td>
+        <td>
+          <a
+            href="https://www.dsfc.net/internet/bloqueur-publicitaire/poids-reel-page-site-web/"
+            >Connaître le poids réel d’une page d’un site Web</a
+          >
+        </td>
+      </tr>
+    </table>
+    <p>
+      Chapitre écrit par Youssef El Saadany, Joseph Gabet, Mehdi Larid et Xiang
+      Li.
+    </p>
   </body>
   <script src="03-taille.js"></script>
 </html>
