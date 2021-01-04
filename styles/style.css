@@ -163,3 +163,10 @@ td {
 .spoiler {
   display: none;
 }
+
+.code
+{
+  margin:auto;
+  display:block;
+  width:40%;
+}
