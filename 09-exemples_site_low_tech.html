@@ -100,9 +100,11 @@
           La compression réduit les temps de réponse en réduisant la taille de
           la réponse HTTP. <i>gzip</i> est la méthode de compression la plus
           populaire et la plus efficace actuellement disponible et réduit
-          généralement la taille de la réponse d'environ 70%. Environ 90% du
-          trafic Internet actuel passe par des navigateurs qui prétendent
-          prendre en charge <i>gzip</i>.
+          généralement la taille de la réponse d'environ 70%. Avec
+          <i>gzip</i> on peut compresser du code HTML, CSS, JavaScript... En
+          effet tous les navigateurs supporte la décompression gzip. Il suffit
+          d'ajouter "Accept-Encoding" dans l'entête des requête HTML vers les
+          serveurs, et les serveurs répondront grâce à "Content-Encoding: gzip".
         </p>
       </li>
       <li>
@@ -130,6 +132,7 @@
           ></strong
         >
         <p>
+          <img src="images/cookie.PNG" />
           Lorsque le navigateur demande une image statique et envoie des cookies
           avec la demande, le serveur ignore les cookies. Ces cookies sont du
           trafic réseau inutile. Pour contourner ce problème, assurez-vous que
@@ -173,19 +176,6 @@
           que le document HTML arrive.
         </p>
       </li>
-      <li>
-        <strong>Éviter les src ou href vides</strong>
-        <p>
-          Vous pouvez vous attendre à ce qu'un navigateur ne fasse rien
-          lorsqu'il rencontre une image vide SRC. Cependant, ce n'est pas le cas
-          dans la plupart des navigateurs. IE fait une demande au répertoire
-          dans lequel se trouve la page; Safari, Chrome, Firefox 3 et les
-          versions antérieures font une demande à la page elle-même. Ce
-          comportement pourrait corrompre les données des utilisateurs,
-          gaspiller les cycles de calcul du serveur générant une page qui ne
-          sera jamais affichée et, dans le pire des cas, paralyser vos serveurs
-          en envoyant une grande quantité de trafic inattendu.
-        </p>
       </li>
       <li>
         <strong>Mettre JavaScript à la fin du code</strong>
@@ -195,19 +185,6 @@
           navigateur ne lancera aucun autre téléchargement. Pour accélérer le
           chargement de la page, déplacez les scripts vers le bas de la page
           s'ils peuvent être différés.
-        </p>
-      </li>
-
-      <li>
-        <strong> Réduire le nombre d'élément DOM</strong>
-        <p>
-          Une page complexe signifie plus d'octets à télécharger et un accès au
-          DOM plus lent en JavaScript. Réduisez le nombre d'éléments DOM sur la
-          page pour améliorer les performances. Cette technique ne fait pas
-          vraiment sens pour un développeur web qui écrit son propre HTML,
-          cependant il faut le garder en tête lorsque des frameworks JavaScript
-          (comme React.js) sont utilisés pour générer du HTML. Ces frameworks
-          ont tendance à créer un grand nombre d'éléments DOM.
         </p>
       </li>
     </ul>
